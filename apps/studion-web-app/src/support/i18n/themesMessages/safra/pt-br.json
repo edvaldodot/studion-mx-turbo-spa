@@ -1,0 +1,11 @@
+{
+  "global:menu.dashboard": "Início",
+  "global:menu.offerings": "Cursos disponíveis",
+  "global:menu.classroom": "Meus cursos",
+  "dashboard:banners.journey.title": "Conheça nossa Jornada Comercial",
+  "dashboard:banners.journey.description": "São 8 cursos que abordam temas como: Prospecção, Ciclo de Vendas, Negociação, Encantamento do Cliente, entre outros.",
+  "dashboard:featured.safra.history.title": "História do Grupo J. Safra e Mercado Financeiro",
+  "dashboard:featured.journey.2020.title": "Jornada 2020",
+  "classroom:header.title": "Meus cursos",
+  "offerings:header.title": "Cursos disponíveis"
+}

@@ -1,0 +1,77 @@
+@import '@/assets/styles/scss/class-utils/_mixins.scss';
+
+$theme-name: 'algar';
+$primary-color: #055550;
+$secondary-color: #28bea5;
+
+body[data-theme='#{$theme-name}'] {
+  @include generate-variables-base-colors($primary-color, $secondary-color);
+  @include text-contrast($primary-color, $secondary-color, var(--text-color));
+  // principal colors
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  // font family
+  --font-family: "Lato", sans-serif;
+  // text colors
+  --text-color: #495057;
+  --text-color-secondary: #6c757d;
+  --border-radius: 8px;
+
+  // surface
+  --surface-ground: #eff3f8;
+  --surface-section: #ffffff;
+  --surface-card: #ffffff;
+  --surface-overlay: #ffffff;
+  --surface-border: #dfe7ef;
+  --surface-hover: #f6f9fc;
+  --surface-0: #ffffff;
+  --surface-50: #fafafa;
+  --surface-100: #f5f5f5;
+  --surface-200: #eeeeee;
+  --surface-300: #e0e0e0;
+  --surface-400: #bdbdbd;
+  --surface-500: #9e9e9e;
+  --surface-600: #757575;
+  --surface-700: #616161;
+  --surface-800: #424242;
+  --surface-900: #212121;
+
+  // logo
+  --menu-reduced-logo-bg: url('/assets/images/themes/#{$theme-name}/svg/#{$theme-name}-logo-reduced.svg')
+    no-repeat center;
+  --menu-reduced-logo-bg-size: contain;
+  --menu-reduced-img-visibility: hidden;
+
+  --menu-logo-bg: url('/assets/images/themes/#{$theme-name}/svg/#{$theme-name}-logo.svg') no-repeat
+    center;
+  --menu-logo-bg-size: contain;
+  --menu-img-visibility: hidden;
+
+  // menu
+  --menu-background: var(--secondary-color);
+  --menu-retract-button-color: #ffffff;
+  --menu-retract-button-hover-color: var(--secondary-color);
+  --menu-retract-button-background-color: var(--primary-color);
+  --menu-section-title-color: var(--primary-color);
+  // menu item
+  --menu-item-text-color: #ffffff;
+  --menu-item-icon-color: #ffffff;
+  --menu-item-active-text-color: #ffffff;
+  --menu-item-active-icon-color: #ffffff;
+  --menu-item-active-background-color: var(--primary-color);
+  --menu-item-hover-background-color: var(--primary-color);
+  // menu subitem
+  --menu-subitem-text-color: #ffffff;
+  --menu-subitem-icon-color: #ffffff;
+  --menu-subitem-active-text-color: #ffffff;
+  --menu-subitem-active-icon-color: #ffffff;
+  --menu-subitem-hover-text-color: #ffffff;
+  --menu-mini-subitem-active-background-color: var(--secondary-color);
+  --menu-subitem-hover-background-color: var(--primary-color);
+  --menu-subitem-active-background-color: var(--primary-color);
+  --menu-mini-subitem-text-color: #ffffff;
+  --menu-expanded-logo-width: 100%;
+  --menu-expanded-logo-height: 100px;
+
+  color-scheme: light;
+}

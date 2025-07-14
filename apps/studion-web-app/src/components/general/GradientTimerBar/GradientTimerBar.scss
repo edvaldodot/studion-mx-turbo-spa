@@ -1,0 +1,14 @@
+.gradient-time-bar__container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 6px;
+  .gradient-line__accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+    background: var(--secondary-color);
+    z-index: 1;
+  }
+}

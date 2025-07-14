@@ -1,0 +1,14 @@
+.session-limit {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-color);
+  font-weight: 700;
+  font-family: var(--font-family);
+
+  span {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,252 @@
+.help-form-wrapper {
+  padding-top: 75px;
+}
+
+.help-form-title {
+  font-family: var(--font-family);
+  font-size: 2.4em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.help-form-wrapper-inner {
+  padding: 0 20px;
+}
+
+.help-form-card {
+  max-width: 480px;
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  top: -75px;
+  padding: 40px;
+  background: var(--surface-card);
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+
+  @media (max-width: 1023px) {
+    max-width: 100%;
+  }
+}
+
+.help-form-card .form-submit {
+  margin-top: 60px;
+}
+
+.help-list {
+  margin-top: 50px;
+}
+
+.help-list-title {
+  font-family: var(--font-family);
+  font-size: 2.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.help-list .accordion-card .accordion-item-header {
+  padding: 20px 20px 20px 40px;
+}
+
+.help-list .accordion-card {
+  .accordion-item-content-inner {
+    &::-webkit-scrollbar {
+      appearance: none;
+    }
+  }
+}
+
+.help-item-date {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  line-height: 20px;
+}
+
+.help-item-subject {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 20px;
+  max-width: 700px;
+}
+
+.help-item-status {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  text-align: right;
+  line-height: 20px;
+}
+
+.help-item-status-label {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.help-item-status-value {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+.help-item-content.is-indent {
+  border-left: 1px solid var(--primary-500);
+  padding-left: 40px;
+}
+
+.help-item-content + .help-item-content {
+  margin-top: 50px;
+}
+
+.help-item-content p {
+  margin-bottom: 0;
+  word-break: break-word;
+}
+
+.help-item-content .btn-download {
+  margin-left: -10px;
+  margin-top: 20px;
+  font-weight: normal;
+  height: auto;
+}
+
+.help-item-user {
+  margin-bottom: 20px;
+}
+
+.help-item-user-image-wrapper {
+  float: left;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.help-item-user-image {
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.help-item-user-image,
+.help-item-user-image-icon {
+  width: 100%;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.help-item-user-name {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.6em;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.help-item-send-label {
+  display: block;
+  line-height: 20px;
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  font-weight: normal;
+}
+
+.wrapper-item-send-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.help-feedback-actions {
+  margin-top: 40px;
+}
+
+.help-feedback-actions .btn {
+  margin: 0 10px;
+}
+
+.help-feedback-actions-title {
+  font-family: var(--font-family);
+  font-size: 2.4em;
+  font-weight: normal;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.help-feedback-form {
+  max-width: 400px;
+  margin: 40px auto 0px;
+}
+
+.help-feedback-form-title {
+  font-family: var(--font-family);
+  font-size: 2.4em;
+  color: var(--primary-color);
+  line-height: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.help-feedback-form .form-submit {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1023px) {
+  .help-list-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  .help-list .accordion-card .accordion-item-header {
+    padding: 20px;
+  }
+
+  .help-list .accordion-card .accordion-item-header-icon {
+    top: auto;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .help-item-date {
+    font-size: 1.2em;
+  }
+
+  .help-item-subject {
+    font-size: 1.4em;
+  }
+
+  .help-item-status {
+    display: block;
+    position: static;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .help-list .accordion-card .accordion-item-content-inner {
+    padding: 20px;
+  }
+
+  .help-item-content + .help-item-content {
+    margin-top: 20px;
+  }
+
+  .help-item-content.is-indent {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .wrapper-item-send-label {
+    padding-top: 0;
+  }
+}

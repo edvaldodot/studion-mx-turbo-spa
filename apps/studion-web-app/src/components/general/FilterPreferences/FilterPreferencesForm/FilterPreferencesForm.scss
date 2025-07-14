@@ -1,0 +1,65 @@
+.preferences-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 350px;
+
+  &__title {
+    color: var(--black-900);
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  &__columns {
+    overflow: auto;
+
+    .checkboxfield {
+      &__item {
+        padding: 8px;
+        margin-bottom: 8px;
+      }
+
+      &__item:not(:first-child) {
+        border-radius: 8px;
+        border: 1px solid var(--black-50);
+        background: var(--surface-0);
+      }
+
+      &__all,
+      &__label {
+        color: var(--black-700);
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+      }
+
+      &__all {
+        font-weight: 700;
+      }
+    }
+  }
+  &__save {
+    display: flex;
+    justify-content: center;
+  }
+
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--black-500);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--black-700);
+  }
+}
+

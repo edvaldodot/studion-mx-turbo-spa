@@ -1,0 +1,30 @@
+.early-access-wrapper {
+  width: 115px;
+  margin-left: 45px;
+}
+
+.conference-room-modal {
+  .modal-form form {
+    max-width: 100%;
+
+    > * {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    > .btn-flat {
+      display: block;
+      width: 520px;
+      text-align: left;
+      margin-top: 12px;
+    }
+
+    .form-full-w {
+      max-width: 100%;
+    }
+  }
+}
+
+.conference-folder-selector__tooltip {
+  font-size: 0.7em;
+}

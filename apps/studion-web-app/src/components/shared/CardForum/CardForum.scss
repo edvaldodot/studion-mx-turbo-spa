@@ -1,0 +1,165 @@
+.card-forum__header {
+  height: 215px;
+  position: relative;
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.card-forum__header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: var(--transparent-primary-gradient);
+}
+
+.card-forum__header-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  color: var(--text-color);
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.card-forum__header-label .icon-wrapper {
+  margin-right: 5px;
+}
+
+.card-forum__options .icon {
+  color: var(--text-color);
+}
+
+.card-forum__content {
+  height: 120px;
+  padding: 12px 14px;
+}
+
+.card-forum__title {
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card-forum-wrapper__dates {
+  display: flex;
+  gap: 5px;
+}
+
+.card-forum__dates {
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.card-forum__dates span {
+  font-size: 1.2em;
+  color: var(--black-500);
+  line-height: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-forum__comments {
+  font-size: 1.4em;
+  color: var(--black-500);
+  line-height: 20px;
+}
+
+.card-forum__comments-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card-forum-icon-calendar svg{
+  color: var(--primary-color);
+}
+
+.card-forum__comments-icon svg {
+  color: var(--primary-color);
+}
+
+.card-forum__status {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  background-color: var(--primary-color);
+  color: var(--text-contrast-primary-color);
+  line-height: 20px;
+  border-radius: 14px;
+  padding: 4px 12px;
+}
+
+.card-forum__status.is-waiting {
+  color: var(--text-contrast-primary-color);
+}
+
+.card-forum__status.is-closed {
+  color: var(--text-contrast-primary-color);
+}
+
+.card-forum__footer {
+  padding: 10px;
+  height: 60px;
+}
+
+.card-forum.is-large {
+  height: 200px;
+  position: relative;
+  padding-left: 300px;
+}
+
+.card-forum .generic-card.--rounded {
+  border-radius: 8px;
+  height: 100%;
+}
+
+.card-forum.is-large .card-forum__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 200px;
+}
+
+.card-forum.is-large .card-forum__content {
+  height: 140px;
+}
+
+.slug__text {
+  color: var(--text-color);
+  background-color: var(--surface-0);
+  padding: 5px 16px;
+  margin-right: 10px;
+  font-size: 1.25em;
+  font-family: var(--font-family);
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px var(--text-color);
+  position: absolute;
+  bottom: -6px;
+
+  .clamp-line {
+    -webkit-line-clamp: 1;
+  }
+}
+
+.card-forum__status-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}

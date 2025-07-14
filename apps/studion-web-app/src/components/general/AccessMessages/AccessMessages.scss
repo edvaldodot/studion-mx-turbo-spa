@@ -1,0 +1,68 @@
+.access-messages {
+  background: linear-gradient(180deg, rgba(10, 7, 86, 0.2) 0%, rgba(0, 5, 23, 0.2) 100%);
+
+  img {
+    display: block;
+    margin: 0 auto 3em;
+    max-width: 100%;
+  }
+}
+
+.access-messages-content {
+  margin: 0 auto;
+}
+
+.access-messages-header {
+  position: relative;
+  color: var(--text-color);
+  text-align: center;
+
+  &::after {
+    content: '';
+    width: 50px;
+    height: 8px;
+    background: var(--secondary-color);
+    border-radius: 99px;
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .icon-wrapper.is-large .icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  h3 {
+    font-size: 3em;
+    margin-top: 0.3em;
+  }
+}
+
+.access-message {
+  margin-top: 12em;
+  text-align: center;
+  color: var(--text-color);
+
+  h1 {
+    font-family: var(--font-family);
+    font-size: 4.5em;
+    margin-bottom: 20px;
+  }
+  div {
+    font-size: 1.6em;
+    padding-bottom: 40px;
+  }
+  p {
+    font-size: 100%;
+    line-height: 1.5em;
+  }
+  ol {
+    list-style: decimal inside;
+  }
+  ul {
+    list-style-type: disc inside;
+  }
+}
+

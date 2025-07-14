@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>StudiOn</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i" rel="stylesheet">
+  <style>
+    @page {
+      size: 3508px 2480px
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+    .certificate {
+      width: 3508px;
+      height: 2480px;
+      position: relative;
+      page-break-before: avoid;
+      page-break-inside: avoid;
+    }
+    .background-image {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%);
+      margin-left: -1050px;
+      width: 2100px;
+      z-index: 2;
+      text-align: center;
+    }
+    .message p {
+      font-size: 72px;
+      color: #707070;
+      margin: 0 0 15px;
+    }
+    .message ol,
+    .message ul {
+      list-style: none;
+      counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+    }
+    .message ul > li::before {
+      content: '\25CF';
+    }
+    .message li::before {
+      display: inline-block;
+      margin-right: 0.3em;
+      margin-left: -1.5em;
+      text-align: right;
+      white-space: nowrap;
+      width: 1.2em;
+    }
+    .message ol li {
+      counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+      counter-increment: list-num;
+    }
+    .message ol li:before {
+      content: counter(list-num, decimal) '. ';
+    }
+    .message li {
+      font-size: 72px;
+      color: #707070;
+    }
+    .hash {
+      margin-top: 80px;
+    }
+    .hash p {
+      color: #707070;
+      font-size: 36px;
+    }
+  </style>
+</head>
+<body style="margin: 0; padding: 0;">
+  <div class="certificate">
+    <img src="images/default_bg.png" class="background-image">
+    <div class="content">
+      <div class="message">
+        <p>Certificamos que <b>Nome do usuário</b> participou do curso <b>Nome da solução</b> com carga horária de <b>XX horas</b></p>
+        <ul>
+          <li>teste</li>
+          <li>teste 2</li>
+        </ul>
+        <ol>
+          <li>teste 3</li>
+          <li>teste 4</li>
+        </ol>
+      </div>
+      <div class="hash">
+        <p>Código de validação: XXXX-XXXX-XXXX-XXXX</p>
+      </div>
+    </div>
+  </div></body></html>

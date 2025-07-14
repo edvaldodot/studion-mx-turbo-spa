@@ -1,0 +1,25 @@
+.modal_research {
+  .modal-confirm {
+    padding: 25px;
+    border-radius: 8px;
+    border-top: 6px solid var(--primary-color);
+    text-align: center;
+  }
+
+  .pre-content {
+    margin: 15px 0;
+    font-family: var(--font-family);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--primary-color);
+  }
+
+  .modal-confirm-content {
+    padding: 10px 0;
+  }
+
+  .modal-confirm-description p {
+    margin: 20px 0;
+  }
+}

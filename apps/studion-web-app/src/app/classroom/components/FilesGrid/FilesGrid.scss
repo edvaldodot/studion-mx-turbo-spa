@@ -1,0 +1,54 @@
+.files-grid {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+  }
+
+  > span {
+    opacity: .5;
+    font-size: 1.2em;
+    color: rgba(0,0,0,0.5);
+  }
+
+  .card-file-download,
+  a.card-file-download {
+    background: var(--surface-card);
+    box-shadow: 0px 2px 6px #00000029;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--primary-color);
+    padding: 0 15px;
+    height: 40px;
+
+    &::before {
+      content: none;
+    }
+
+    &.is-disabled {
+      opacity: 0.5;
+    }
+
+    .text {
+      text-align: left;
+      font-size: 0.938rem;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      word-break: break-all;
+    }
+
+    .icon-wrapper {
+      width: min-content;
+    }
+  }
+}

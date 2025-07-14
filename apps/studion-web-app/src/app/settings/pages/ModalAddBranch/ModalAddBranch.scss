@@ -1,0 +1,15 @@
+.modal-add-branch {
+  .branch-breadcrumbs {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .modal-description {
+    margin-bottom: 50px;
+  }
+
+  &.modal-form form {
+    margin-top: 40px;
+  }
+}

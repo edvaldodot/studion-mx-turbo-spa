@@ -1,0 +1,43 @@
+{
+  "headers": [
+    {
+      "source" : "*",
+      "headers" : [
+        {
+          "key" : "X-FRAME-OPTIONS",
+          "value" : "SAMEORIGIN"
+        },
+
+        {
+          "key" : "Cross-Origin-Opener-Policy",
+          "value" : "same-origin"
+        },
+        {
+          "key" : "Cross-Origin-Embedder-Policy",
+          "value" : "require-corp"
+        }
+      ]
+    },
+    {
+      "source" : "**/*.@(html)",
+      "headers" : [{
+        "key" : "Cache-Control",
+        "value" : "no-cache"
+      }]
+    },
+    {
+      "source" : "**/*.@(css|js)",
+      "headers" : [{
+        "key" : "Cache-Control",
+        "value" : "private, max-age=172800, stale-while-revalidate=604800"
+      }]
+    },
+    {
+      "source" : "**/*.@(jpg|jpeg|gif|png|svg|webp|ico)",
+      "headers" : [{
+        "key" : "Cache-Control",
+        "value" : "private, max-age=172800, stale-while-revalidate=604800"
+      }]
+    }
+  ]
+}

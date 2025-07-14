@@ -1,0 +1,5 @@
+export const SET_DATA = `forums/SET_DATA`
+export const REMOVE_ITEMS = `forums/REMOVE_ITEMS`
+export const SET_EVALUATION_STUDENT_LIST = 'forums/SET_EVALUATION_STUDENT_LIST'
+export const SET_REMAINING_NOTE = 'forums/SET_REMAINING_NOTE'
+export const SET_DISCUSSION_LIST = 'forums/SET_DISCUSSION_LIST'

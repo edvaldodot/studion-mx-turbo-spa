@@ -1,0 +1,64 @@
+{
+  "meta": [
+    {
+      "name": "theme-color",
+      "content": "<THEME_COLOR>"
+    },
+    {
+      "name": "description",
+      "content": "<APP_DESCRIPTION>"
+    },
+    {
+      "name": "apple-mobile-web-app-status-bar-style",
+      "content": "<THEME_COLOR>"
+    },
+    {
+      "name": "apple-mobile-web-app-title",
+      "content": "<APP_TITLE>"
+    }
+  ],
+  "link": [
+    {
+      "rel": "icon",
+      "type": "image/png",
+      "sizes": "192x192",
+      "href": "/assets/images/themes/<THEME_NAME>/ico/favicon-192x192.png?<TIMESTAMP>",
+      "color": ""
+    },
+    {
+      "rel": "icon",
+      "type": "image/png",
+      "sizes": "32x32",
+      "href": "/assets/images/themes/<THEME_NAME>/ico/favicon-32x32.png?<TIMESTAMP>",
+      "color": ""
+    },
+    {
+      "rel": "icon",
+      "type": "image/png",
+      "sizes": "16x16",
+      "href": "/assets/images/themes/<THEME_NAME>/ico/favicon-16x16.png?<TIMESTAMP>",
+      "color": ""
+    },
+    {
+      "rel": "icon",
+      "type": "image/ico",
+      "sizes": "16x16",
+      "href": "/assets/images/themes/<THEME_NAME>/ico/favicon.ico?<TIMESTAMP>",
+      "color": ""
+    },
+    {
+      "rel": "manifest",
+      "type": "",
+      "sizes": "",
+      "href": "/assets/images/themes/<THEME_NAME>/ico/manifest.json",
+      "color": ""
+    },
+    {
+      "rel": "mask-icon",
+      "type": "",
+      "sizes": "",
+      "href": "/assets/images/themes/<THEME_NAME>/ico/safari-pinned-tab.svg",
+      "color": "<THEME_COLOR>"
+    }
+  ]
+}

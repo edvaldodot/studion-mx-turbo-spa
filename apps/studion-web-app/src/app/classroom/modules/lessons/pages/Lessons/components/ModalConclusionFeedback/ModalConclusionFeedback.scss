@@ -1,0 +1,81 @@
+.modal-conclusion-feedback {
+  .modal-confirm {
+    padding: 45px 32px;
+    align-items: center;
+
+    .modal-confirm-title {
+      margin-bottom: 1rem;
+    }
+
+    .modal-confirm-footer {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .pre-content {
+    color: var(--text-color);
+
+    .icon-wrapper {
+      border-radius: 50%;
+      background: var(--primary-color);
+
+      .icon {
+        width: 19px;
+        height: 19px;
+        margin-top: 3px;
+        color: var(--text-contrast-primary-color);
+      }
+    }
+  }
+
+  .rating-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .description {
+      margin-bottom: 20px;
+    }
+
+    .label {
+      font-size: 12px;
+      margin-bottom: 13px;
+    }
+
+    .vue-star-rating {
+      gap: 16px;
+
+      &-star {
+        margin: 0 !important;
+      }
+    }
+  }
+
+  .certificate-section {
+    $spacing: 8px;
+    margin-top: $spacing;
+
+    h2 {
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+    .actions-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      justify-content: space-between;
+    }
+  }
+
+  .redirect-section {
+    p {
+      margin-bottom: 60px;
+    }
+  }
+}

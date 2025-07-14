@@ -1,0 +1,132 @@
+.action-template-create {
+  margin-top: 60px;
+  padding-bottom: 120px;
+
+  form {
+    margin: 0 auto;
+    width: 480px;
+    max-width: 90%;
+  }
+
+  &__header {
+    font-family: var(--font-family);
+    h2 {
+      font-family: var(--font-family);
+      font-size: 1.8em;
+      font-weight: normal;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 1.6em;
+      color: var(--black-500);
+    }
+  }
+
+  .theme-snow {
+    background-color: var(--surface-0);
+    border-radius: 8px;
+
+    .form-input-wrapper {
+      padding: 12px;
+    }
+
+    .form-label {
+      padding-left: 12px;
+    }
+
+    .form-item-tools {
+      display: flex;
+      background-color: var(--gray);
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    .form-editor-toolbar,
+    .form-item-tools {
+      height: auto;
+    }
+
+    .form-input-wrapper {
+      .span-tag {
+        color: var(--primary-color);
+      }
+    }
+
+    .form-input-counter {
+      width: 65px;
+    }
+  }
+
+  .tag-validator {
+    font-size: 1.2em;
+    color: var(--alert-700);
+  }
+
+  .input-title {
+    h3 {
+      font-size: 1.8em;
+      text-transform: uppercase;
+      padding-bottom: 8px;
+    }
+    p {
+      font-size: 1.2em;
+      font-style: italic;
+    }
+  }
+
+  .ia-cmd {
+    border: 1px solid var(--gray);
+    padding: 12px;
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .ai-input {
+    margin-bottom: 0;
+
+    .ql-clean {
+      display: none;
+    }
+    .form-item-tools {
+      position: relative;
+      justify-content: space-between;
+
+      .tips {
+        position: absolute;
+        top: 12px;
+        right: -26px;
+      }
+      .controls {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+
+        .icon-wrapper {
+          cursor: pointer;
+        }
+      }
+      .tag-selector {
+        border: none;
+        background-color: var(--gray);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .action-template-create {
+    .ai-input {
+      .form-item-tools {
+        .tips {
+          position: relative;
+          top: auto;
+          right: auto;
+          display: flex;
+          align-items: center;
+          padding: 0 6px;
+        }
+      }
+    }
+  }
+
+}

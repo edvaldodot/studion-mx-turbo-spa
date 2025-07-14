@@ -1,0 +1,330 @@
+.trails-create-header {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.trails-create-header.theme-dark {
+  color: var(--text-color);
+}
+
+.trails-create-title {
+  font-family: var(--font-family);
+  font-size: 2.4em;
+  font-weight: normal;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+.trails-create-description {
+  font-family: var(--font-family);
+  font-size: 1.8em;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+.trails-create .helper-text {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 1.6em;
+  text-transform: none;
+  margin-top: 20px;
+}
+
+.trails-create .form {
+  width: 480px;
+  margin: 0 auto 40px;
+
+  .datatable-wrapper {
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .empty-message {
+    margin-top: 40px;
+  }
+}
+
+.trail-form-branch-content__wrapper,
+.trail-form-team-content__wrapper {
+  background-color: var(--bg-branch-selector);
+  margin: 0 -40px 40px;
+  padding: 40px 40px 20px;
+  border-radius: 8px;
+  .branch-selector {
+    padding: 0;
+  }
+}
+
+.trails-create-reenrollment__enable {
+  span {
+    color: var(--black-500);
+  }
+}
+
+.trails-create-reenrollment__options {
+  .checkbox__item {
+    margin-bottom: 10px;
+  }
+}
+
+.trail-form-time-content__wrapper {
+  background-color: var(--surface-0);
+  margin: 0 -40px 40px;
+  padding: 40px 40px 20px;
+  box-shadow: 0px 2px 4px #00000040;
+  border-radius: 8px;
+  .form-section {
+    margin-block: 20px;
+  }
+}
+
+.trails-create .form-section {
+  margin-top: 0;
+}
+
+.trails-create .main-content-inner {
+  min-height: calc(100vh - 60px);
+}
+
+.trails-create .trail-image {
+  margin-bottom: 50px;
+}
+
+.trails-create .responsible-group {
+  margin-bottom: 0;
+}
+
+.trails-create .btn-add-responsible {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.trails-create.step-02 .action-btn {
+  margin-bottom: 50px;
+}
+
+.trails-create.step-02 .draggable-item-col {
+  .tag {
+    background-color: var(--surface-200);
+    border-radius: 20px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 12px;
+    font-size: 1.2em;
+    cursor: pointer;
+
+    &--finished svg {
+      color: var(--primary-color);
+    }
+    &--err svg {
+      color: var(--alert-700);
+    }
+  }
+
+  .form-item {
+    top: 5px;
+  }
+}
+
+.trails-create.step-02.modal--status {
+  .modal-confirm {
+    .modal-confirm-content {
+      margin: 8em 0;
+    }
+  }
+}
+
+.trails-create.step-02 .draggable-item.new-item {
+  animation: new-drag-item 10s cubic-bezier(0.82, 0.01, 0.75, 0.65) forwards;
+}
+
+.trails-create.step-02 .draggable-item.new-item:after {
+  content: "";
+  position: absolute;
+  right: -7px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background: var(--primary-500);
+  border-radius: 100%;
+}
+
+.trails-create-timeline--wrapper {
+  margin-bottom: 12px;
+  p {
+    font-family: var(--font-family);
+    margin-bottom: 8px;
+    color: #00000080;
+  }
+  i {
+    font-family: var(--font-family);
+    color: #00000080;
+  }
+}
+
+.trails-users-modal {
+  .modal-form-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5em;
+
+    .btn.flat-clear {
+      margin: 0;
+    }
+  }
+
+  .datatable {
+    .td-tag {
+      width: max-content;
+    }
+
+    .td {
+      .td-text {
+        max-width: 200px;
+        overflow-wrap: anywhere;
+      }
+    }
+  }
+}
+
+.add-solution-modal .modal-form .datatable {
+  margin-bottom: 30px;
+}
+
+.user-solutions-list {
+  td.course-name {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+  }
+  tbody {
+    border-bottom: 1px solid var(--primary-700);
+    &:last-child {
+      border: none;
+    }
+
+    .td-tag {
+      width: 140px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &.--status {
+        cursor: pointer;
+      }
+    }
+
+    .icon-wrapper {
+      &.--success svg.icon {
+        color: var(--primary-color);
+      }
+      &.--err svg.icon {
+        color: var(--alert-700);
+      }
+    }
+  }
+}
+
+.add-solution-modal .pagination {
+  margin-bottom: 40px;
+}
+
+.pl-1 { padding-left: 0.5em }
+.pl-2 { padding-left: 1em }
+.pl-3 { padding-left: 1.5em }
+
+.pr-1 { padding-right: 0.5em }
+.pr-2 { padding-right: 1em }
+.pr-3 { padding-right: 1.5em }
+
+.mb-1 { margin-bottom: 0.5em }
+.mb-2 { margin-bottom: 1em }
+.mb-3 { margin-bottom: 1.5em }
+.mb-4 { margin-bottom: 2em }
+.mb-5 { margin-bottom: 2.5em }
+.mb-6 { margin-bottom: 3em }
+.mb-7 { margin-bottom: 3.5em }
+.mb-8 { margin-bottom: 4em }
+.mb-9 { margin-bottom: 4.5em }
+.mb-10 { margin-bottom: 5em }
+
+.mt-1 { margin-top: 0.5em }
+.mt-2 { margin-top: 1em }
+.mt-3 { margin-top: 1.5em }
+.mt-4 { margin-top: 2em }
+.mt-5 { margin-top: 2.5em }
+.mt-6 { margin-top: 3em }
+.mt-7 { margin-top: 3.5em }
+.mt-8 { margin-top: 4em }
+.mt-9 { margin-top: 4.5em }
+.mt-10 { margin-top: 5em }
+
+.invisible {
+  visibility: hidden;
+}
+
+.modal .tr-dropdown-content .empty-message {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.modal .tr-dropdown-content .empty-message h2 {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .trails-create .main-content-inner {
+    min-height: auto;
+    padding-top: 20px;
+  }
+
+  .trails-create .form {
+    width: auto;
+  }
+
+  .trails-users-modal .modal-form-buttons {
+    margin-top: 3em;
+    flex-direction: column;
+  }
+
+  .trails-create.step-02 {
+    .draggable-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      height: auto;
+
+      &-col {
+        .tag {
+          margin-left: 1em;
+          margin-right: 8px;
+        }
+
+        &:nth-child(1) {
+          position: absolute;
+          left: 0;
+        }
+        &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5) {
+          width: 50%;
+        }
+        &:last-child {
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+@keyframes new-drag-item {
+  from {
+    box-shadow: 0px 2px 4px var(--primary-500er);
+  } to {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.29);
+  }
+}

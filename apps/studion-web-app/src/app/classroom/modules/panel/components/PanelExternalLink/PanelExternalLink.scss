@@ -1,0 +1,42 @@
+.wrapper-panel-external-link {
+  padding-top: 2em;
+
+  .panel-external-link-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .panel-external-link-icon {
+      color: var(--text-color);
+    }
+
+    h3 {
+      font-size: 1.6em;
+      text-transform: uppercase;
+      color: var(--text-color);
+    }
+  }
+
+  .panel-external-link-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .panel-external-link {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 14.5px 16px;
+
+    .area-cards-external-link {
+      height: 100%;
+      max-height: 383px;
+      overflow-y: auto;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
+}

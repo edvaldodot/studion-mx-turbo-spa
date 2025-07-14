@@ -1,0 +1,28 @@
+.modal-blocker.survey-modal {
+  background: rgba(38,38,38, 0.9);
+}
+
+.survey-wrapper {
+  width: 605px;
+  margin: 0 auto;
+}
+
+.survey-modal .modal {
+  position: static;
+}
+
+.survey-modal iframe {
+  width: 100%;
+  height: 522px;
+}
+
+.survey-modal .close-button {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.survey-modal .close-button svg {
+  width: 40px;
+  height: 40px;
+}

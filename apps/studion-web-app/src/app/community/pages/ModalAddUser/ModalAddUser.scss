@@ -1,0 +1,81 @@
+.modal-add-user .datatable {
+  td.label-title-name {
+    font-size: 12px;
+  }
+
+  td .btn.is-disabled {
+    display: none;
+  }
+
+  .enrollment-colapse-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px 0 10px;
+
+    .enrollment-infos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      width: 100%;
+      padding: 0px 0 10px;
+
+      .enrollment-infos__column {
+        min-width: 250px;
+        flex: 1;
+
+        p {
+          font-size: 1.4em;
+          color: var(--text-color);
+        }
+
+        .enrollment-infos__title {
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+}
+
+.delete-user {
+  padding-top: 5em;
+}
+
+@media screen and (max-width: 1023px){
+  .modal-add-user {
+    .datatable-wrapper .datatable {
+      .tr-parent-dropdown {
+        .td {
+          border-bottom: none;
+        }
+      }
+
+      .tr-dropdown {
+        .td {
+          height: auto;
+          padding: 0;
+        }
+      }
+
+      .enrollment-colapse-data {
+        padding: 20px 0 10px;
+
+        .enrollment-infos {
+          padding: 0px 0px 10px;
+
+          .enrollment-infos__column {
+            min-width: 230px;
+          }
+        }
+      }
+    }
+  }
+}
+.password__hint{
+  font-size: 0.8em;
+  .hint__text{
+    margin-top: 10px;
+  }
+}

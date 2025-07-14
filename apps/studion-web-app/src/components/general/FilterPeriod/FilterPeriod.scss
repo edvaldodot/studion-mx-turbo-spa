@@ -1,0 +1,153 @@
+.filter-item.period {
+  margin-bottom: 20px;
+  position: relative;
+
+  .period {
+    &__button {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+  }
+
+  // Dark mode
+  &.--dark {
+    color: var(--text-color);
+  }
+
+  .period-form__wrapper {
+    z-index: 20;
+    background: var(--surface-0);
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 400px;
+    padding: 16px 12px 12px;
+    color: var(--text-color);
+
+    .period-form {
+      display: flex;
+      flex-direction: column;
+
+      &__title {
+        color: var(--secondary-color);
+        font-size: 1.4em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .form-item {
+        font-size: .9em;
+        margin-bottom: 0;
+
+        .form-input {
+          height: 35px;
+        }
+      }
+
+      .container-calendar {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        justify-content: center;
+
+        .separator {
+          margin-top: 25px;
+        }
+      }
+    }
+
+    .filter-period-calendar {
+      .form-item.view-date {
+        margin: 0;
+        font-size: 8px;
+
+        .form-input-append {
+          display: flex;
+          flex-direction: row-reverse;
+        }
+
+        .icon {
+          color: var(--primary-color);
+        }
+
+        .clear-btn {
+          --size: 18px;
+          height: 40px;
+          width: var(--size);
+          cursor: pointer;
+
+          .icon {
+            height: var(--size);
+            width: var(--size);
+          }
+        }
+      }
+    }
+
+    .btn--apply {
+      margin: 0;
+      padding: 0;
+      height: unset;
+      align-self: flex-end;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .period-form__wrapper {
+      width: 100%;
+      animation: fadeTop 400ms ease;
+      position: fixed;
+      top: 55px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      overflow-y: auto;
+
+      ::-webkit-scrollbar {
+        width: 3px;
+        height: 4px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: none;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: var(--black-500);
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--black-700);
+      }
+
+      .container-calendar {
+        flex-direction: column;
+
+        .filter-period-calendar {
+          width: 100%;
+        }
+
+        .separator {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    margin: 0;
+  }
+}

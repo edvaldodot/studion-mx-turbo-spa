@@ -1,0 +1,40 @@
+.carousel.dark {
+  color: var(--text-color);
+}
+
+.carousel__navs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.carousel__navs .btn {
+  color: var(--primary-color);
+}
+
+.carousel__navs .btn.is-disabled {
+  opacity: 0.4;
+}
+
+.carousel__navs .btn:not(.is-disabled):hover {
+  opacity: 0.7;
+}
+
+.carousel__navs .btn.theme-dark {
+  color: var(--text-color);
+}
+
+.carousel__navs button:nth-of-type(2) {
+  transform: rotate(-180deg);
+}
+
+.carousel__navs .page-info {
+  font-size: 1.4em;
+}
+
+.carousel__navs .page-info span {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 12px;
+}

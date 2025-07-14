@@ -1,0 +1,18 @@
+.form-filter {
+  &.view {
+    .form-item.is-disabled {
+      .form-input,
+      .form-label,
+      td {
+        color: var(--text-color);
+        border-bottom-color: var(--text-color);
+        pointer-events: none;
+      }
+
+      .form-input-append,
+      .form-input-counter {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "new-classroom",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview --port=8081 --host=mx.studion.local",
+    "lint": "eslint . --ext .vue,.ts,.js",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "i18n:export": "node scripts/i18n-extract export",
+    "i18n:import": "node scripts/i18n-extract import"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "material-symbols": "^0.31.3",
+    "pinia": "^3.0.3",
+    "vue": "^3.5.13",
+    "vue-i18n": "^9.14.2",
+    "vue-pdf-embed": "^2.1.2",
+    "vue-router": "^4.5.0",
+    "vue-toastification": "^2.0.0-rc.5"
+  },
+  "devDependencies": {
+    "@pinia/testing": "^1.0.2",
+    "@types/node": "^22.10.7",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vitest/coverage-v8": "3.1.3",
+    "@vitest/ui": "3.1.3",
+    "@vue/test-utils": "^2.4.6",
+    "@vue/tsconfig": "^0.7.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-vue": "^9.32.0",
+    "flush-promises": "^1.0.2",
+    "jsdom": "^26.1.0",
+    "postcss": "^8.5.3",
+    "prettier": "^3.4.2",
+    "sass": "^1.87.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
+    "vitest": "^3.0.3",
+    "vue-tsc": "^2.2.0"
+  },
+  "workspaces": []
+}

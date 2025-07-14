@@ -1,0 +1,56 @@
+.modal-user-progress__component {
+  --mandatory-color: var(--alert-900);
+  --extra-color: #F48554;
+}
+
+.modal-user-progress__area {
+  display: flex;
+  flex-direction: row;
+  margin-top: 6em;
+
+  > * {
+    margin: 1.5em;
+  }
+
+  @media (max-width: 850px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.modal-user-progress__graph {
+  width: 300px;
+
+  @media (max-width: 850px) {
+    margin-bottom: 4em;
+  }
+}
+
+.modal-user-progress__lists {
+  flex: 1;
+  width: 100%;
+}
+
+.modal-user-progress__title {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 1.6em;
+  color: var(--mandatory-color);
+  margin-bottom: .6em;
+  text-transform: uppercase;
+
+  .tips {
+    display: inline-block;
+    margin-left: 1em;
+  }
+}
+
+.modal-user-progress__extra {
+  .modal-user-progress__title {
+    color: var(--extra-color);
+  }
+}
+
+.modal-user-progress__mandatory {
+  margin-bottom: 3em;
+}

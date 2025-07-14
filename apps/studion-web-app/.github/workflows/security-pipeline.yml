@@ -1,0 +1,40 @@
+name: Security Pipeline
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        required: true
+        type: choice
+        description: Ambiente a ser executado
+        options:
+          - Produção
+          - Homologação
+      codebuild_project:
+        required: false
+        type: string
+        description: Nome do projeto CodeBuild
+        default: ''
+jobs:
+  code-analysis:
+    uses: dotdigitalgroup/dot-actions/.github/workflows/security-code-analysis.yml@main
+    secrets: inherit
+    with:
+      environment: ${{ github.ref_name == 'master' && 'Produção' || startsWith(github.ref_name, 'homolog') && 'Homologação'  }}
+      codebuild_project: ${{ inputs.codebuild_project }}
+      sonar_wait: false
+  container-scan:
+    uses: dotdigitalgroup/dot-actions/.github/workflows/security-container-scan.yml@main
+    needs: code-analysis
+    secrets: inherit
+    with:
+      environment: ${{ github.ref_name == 'master' && 'Produção' || startsWith(github.ref_name, 'homolog') && 'Homologação'  }}
+      codebuild_project: ${{ inputs.codebuild_project }}
+
+  dast:
+    uses: dotdigitalgroup/dot-actions/.github/workflows/security-dast.yml@main
+    needs: container-scan
+    secrets: inherit
+    with:
+      environment: ${{ github.ref_name == 'master' && 'Produção' || startsWith(github.ref_name, 'homolog') && 'Homologação'  }}
+      codebuild_project: ${{ inputs.codebuild_project }}
+      run_deploy: false

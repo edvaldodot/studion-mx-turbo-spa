@@ -1,0 +1,153 @@
+.chat-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.chat-list .card-chat {
+  margin: 0 20px 40px;
+  width: 22em;
+}
+
+@media screen and (max-width: 1023px) {
+  .chat-list {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  .chat-list .card-chat {
+    width: calc(100%/2 - 20px);
+    min-width: 220px;
+    margin: 0 10px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .chat-list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .chat-list .card-chat {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.main-content.chatroom {
+  min-height: 100vh;
+  padding-bottom: 0;
+}
+
+.chatroom + .footer {
+  display: none;
+}
+
+.chatroom-wrapper {
+  position: relative;
+}
+
+.chatroom-bar {
+  background: var(--surface-0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  padding: 0 10px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-direction: row;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.chatroom-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1 auto;
+}
+
+.chatroom-info-title {
+  float: left;
+  font-family: var(--font-family);
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.chat__timer {
+  margin: 10px;
+  padding: 0 15px;
+  border-top: 5px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  min-height: 100px;
+  min-width: 280px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.10);
+
+  .app-timer__title {
+    margin-bottom: .5em;
+    min-width: 200px;
+  }
+}
+
+.chatroom-info-description {
+  font-family: var(--font-family);
+  overflow: hidden;
+  line-height: 1.4rem;
+  max-height: calc(1.4rem * 2);
+  margin-bottom: 10px;
+
+  &.--show-btn {
+    margin-bottom: 20px;
+  }
+
+  &.--open {
+    max-height: fit-content;
+  }
+}
+
+.btn-view-more {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+
+  .text {
+    text-decoration: underline;
+    color: var(--primary-500);
+  }
+}
+
+.chatroom-bar-controls {
+  float: left;
+}
+
+.chatroom-bar-controls .btn,
+.chatroom-bar-controls .btn:hover {
+  float: left;
+}
+
+.end-chat__modal {
+  .modal-confirm-footer p{
+    text-align: center;
+  }
+
+  &.modal-information {
+    .modal-confirm-actions {
+      justify-content: center;
+    }
+  }
+}
+
+/* IFRAME - CHATROOM */
+.iframe-chatroom {
+  width: 100%;
+  height: calc(100vh - 233px);
+}
+

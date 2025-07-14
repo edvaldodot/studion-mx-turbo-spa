@@ -1,0 +1,100 @@
+.datatable-metadata .datatable .td {
+  border-bottom: unset;
+}
+
+.datatable-metadata .datatable .tr-parent-dropdown.buttons-group {
+  border-bottom: 1px solid var(--generic-dark-border-color);
+  text-align: right;
+}
+
+.datatable-metadata .datatable .tr-parent-dropdown.buttons-group td {
+  padding-top: 0px;
+}
+
+.datatable-metadata .datatable .tr-parent-dropdown.buttons-group td .text-more {
+  font-size: 1.4em;
+}
+
+.datatable-metadata .datatable.datatable-mobile .tr-parent-dropdown .td {
+  padding-top: 10px;
+}
+
+/* .datatable-metadata .datatable.datatable-mobile .tr-parent-dropdown.is-open .td {
+  padding-top: 10px;
+} */
+
+.datatable .metadata-tr-list {
+  padding: 20px 0;
+}
+
+.datatable .metadata-tr-detail {
+  float: left;
+  min-height: 1px;
+  margin-right: 30px;
+}
+
+.datatable .metadata-tr-detail:nth-child(1) {
+  width: 540px;
+}
+
+.datatable .metadata-tr-detail:nth-child(1) .metadata-tr-detail-inner {
+  float: left;
+  width: 255px;
+  margin-right: 30px;
+}
+
+.datatable .metadata-tr-detail:nth-child(1) .metadata-tr-detail-inner:last-child {
+  margin-right: 0;
+}
+
+.datatable .metadata-tr-detail:nth-child(2) {
+  width: 145px;
+}
+
+.datatable .metadata-tr-detail:nth-child(3) {
+  width: 200px;
+}
+
+.datatable .metadata-tr-detail:last-child {
+  margin-right: 0;
+}
+
+.datatable .metadata-tr-detail-title {
+  color: var(--dark-color-transparent-2);
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.datatable .metadata-tr-detail-item {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  .datatable .metadata-tr-detail {
+    width: 50%;
+    min-width: auto;
+    margin-right: 0;
+    padding: 0 10px;
+  }
+
+  .datatable .metadata-tr-detail:nth-child(1),
+  .datatable .metadata-tr-detail:nth-child(2),
+  .datatable .metadata-tr-detail:nth-child(3),
+  .datatable .metadata-tr-detail:nth-child(1) .metadata-tr-detail-inner {
+    width: auto;
+  }
+
+  .datatable .metadata-tr-detail-title {
+    font-size: 1.2em;
+  }
+
+  .datatable .metadata-tr-detail-item {
+    font-size: 1.4em;
+  }
+}

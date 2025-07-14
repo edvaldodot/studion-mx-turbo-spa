@@ -1,0 +1,19 @@
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="410.823" height="92.734" viewBox="0 0 410.823 92.734">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_3201" data-name="Retângulo 3201" width="410.823" height="92.734" fill="none"/>
+    </clipPath>
+  </defs>
+  <path id="Caminho_4358" data-name="Caminho 4358" d="M141.585,23.3,98.772,66.115h39.057L180.642,23.3Z" transform="translate(107.601 25.385)" fill="#f27c00"/>
+  <path id="Caminho_4359" data-name="Caminho 4359" d="M150.667.729,133.727,17.67l13.184,25.873L189.724.729Z" transform="translate(145.681 0.795)" fill="#f27c00" fill-rule="evenodd"/>
+  <path id="Caminho_4360" data-name="Caminho 4360" d="M96.787.729,82.517,90.7h32.674L129.463.729Z" transform="translate(89.893 0.795)" fill="#fff"/>
+  <g id="Grupo_10130" data-name="Grupo 10130">
+    <g id="Grupo_10129" data-name="Grupo 10129" clip-path="url(#clip-path)">
+      <path id="Caminho_4361" data-name="Caminho 4361" d="M66.589,90.7H32.037L77.534.729h36.149l17.9,89.976H96.948L95.715,79.482H71.01ZM93.653,58.177l-1.6-16.494c-.378-3.893-.209-9.739-.134-13.907H90.58l-11.2,30.4H93.653Z" transform="translate(34.901 0.795)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Caminho_4362" data-name="Caminho 4362" d="M110.9.726l39.055,0,21.822,42.824H132.72Z" transform="translate(120.814 0.79)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Caminho_4363" data-name="Caminho 4363" d="M183.533,90.7H148.981L194.478.729h36.149l17.9,89.976H213.892l-1.233-11.222h-24.7ZM210.6,58.177l-1.6-16.494c-.378-3.893-.209-9.739-.134-13.907h-1.339l-11.2,30.4H210.6Z" transform="translate(162.299 0.795)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Caminho_4364" data-name="Caminho 4364" d="M71.969,37.962c-4.425-4.852-10.365-9.053-17.745-9.053A21.479,21.479,0,0,0,33.643,46.437c-1.525,9.927,5.725,17.53,15.507,17.53,7.528,0,13.978-3.184,20.067-8.324l-6.3,33.683c-4.469,1.947-13.09,3.036-19.41,3.408H35.329C11.817,90.889-3.251,71.681.6,47.312,4.739,21.013,28.721,0,55.087,0A64.9,64.9,0,0,1,76.449,3.692Z" transform="translate(0 0.001)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Caminho_4365" data-name="Caminho 4365" d="M125.572,49.175,151.445,23.3l21.815,42.814H134.2Z" transform="translate(136.798 25.386)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+@use "@/assets/styles/scss/class-utils/_typography.scss";
+
+.pdf-viewer {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3em 20px;
+  margin-bottom: 0;
+  background-color: red;
+
+  &__toolbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__navigation {
+    @extend .text-base;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    button {
+      color: var(--black-700);
+    }
+
+    button[disabled] {
+      cursor: not-allowed;
+    }
+  }
+}

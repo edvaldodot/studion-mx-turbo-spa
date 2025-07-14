@@ -1,0 +1,42 @@
+.action-submenu {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.action-submenu-list {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: 20px;
+  text-align: left;
+
+  &.align-left {
+    left: auto;
+    right: 100%;
+  }
+}
+
+.action-submenu-list .btn {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.action-submenu-list .btn-secondary:hover {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--text-contrast-primary-color);
+}
+
+@media screen and (max-width: 1023px) {
+  .action-submenu-list {
+    left: 0;
+    top: auto;
+    bottom: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,124 @@
+body.print {
+  margin: 22.5pt 30pt;
+  height: auto;
+}
+
+body.print .main {
+  min-height: auto;
+}
+
+body.print .footer {
+  display: none;
+}
+
+body.print .menuu {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  html, body {
+    height: auto;
+  }
+
+  body {
+    background: none;
+    margin: 22.5pt 30pt;
+  }
+
+  .main {
+    min-height: auto;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+.print-email .logo {
+  margin-bottom: 18.75pt;
+}
+
+.print-email .logo-image {
+  width: 110px;
+  height: 40px;
+}
+
+.print-email .message-title {
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 15pt 0;
+  border-top: 2px solid rgba(0, 0, 0, .25);
+  border-bottom: 1px solid rgba(0, 0, 0, .25);
+  margin-bottom: 30pt;
+}
+
+.print-email .message {
+  padding-bottom: 22.5pt;
+  border-bottom: 1px solid rgba(0, 0, 0, .25);
+  margin: 30pt 0;
+}
+
+.print-email .message-info {
+  margin-bottom: 30pt;
+}
+
+.print-email .message-info-names {
+  vertical-align: top;
+  display: inline-block;
+  width: calc(100% - 105px);
+  font-size: 1.4em;
+}
+
+.print-email .message-info-sender {
+  display: block;
+}
+
+.print-email .message-info-datetime {
+  vertical-align: top;
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  font-size: 1.4em;
+  font-weight: 100;
+}
+
+.print-email .message-info-date,
+.print-email .message-info-time {
+  display: block;
+}
+
+.print-email .message-attachments {
+  margin-top: 22.5pt;
+}
+
+.print-email .message-attachments-title {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 11.25pt;
+}
+
+.print-email .message-attachment-item + .message-attachment-item {
+  margin-top: 7.5pt;
+}
+
+.print-email .message-attachment-item-icon {
+  display: inline-block;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, .25);
+}
+
+.print-email .message-attachment-item-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: bold;
+}

@@ -1,0 +1,74 @@
+.gpt-modal {
+  > .modal {
+    width: 632px;
+  }
+}
+
+.gpt-modal__container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: var(--surface-0);
+  border-radius: 8px;
+  padding: 40px 40px 90px;
+}
+
+.gpt-modal__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: inherit;
+}
+
+.gpt-modal__icon-container {
+  margin: 0 auto 32px;
+}
+
+.gpt-modal__chatbot-icon {
+  scale: 2;
+}
+
+.gpt-modal__heading {
+  text-align: center;
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 1.5em;
+  color: var(--text-color);
+  margin: 0 auto 8px;
+}
+
+.gpt-modal__description {
+  text-align: center;
+  font-size: 1.6em;
+  line-height: 1.5em;
+  color: var(--text-color);
+  margin: 0 auto;
+}
+
+.gpt-modal__button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.gpt-modal__button {
+  font-size: 1.6em;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.gpt-modal__close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .gpt-modal {
+    > .modal {
+      width: calc(100% - 40px);
+    }
+  }
+}

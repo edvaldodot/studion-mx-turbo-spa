@@ -1,0 +1,16 @@
+{
+  "offering": {
+    "title": "Oferta 01",
+    "description": "Descrição da oferta teste",
+    "audience": "Oferta destinada para todos os publicos",
+    "period_type": "predefined",
+    "start_date": "20/10/2017",
+    "end_date": "20/12/2017",
+    "image": "akjhdakjsdha-kajs-uahu-ujhab-asdifajhnalcfhh",
+    "paid": false,
+    "price": "",
+    "tags": ["tag1", "tag2", "tag3"],
+    "published": false,
+    "meta": "{}"
+  }
+}

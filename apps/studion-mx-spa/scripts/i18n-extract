@@ -1,0 +1,139 @@
+#!/usr/bin/env node
+
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import _ from 'lodash';
+
+const { forEach, isEqual, difference } = _;
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const translationsPath = path.join(__dirname, '../src/support/i18n/locales');
+const baseLanguageAlias = 'pt-br';
+
+const wipeTranslation = (translation) => {
+  const outputObj = {};
+  forEach(translation, (value, key) => {
+    outputObj[key] = '';
+  });
+  return outputObj;
+};
+
+const getCsvContent = (language, differences) => {
+  const csvHeaders = ['Alias', 'Texto em PT_BR', 'Tradução'];
+  const csvSeparator = '\t';
+  const currentLanguage = differences.find(({ alias }) => alias === language);
+  let output = [];
+
+  output.push(csvHeaders.join(csvSeparator));
+
+  currentLanguage.translationMap.forEach(entry => {
+    output.push([
+      entry.expression,
+      entry.baseLanguageText,
+      ''
+    ].join(csvSeparator));
+  });
+
+  return output.join('\n') + '\n';
+};
+
+const translations = fs.readdirSync(translationsPath)
+  .filter(filename => filename.split('.').pop() === 'json')
+  .map(filename => {
+    const currentTranslation = JSON.parse(fs.readFileSync(path.join(translationsPath, filename), 'utf8'));
+    return {
+      alias: filename.replace(/\.[^/.]+$/, ''),
+      fullTranslation: currentTranslation,
+      emptyTranslation: wipeTranslation(currentTranslation),
+      expressions: Object.keys(currentTranslation)
+    };
+  });
+
+const translationsAreUpToDate = (translations) => {
+  return translations.reduce((acc, entry) => {
+    if (!isEqual(acc.emptyTranslation, entry.emptyTranslation)) {
+      return false;
+    }
+    acc = entry;
+    return acc;
+  }, translations[0]);
+};
+
+const argumentsAreValid = (translations, processArgs) => {
+  const task = processArgs[2] || null;
+  const language = processArgs[3] || null;
+  const validTasks = ['import', 'export'];
+  const validLanguages = translations
+    .filter(translation => translation.alias !== baseLanguageAlias)
+    .map(({ alias }) => alias);
+  const message = `Valid tasks: ${validTasks.join(', ')} | Valid languages: ${validLanguages.join(', ')}`;
+
+  if (!task || !language || !validTasks.includes(task) || !validLanguages.includes(language)) {
+    return { valid: false, message };
+  }
+  return { valid: true, message: null };
+};
+
+const argsTest = argumentsAreValid(translations, process.argv);
+const task = process.argv[2];
+const language = process.argv[3];
+
+if (!argsTest.valid) {
+  process.stderr.write(`Usage: i18n-extract <task> <language>\n${argsTest.message}\n`);
+  process.exit(1);
+}
+
+if (task === 'export') {
+  if (!translationsAreUpToDate(translations)) {
+    const baseLanguageTranslations = translations.find(({ alias }) => alias === baseLanguageAlias);
+    const updatedExpressions = baseLanguageTranslations.expressions;
+    const filteredTranslations = translations.filter(translation => translation.alias !== baseLanguageAlias);
+    const differences = filteredTranslations.map((translation, key) => {
+      const newExpressions = difference(updatedExpressions, filteredTranslations[key].expressions);
+      return {
+        alias: translation.alias,
+        diff: newExpressions,
+        translationMap: updatedExpressions
+          .map(expression => ({
+            expression,
+            baseLanguageText: baseLanguageTranslations.fullTranslation[expression]
+          }))
+          .filter(({ expression }) => newExpressions.includes(expression))
+      };
+    });
+
+    fs.writeFileSync(`./translations_${language}.tsv`, getCsvContent(language, differences));
+    process.stdout.write(`The translation file was generated for the language "${language}".\n`);
+    process.exit(0);
+  }
+}
+
+if (task === 'import') {
+  const translatedFile = fs.readFileSync(`./translations_${language}.tsv`, 'utf8');
+  const languageObj = JSON.parse(fs.readFileSync(path.join(translationsPath, `${language}.json`), 'utf8'));
+  let parsedTranslation = translatedFile.split('\n').map(entry => entry.replace('\r', '').split('\t'));
+
+  parsedTranslation.shift();
+  if (parsedTranslation[parsedTranslation.length - 1] === '') {
+    parsedTranslation.pop();
+  }
+
+  parsedTranslation = parsedTranslation.map(translation => ({
+    expression: translation[0],
+    text: translation[2]
+  }));
+
+  parsedTranslation.forEach(({ expression, text }) => {
+    languageObj[expression] = text;
+  });
+
+  fs.writeFileSync(path.join(translationsPath, `${language}.json`), JSON.stringify(languageObj, null, 2) + '\n');
+  process.stdout.write(`The language "${language}" was updated successfully.\n`);
+  process.exit(0);
+}
+
+process.stdout.write(`No difference was found in translations for the current base language: ${baseLanguageAlias}\n`);
+process.exit(0);

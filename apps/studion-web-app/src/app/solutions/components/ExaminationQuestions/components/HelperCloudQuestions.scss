@@ -1,0 +1,29 @@
+.helper-cloud {
+  z-index: 999;
+
+  &__matrix {
+    .form-input-details {
+      display: none;
+    }
+    .form-item-horizontal {
+      padding-top: 0;
+      margin: 10px 0;
+      .form-radio-item {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__linear-scale {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    span {
+      padding-bottom: 4px;
+    }
+    .form-radio-item {
+      margin-right: 12px;
+      max-width: 64px;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.panel-card-library {
+  &__item {
+    margin-bottom: 12px;
+    h3 {
+      font-size: 1.4em;
+      color: var(--black-700);
+      margin-bottom: 11px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      white-space: break-spaces;
+    }
+    p {
+      font-size: 1.4em;
+      color: var(--black-500);
+      margin-bottom: 15px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      white-space: break-spaces;
+    }
+  }
+
+  &__icon-wrapper {
+    border-radius: 8px 8px 0 0;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    .icon {
+      color: var(--text-color);
+    }
+  }
+
+  &__body-wrapper {
+    padding: 9px 12px;
+    border: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 768px) {
+    &__item {
+      min-width: 295px;
+      margin-right: 20px;
+    }
+    &__body-wrapper {
+      min-height: 170px;
+    }
+  }
+}

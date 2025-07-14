@@ -1,0 +1,38 @@
+.card-project {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto 12px;
+
+  &__comments-icon {
+    color: var(--primary-color);
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    flex-direction: row;
+    gap: 4px;
+  }
+
+  &-sub-info {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    flex-direction: row;
+    gap: 3px;
+    padding-left: 35px;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .btn {
+      width: 300px;
+    }
+  }
+}
+
+

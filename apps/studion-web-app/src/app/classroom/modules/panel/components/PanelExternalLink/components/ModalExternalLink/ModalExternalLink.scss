@@ -1,0 +1,115 @@
+.modal-external-link {
+  & .card__content {
+    padding: 0;
+    border-radius: 8px;
+  }
+
+  .wrapper-modal-external-link {
+    border-radius: 8px;
+    height: auto;
+    max-height: 800px;
+
+    .btn-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: var(--black-500);
+      cursor: pointer;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--black-900);
+      }
+    }
+
+    .first-session,
+    .last-session {
+      padding: 2rem;
+    }
+
+    .last-session {
+      background-color: var(--black-50);
+      border-radius: 0 0 8px 8px;
+      min-height: 208px;
+    }
+
+    .span-text-external-link {
+      font-weight: bold;
+      font-size: 1rem;
+      display: block;
+      color: var(--primary-900);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0 1rem;
+      color: var(--black-700);
+    }
+
+    p {
+      font-size: 1rem;
+      color: var(--black-800);
+    }
+
+    .display-flex-external-link,
+    .display-flex-baseline-external-link {
+      display: flex;
+      gap: 0.875rem;
+    }
+
+    .display-flex-baseline-external-link {
+      align-items: flex-start;
+    }
+
+    .display-flex-no-gap-external-link {
+      display: flex;
+    }
+
+    .btn-add-variable-external-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-test-external-link {
+      padding-top: 3px;
+    }
+
+    .btn-salve-external-link {
+      padding: 11px 30px;
+      border-radius: 900px;
+
+      &.text {
+        font-size: 0.875rem;
+      }
+
+      &.btn-secondary {
+        height: auto;
+      }
+    }
+
+    .header-modal-external-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .black-500 {
+      color: var(--black-500);
+    }
+
+    .input-meta-data-fields {
+      max-width: 360px;
+      width: 100%;
+    }
+
+    .input-link-meta-data-fields {
+      max-width: 800px;
+      width: 100%;
+    }
+  }
+}

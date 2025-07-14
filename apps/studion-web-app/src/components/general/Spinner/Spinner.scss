@@ -1,0 +1,85 @@
+.spinner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 100001;
+}
+
+.spinner,
+.spinner-canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100px;
+}
+
+.spinner {
+  ellipse {
+    fill: var(--secondary-color);
+  }
+  #ellipse-1 {
+    animation: ellipse-1__kf 1000ms linear infinite normal forwards;
+  }
+  #ellipse-2 {
+    animation: ellipse-2__kf 1000ms linear infinite normal forwards;
+  }
+  #ellipse-3 {
+    animation: ellipse-3__kf 1000ms linear infinite normal forwards;
+  }
+  #ellipse-4 {
+    animation: ellipse-4__kf 1000ms linear infinite normal forwards;
+  }
+  #ellipse-5 {
+    animation: ellipse-5__kf 1000ms linear infinite normal forwards;
+  }
+  @keyframes ellipse-1__kf {
+    0% {
+      transform: translate(300px, 300px) rotate(0deg);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    100% {
+      transform: translate(300px, 300px) rotate(360deg);
+    }
+  }
+  @keyframes ellipse-2__kf {
+    0% {
+      transform: translate(300px, 300px) rotate(0deg);
+      animation-timing-function: cubic-bezier(0.6, 0, 1, 1);
+    }
+    100% {
+      transform: translate(300px, 300px) rotate(360deg);
+    }
+  }
+  @keyframes ellipse-3__kf {
+    0% {
+      transform: translate(300px, 300px) rotate(0deg);
+      animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+    }
+    100% {
+      transform: translate(300px, 300px) rotate(360deg);
+    }
+  }
+  @keyframes ellipse-4__kf {
+    0% {
+      transform: translate(300px, 300px) rotate(0deg);
+      animation-timing-function: cubic-bezier(0.2, 0, 1, 1);
+    }
+    100% {
+      transform: translate(300px, 300px) rotate(360deg);
+    }
+  }
+  @keyframes ellipse-5__kf {
+    0% {
+      transform: translate(300px, 300px) rotate(0deg);
+      animation-timing-function: cubic-bezier(0.465, 0.415, 0.855, 0.99);
+    }
+    100% {
+      transform: translate(300px, 300px) rotate(360deg);
+    }
+  }
+}
+

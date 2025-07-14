@@ -1,0 +1,81 @@
+
+.form-section.center-form-section {
+  max-width: 480px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.draggable {
+  margin: 0 auto 5em;
+  max-width: 770px;
+}
+
+.draggable.small {
+  max-width: 480px;
+}
+
+.banner-col {
+  padding: 0 1.4em;
+}
+
+.draggable-item .banner-col img {
+  max-width: 480px;
+  width: 100%;
+}
+
+.draggable.small .banner-col img {
+  max-width: 180px;
+}
+
+.banner-col .banner {
+  width: 120px;
+  height: 100px;
+  background-size: cover;
+}
+
+.generic-list__item {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background: #FFF;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
+  padding: 0 2.4em;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+
+.generic-list__item.--image {
+  height: 100px;
+}
+
+.generic-list__body {
+  flex: 1;
+  font-family: var(--font-family);
+  font-size: 1.8em;
+  color: var(--black-700);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.generic-list__actions {
+  display: flex;
+  align-items: center;
+}
+
+.generic-list__actions .form-item {
+  margin-bottom: 0;
+}
+
+.generic-list__actions > * {
+  margin-left: 1.2em;
+}
+
+.access-messages-list .icon.type-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--primary-color);
+  margin-right: 16px;
+}

@@ -1,0 +1,13 @@
+// estilo custom para ferramenta de acessibilidade userway
+.uwy.userway_p1 {
+  &.userway_p1 {
+    .userway_buttons_wrapper {
+      top: 60px;
+      right: -85px;
+    }
+  }
+}
+
+#userwayAccessibilityIcon {
+  display: none;
+}

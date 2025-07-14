@@ -1,0 +1,89 @@
+.modal-add-forum {
+  opacity: 1;
+
+  .modal-form {
+    form {
+      max-width: 100%;
+
+      > * {
+        max-width: 520px;
+        margin: 25px auto;
+
+        &.input-editor-forum-form {
+          margin-bottom: 65px;
+          max-width: 583px;
+          width: 100%;
+        }
+
+        &.form-full-w {
+          max-width: 100%;
+          .session-bind-class {
+            .switch {
+              top: 17px;
+            }
+          }
+        }
+      }
+    }
+
+    .modal-subtitle {
+      &.is-management {
+        color: var(--text-color);
+        font-size: 4em;
+        margin-bottom: 20px;
+      }
+    }
+
+    .submit-button {
+      padding-bottom: 32px;
+    }
+  }
+
+  .modal-poll__sessions-bind {
+    width: 100%;
+    padding-bottom: 4em;
+    padding: 0 32px;
+  }
+  &.modal-add-video-open {
+    opacity: 0;
+  }
+
+  .form-item {
+    margin-bottom: 30px;
+
+    .form-input-wrapper.input-editor-forum-form {
+      background-color: white;
+    }
+
+    &.has-error.has-focus {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.interaction-form {
+  &__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    gap: 10px;
+
+    .form-item {
+      max-width: 70px;
+      margin-bottom: 0;
+    }
+
+    .form-group-description {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .form-input-messages-container {
+    margin-top: 10px;
+
+    &.dark {
+      color: var(--alert-900);
+    }
+  }
+}

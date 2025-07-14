@@ -1,0 +1,120 @@
+.library-solution-image {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.library-solution-title {
+  font-family: var(--font-family);
+  font-size: 1.6em;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: bold;
+  width: 580px;
+  color: var(--text-color);
+}
+
+.library-solution-media {
+  font-family: var(--font-family);
+  font-size: 1.6em;
+  width: 170px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 40px;
+  color: var(--black-500);
+}
+.library .accordion {
+  margin-top: 40px;
+}
+
+.library .accordion-item-header {
+  min-height: 70px;
+}
+
+.library .accordion-item-header:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.library .accordion-header-text:nth-child(1) {
+  width: 610px;
+}
+
+.library .accordion-header-text:nth-child(2) {
+  width: 380px;
+}
+
+.library .datatable .icon-filetype {
+  color: var(--black-500);
+}
+
+.library .datatable-wrapper-card {
+  margin-top: 40px;
+}
+
+.library .datatable .td.td-actions {
+  text-align: right;
+
+  .icon.icon-goto-external {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.accordion.theme-dark .library-solution-media {
+  color: var(--text-color);
+}
+.modal-form .filter-item .filter-search-form{
+  margin: 0 auto;
+}
+@media screen and (max-width: 1023px) {
+  .library-solution-title {
+    width: auto;
+    display: block;
+    line-height: 1.2em;
+    font-size: 1.4em;
+    padding: 7px 0;
+  }
+
+  .library-solution-media {
+    display: block;
+    width: auto;
+    text-align: left;
+    line-height: 1em;
+    font-size: 1.4em;
+    padding: 8px 0;
+  }
+
+  .library .accordion-item-header:before {
+    display: none;
+  }
+
+  .library .accordion-card .btn-flat {
+    margin-left: -10px;
+  }
+
+  .library .datatable .icon-filetype {
+    margin-left: -10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .library-solution-title {
+    width: 60%;
+  }
+
+  .library .accordion-header-text:nth-child(1) {
+    width: 60%
+  }
+
+  .library .accordion-header-text:nth-child(2) {
+    width: 40%;
+  }
+}

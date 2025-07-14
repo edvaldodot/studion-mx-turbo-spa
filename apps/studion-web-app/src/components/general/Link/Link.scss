@@ -1,0 +1,20 @@
+.link {
+  a {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &.--primary {
+    a {
+      color: var(--primary-color);
+    }
+  }
+
+  &.--secondary {
+    a {
+      color: var(--secondary-color);
+    }
+  }
+}

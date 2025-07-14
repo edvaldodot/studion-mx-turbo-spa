@@ -1,0 +1,45 @@
+.card-link-wrapper {
+  cursor: pointer;
+
+  .card-external-link {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid var(--black-50);
+    border-radius: 8px;
+
+    .card-external-link-area-icon {
+      width: 130px;
+      height: 100px;
+      background-color: var(--secondary-200);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .card-external-link-icon {
+        color: var(--secondary-900);
+        .icon {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
+    .card-external-link-content {
+      padding: 14.5px 16px;
+      width: 100%;
+
+      h3 {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}

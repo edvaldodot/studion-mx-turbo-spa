@@ -1,0 +1,10 @@
+.note-create {
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    button {
+      padding: 0 24px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.classroom-card__dates {
+  margin-bottom: 20px;
+
+  p {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    font-size: 1.7em;
+  }
+
+  strong {
+    font-weight: bold;
+    color: #4C4C4C;
+  }
+
+  .date-icon {
+    display: inline-block;
+    margin-right: -10px;
+    font-size: 1.2em;
+  }
+}

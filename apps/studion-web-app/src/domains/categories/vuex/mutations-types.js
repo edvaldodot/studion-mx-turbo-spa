@@ -1,0 +1,5 @@
+export const SET_CATEGORIES_LIST = 'categories/SET_CATEGORIES_LIST'
+export const SET_CATEGORY_ITEM = 'categories/SET_CATEGORY_ITEM'
+export const MOVE_CATEGORY = 'categories/MOVE_CATEGORY'
+export const DELETE_CATEGORY = 'categories/DELETE_CATEGORY'
+export const SET_CATEGORIES_TAB_LIST = 'categories/SET_CATEGORIES_TAB_LIST'

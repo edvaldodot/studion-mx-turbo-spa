@@ -1,0 +1,30 @@
+.skeleton {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .grid {
+    display: grid;
+    gap: 8px;
+  }
+
+  svg defs linearGradient stop {
+    &:nth-child(1), &:nth-child(3) {
+      stop-color: var(--primary-color);
+    }
+    &:nth-child(2) {
+      stop-color: var(--primary-500);
+    }
+  }
+
+  &.--no-colored {
+    svg defs linearGradient stop {
+      &:nth-child(1), &:nth-child(3) {
+        stop-color: var(--primary-700);
+      }
+      &:nth-child(2) {
+        stop-color: var(--primary-500);
+      }
+    }
+  }
+}

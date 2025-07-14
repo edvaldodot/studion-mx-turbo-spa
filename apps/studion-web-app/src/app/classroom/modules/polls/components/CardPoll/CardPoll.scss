@@ -1,0 +1,248 @@
+/* CARD - POLL */
+.card-poll {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-poll-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--black-500);
+}
+
+.card-poll-question {
+  padding: 20px;
+}
+
+.card-poll-question-header {
+  margin-bottom: 20px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 40px;
+}
+
+.card-poll-question-user-image-wrapper {
+  float: left;
+  margin-right: 10px;
+}
+
+.card-poll-question-user-image {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.card-poll-question-user-image,
+.card-poll-question-user-icon {
+  width: 40px;
+  height: 40px;
+  color: var(--black-500);
+}
+
+.card-poll-question-user-position {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.card-poll-question-user-name {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.6em;
+  line-height: 20px;
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-poll-question-time {
+  text-align: right;
+}
+
+.card-poll-question-time-label {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--black-500);
+  line-height: 20px;
+}
+
+.card-poll-question-time-value {
+  display: block;
+  font-size: 1.6em;
+  color: var(--black-500);
+  line-height: 20px;
+}
+
+.card-poll-question-statement p {
+  font-size: 1.8em;
+}
+
+.card-poll-question-form {
+  padding: 0 20px;
+}
+
+.card-poll-question .btn.is-submit {
+  width: 130px;
+  margin-top: 30px;
+}
+
+.card-poll-comments-list {
+  padding: 30px 20px 10px;
+}
+
+.card-poll-comments-title {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  padding-left: 60px;
+  margin-bottom: 30px;
+}
+
+.card-poll-comment-item {
+  padding-left: 60px;
+  position: relative;
+}
+
+.card-poll-comment-item + .card-poll-comment-item {
+  margin-top: 30px;
+}
+
+.card-poll-comment-image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-poll-comment-image,
+.card-poll-comment-icon {
+  width: 40px;
+  height: 40px;
+  color: var(--black-500);
+}
+
+.card-poll-comment-name {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.6em;
+  font-weight: 900;
+  color: var(--black-700);
+  margin-right: 5px;
+  line-height: 20px;
+}
+
+.card-poll-comment-time {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 15px;
+  font-size: 1.2em;
+  color: rgba(0,0,0,0.25);
+}
+
+.card-poll-comment-text p {
+  margin-bottom: 10px;
+}
+
+.card-poll-comment-actions .btn {
+  color: rgba(0,0,0,0.25);
+}
+
+.card-poll-comment-actions .btn:hover {
+  color: var(--primary-500);
+}
+
+.card-dropdown {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card-dropdown .dropdown-link {
+  color: var(--primary-500er);
+}
+
+.card-poll-votes {
+  padding-left: 20px;
+}
+
+.card-poll-votes-count {
+  display: block;
+  font-size: 1.4em;
+  color: var(--black-500);
+  margin-top: 20px;
+}
+
+.card-poll-votes-item + .card-poll-votes-item {
+  margin-top: 15px;
+}
+
+.card-poll-votes-item p {
+  margin-bottom: 10px;
+}
+
+.card-poll-votes-progress {
+  display: inline-block;
+  vertical-align: middle;
+  height: 10px;
+  border-radius: 5px;
+  background: var(--accent-light-color);
+  margin-right: 10px;
+}
+
+.card-poll-votes-item.is-active .card-poll-votes-progress {
+  background-color: var(--primary-color);
+}
+
+.card-poll-votes-progress-label,
+.card-poll-votes-counter {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.6em;
+  color: var(--black-500);
+}
+
+.card-poll-votes-progress-label:after {
+  content: '|';
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px;
+}
+
+.card-poll-comments-form {
+  padding: 20px 20px 20px 80px;
+  border-top: 1px solid #E0E0E0;
+  position: relative;
+}
+
+.card-poll-comments-form .user-image {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.card-poll-comments-form .user-image .icon {
+  width: 40px;
+  height: 40px;
+  color: var(--black-500);
+}
+
+.card-poll-comments-form .form-item {
+  margin-bottom: 0;
+}
+
+.card-poll-comments-form .btn.is-submit {
+  color: var(--primary-500);
+}
+
+
+@media screen and (max-width: 1023px) {
+  .card-poll-question-form {
+    padding: 0;
+  }
+}

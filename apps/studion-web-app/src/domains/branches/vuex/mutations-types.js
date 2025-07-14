@@ -1,0 +1,8 @@
+export const SET_TREE = 'branches/SET_TREE'
+export const SET_BRANCHES_LIST = 'branches/SET_BRANCHES_LIST'
+export const CLEAR_BRANCHES_LIST = 'branches/CLEAR_BRANCHES_LIST'
+export const SET_CURRENT_PARENT = 'branches/SET_CURRENT_PARENT'
+export const SET_CURRENT = 'branches/SET_CURRENT'
+export const CLEAR_CURRENT = 'branches/CLEAR_CURRENT'
+export const SET_ASSOCIATION = 'branches/SET_ASSOCIATION'
+export const SET_DISASSOCIATION = 'branches/SET_DISASSOCIATION'

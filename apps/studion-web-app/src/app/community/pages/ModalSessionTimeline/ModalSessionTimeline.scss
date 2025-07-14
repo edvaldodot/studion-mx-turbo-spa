@@ -1,0 +1,71 @@
+.modal-session-timeline {
+  &.d-none {
+    display: none;
+    visibility: hidden;
+    cursor: none;
+  }
+
+  .form-section-title,
+  .session-details,
+  .session-details__info {
+    color: var(--text-color);
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .session-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 16px 0;
+
+    &__info {
+      min-width: 130px;
+      margin: 12px 0;
+
+      span {
+        font-size: 1.3em;
+      }
+      p {
+        font-size: 1.6em;
+        font-weight: bold;
+        padding-top: 5px;
+      }
+    }
+  }
+
+  .modal-form-box-inner {
+    border-radius: 8px;
+
+    &.check {
+      padding: 4px 0px 20px 40px;
+    }
+
+    .modal-form-dropdown {
+      display: flex;
+      color: var(--primary-500);
+      justify-content: flex-end;
+    }
+
+    .form-group {
+      padding: 0px 40px 0px 0px;
+    }
+
+    @media screen and (min-width: 1023px) {
+      &.empty-message {
+        padding: 70px 40px;
+      }
+    }
+
+    @media screen and (max-width: 1023px) {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .class-title {
+      font-size: 1.5em;
+      color: var(--text-color);
+      margin: 10px 0 20px 0;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.modal-information.modal-group-creation {
+  .modal-offer-type-class {
+    font-size: 14px;
+    text-transform: capitalize;
+    padding-top: 20px;
+  }
+
+  .modal-offer-title-class {
+    font-size: 20px;
+    color: var(--primary-color);
+  }
+  .modal-offer-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+
+    .icon-wrapper {
+      color: var(--primary-color);
+    }
+
+    .modal-offer-success-mesage {
+      font-size: 40px;
+      color: var(--primary-color);
+      text-align: center;
+    }
+
+    .modal-offer-description-text {
+      color: var(--text-color);
+
+      &__error {
+        padding:10px 10px
+      }
+    }
+    .modal-offer-description-session-name {
+      font-weight: 700;
+      text-align: center;
+      padding: 10px 10px;
+    }
+
+    @media screen and (max-width: 450px) {
+      .modal-offer-title-class {
+        font-size: 18px;
+      }
+      .modal-offer-success-mesage {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .modal-confirm-actions {
+    justify-content: center;
+    padding-bottom: 70px;
+  }
+}

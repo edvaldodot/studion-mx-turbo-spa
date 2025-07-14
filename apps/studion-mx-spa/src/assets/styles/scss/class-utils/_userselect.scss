@@ -1,0 +1,10 @@
+@use './mixins' as *;
+
+$userselect-props: (
+    'select-none': 'none',
+    'select-text': 'text',
+    'select-all': 'all',
+    'select-auto': 'auto'
+) !default;
+
+@include style-class('user-select', $userselect-props);

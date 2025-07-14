@@ -1,0 +1,389 @@
+.classroom .header-content {
+  background-image: var(--classroom-header-background-image);
+}
+
+.classroom .trail-description {
+  font-family: var(--font-family);
+  font-size: 1.8em;
+  margin: 20px 0;
+  color: var(--text-color);
+}
+
+.classroom .trail-solutions-title {
+  font-family: var(--font-family);
+  font-size: 2.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.classroom .trail-solutions-subtitle {
+  font-family: var(--font-family);
+  font-size: 2.4em;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.classroom-offer-type {
+  font-family: var(--font-family);
+  font-size: 2.4em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(0,0,0,0.5);
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.classroom-offer-item {
+  margin-bottom: 40px;
+}
+
+.classroom-offer-name {
+  font-family: var(--font-family);
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+/* ClassroomCards styles */
+
+.classroom-card .generic-card {
+  position: relative;
+  z-index: 1;
+
+  &.trail-card,
+  &.session-info {
+    flex-wrap: wrap;
+  }
+}
+
+.classroom-card .generic-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background: var(--primary-500);
+  z-index: -1;
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.classroom-card + .classroom-card {
+  margin-top: 20px;
+}
+
+.classroom-card .generic-card.--disabled {
+  opacity: 0.7;
+}
+
+.classroom-card .generic-card.--disabled:before {
+  display: none;
+}
+
+.classroom-card .generic-card.--disabled {
+  cursor: not-allowed;
+}
+
+/* -- CARD DE OFERTA */
+
+.generic-card.--dark.offer-card {
+  background: var(--primary-500);
+}
+
+.generic-card.--dark.offer-card:before {
+  background: var(--primary-color);
+}
+
+
+.classroom-card__footer {
+  .btn-show-details {
+    padding: 5px 0 0;
+    height: unset;
+  }
+}
+
+.classroom-card__footer-text {
+  font-family: var(--font-family);
+}
+
+/* -- CARD DE TRILHA */
+
+.generic-card.--dark.trail-card {
+  background: var(--secondary-color);
+  &.--disabled {
+    background-color: var(--primary-color);
+  }
+
+  .classroom-card__footer {
+    .btn {
+      padding: 0;
+      height: 25px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.generic-card.--dark.trail-card:before {
+  background: var(--accent-light-color);
+}
+
+.generic-card.--dark.trail-card .classroom-card__type {
+  color: var(--light-color);
+}
+
+.classroom-card .generic-card__body {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.enrollment-status {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  padding: 7px 10px;
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: var(--font-family);
+  background-color: var(--primary-color);
+  border-radius: 0 0 5px 5px;
+  z-index: 11;
+}
+
+.enrollment-status.aprovado {
+  background-color: var(--secondary-color);
+}
+
+.enrollment-status.nao_iniciou {
+  background-color: var(--alert-900);
+}
+
+.enrollment-status.expirado,
+.enrollment-status.reprovado {
+  background-color: var(--alert-500);
+}
+
+.course-certificate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.course-certificate__text{
+  margin-top: 20px;
+  flex: 1;
+}
+.course-certificate__title {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.6em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 18px;
+  color: var(--text-white);
+}
+
+.course-certificate__title svg {
+  color: var(--text-white);
+  margin-right: 10px;
+}
+
+.classroom-card__type {
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--alert-900);
+  display: block;
+}
+
+.classroom-card__title {
+  font-family: var(--font-family);
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--light-color);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.classroom-card__session_name-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.classroom-card__vertical_bar {
+  display: inline-block;
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin: 0 20px 10px;
+}
+
+.classroom-card__status {
+  display: inline-block;
+  font-family: var(--font-family);
+  letter-spacing: 0px;
+  font-size: 1.4em;
+  font-weight: normal;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.classroom-card__availability {
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  color: var(--light-color);
+  margin-bottom: 10px;
+}
+
+.classroom-card__session_name {
+  display: inline-flex;
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: var(--text-color);
+}
+
+.classroom-card__prerequisite {
+  font-family: var(--font-family);
+  font-size: 1.4em;
+}
+
+.classroom-card__icon {
+  .icon{
+    width: 30px;
+    height: 30px;
+    color: var(--text-color);
+  }
+}
+
+.course-data {
+  display: flex;
+  align-items: center;
+}
+
+.course-data.corda-data--column {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.course-data__info {
+  display: flex;
+  align-items: center;
+  margin-right: 2em;
+}
+
+.course-data.corda-data--column  .course-data__info + .course-data__info {
+  margin-top: 0.8em;
+  margin-left: 0;
+}
+
+.course-data__info strong {
+  font-size: 1.6em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.course-data__info strong svg{
+  color: var(--text-color);
+  margin: 0 0.3rem;
+}
+
+.course-data__info span {
+  font-family: var(--font-family);
+  font-size: 1.6em;
+  color: var(--text-color);
+}
+
+.spacer {
+  flex: 1;
+}
+.solutions-link-certificate-btn {
+  margin-left: -10px;
+}
+@keyframes classroomCardHoverIn {
+  0% {
+    width: 50px;
+    left: auto;
+    right: 0;
+  }
+  10% {
+    width: 0px;
+    left: auto;
+    right: 0;
+  }
+  11% {
+    width: 0px;
+    left: 300px;
+    right: auto;
+  }
+  70% {
+    width: calc(100% - 300px);
+    left: 300px;
+    right: auto;
+  }
+  71% {
+    width: calc(100% - 300px);
+    left: auto;
+    right: 0;
+  }
+  100% {
+    width: 75px;
+    left: auto;
+    right: 0;
+  }
+}
+
+@keyframes classroomCardHoverOut {
+  0% {
+    width: 75px;
+    left: auto;
+    right: 0;
+  }
+  99% {
+    left: auto;
+    right: 0;
+  }
+  100% {
+    width: 50px;
+    left: auto;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .classroom-offer-type {
+    font-size: 1.8em;
+    line-height: 20px;
+  }
+
+  .classroom-card.session-info {
+    .generic-card__body {
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .classroom-card:before {
+    display: none;
+  }
+  .classroom-card__info {
+    flex-direction: column;
+  }
+}

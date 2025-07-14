@@ -1,0 +1,7 @@
+{
+  "global:profile.menu.1": "My registration",
+  "profile:header.title": "My registration",
+  "dashboard.profile.new:modal.description.2": "If you do not want to fill in this information, just click 'FILL IN LATER' at the top of this page. Some features such as enrollment and access to the classroom will be inaccessible, but anything is only to fill in later on the 'MY REGISTRATION' page.",
+  "dashboard.profile.pending:modal.description.2": "If you do not want to fill in this information now, just click on 'FILL IN LATER' at the top of this page. Some features such as tuition and classroom access will be inaccessible, but anything is only to fill in later on the 'MY REGISTRATION' page.",
+  "classroom.lessons:modal.research.warning:description": "The satisfaction survey is a mandatory activity for completion and availability of your certificate. Your opinion is very important for us to improve. Contribute by answering the survey and become a course finisher!"
+}

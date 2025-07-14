@@ -1,0 +1,129 @@
+.calendar-event-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 410px;
+  z-index: 99;
+  border-top: 4px solid transparent;
+  background: var(--surface-overlay);
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+
+  .calendar-event-modal-close.btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+  }
+}
+
+.calendar-event-modal-close .icon {
+  width: 12px;
+  height: 12px;
+}
+
+.calendar-event-modal-content {
+  padding: 5px 10px 0;
+}
+
+.calendar-event-modal-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar-event-modal-title-content {
+  width: 100%;
+}
+
+.calendar-event-modal-title {
+  font-family: var(--font-family);
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 25px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+.calendar-event-modal-date {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  text-align: right;
+  font-family: var(--font-family);
+}
+
+.calendar-event-modal-author {
+  display: flex;
+  gap: 10px;
+  font-family: var(--font-family);
+}
+
+.calendar-event-modal-author-profile {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+}
+
+.calendar-event-modal-author-profile-type {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: var(--text-color);
+}
+
+.calendar-event-modal-author-profile-name {
+  font-size: 1.5em;
+  color: var(--text-color);
+}
+
+.calendar-event-modal-author-image {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--black-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .calendar-event-modal-author-image-icon {
+    color: var(--text-color);
+  }
+}
+
+.calendar-event-modal-description {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.calendar-event-modal-description ol li,
+.calendar-event-modal-description ul li {
+  font-size: 1.4em;
+}
+
+.calendar-event-modal-description ul li::before,
+.td-calendar-description ul li::before {
+  content: '\25CF ';
+}
+
+.calendar-event-modal-description ol li,
+.td-calendar-description ol li {
+  counter-reset: list-1 list-2 list-3 list-4 list-5 list-6 list-7 list-8 list-9;
+  counter-increment: list-num;
+}
+
+.calendar-event-modal-description ol li:before,
+.td-calendar-description ol li:before {
+  content: counter(list-num, decimal) '. ';
+}
+
+.calendar-event-modal-infos {
+  display: flex;
+  justify-content: space-between;
+}
+

@@ -1,0 +1,6 @@
+export const SET_CURRENT = 'profiles/SET_CURRENT'
+export const SET_CONTEXTS = 'profiles/SET_CONTEXTS'
+export const SET_DATA = 'profiles/SET_DATA'
+export const PROFILES_ADD_ITEMS = 'profiles/PROFILES_ADD_ITEMS'
+export const PROFILES_SET_CURRENT = 'profiles/PROFILES_SET_CURRENT'
+export const SET_ALL_PROFILES = 'profiles/SET_ALL_PROFILES'

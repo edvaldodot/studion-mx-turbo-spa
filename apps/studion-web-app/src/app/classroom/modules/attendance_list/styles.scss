@@ -1,0 +1,47 @@
+.attendance-list {
+  .filter-order {
+    width: 220px;
+  }
+}
+
+.attendance-list .datatable-list {
+  margin-top: 40px;
+}
+
+.attendance-list.modal-confirm {
+  padding: 20px;
+}
+
+.audit-attendance-accordion {
+  display: flex;
+  justify-content: center;
+
+  & > * {
+    flex: 1;
+    max-width: 560px;
+  }
+}
+
+.modal-attendance-list .modal-subtitle,
+.modal-manage-attendance-list .modal-subtitle {
+  font-size: 2.5em;
+}
+
+.modal-attendance-list {
+  .check-items-btn {
+    cursor: pointer;
+  }
+
+  .datatable {
+    margin-bottom: 0;
+  }
+
+  .th-description {
+    font-weight: normal;
+    font-size: 0.85rem;
+  }
+
+  .attendance-action {
+    margin: 0 30px;
+  }
+}

@@ -1,0 +1,38 @@
+.examination-questions-template {
+  .modal-form-box-inner {
+    .close-outter {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .input-row {
+      position: relative;
+      display: grid;
+      gap: 10px;
+      grid-template-columns: .95fr 2.5fr 2fr;
+
+      &.has-close {
+        grid-template-columns: .95fr 2.5fr 2fr .2fr;
+      }
+
+      .form-item {
+        margin-bottom: 0;
+      }
+
+      .close-inner {
+        position: absolute;
+        right: -12px;
+        top: 10px;
+
+        &.is-disabled {
+          opacity: .3;
+        }
+      }
+    }
+
+    .form-input-messages-container {
+      color: var(--alert-900);
+    }
+  }
+}

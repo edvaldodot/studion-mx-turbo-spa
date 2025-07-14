@@ -1,0 +1,49 @@
+.date-hour__time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: var(--text-color);
+
+  .date-hour__date {
+    flex: 1;
+  }
+
+  .date-hour__start-end {
+    flex: 1;
+    margin-left: 15px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid var(--black-400);
+    margin-bottom: 40px;
+    padding-top: 11px;
+
+    .divisor {
+      display: flex;
+      height: 100%;
+      margin: 13px 7px 0;
+    }
+
+    .hour-field {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+
+      input {
+        padding: 8px;
+        height: 40px;
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: stretch;
+
+    .date-hour__hours {
+      margin-left: 0;
+    }
+  }
+}

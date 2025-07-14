@@ -1,0 +1,18 @@
+.session-card-content {
+  &__enrollments-title{
+    font-family: var(--font-family);
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &__action-certificate {
+    width: fit-content;
+    span {
+      text-decoration: underline;
+      color: var(--text-color);
+      &:hover {
+        color: var(--primary-500);
+      }
+    }
+  }
+}

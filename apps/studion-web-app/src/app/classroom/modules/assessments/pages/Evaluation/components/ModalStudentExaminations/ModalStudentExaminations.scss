@@ -1,0 +1,42 @@
+.modal-students-examinations {
+  .modal {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .modal-students-examinations {
+    .modal {
+      width: 80%;
+      padding: 0;
+
+      .datatable-wrapper {
+        padding-bottom: 4px;
+
+        .tr-mobile {
+          display: grid;
+          grid-template-columns: 50% auto;
+
+          .td:first-of-type,
+          .td:last-of-type,
+          .td {
+            border-radius: 0;
+          }
+
+          .td {
+            padding: 10px;
+          }
+
+          :nth-child(2n) {
+            &.td-actions {
+              display: flex;
+              justify-content: right;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

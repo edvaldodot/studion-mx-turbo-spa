@@ -1,0 +1,34 @@
+$weights: 100, 200, 300, 400, 500, 600, 700;
+$optical-sizes: 20, 24, 40, 48;
+
+@each $weight in $weights {
+  .icon-weight-#{$weight} {
+    font-variation-settings: 'wght' #{$weight};
+  }
+}
+
+@each $size in $optical-sizes {
+  .icon-ops-#{$size} {
+    font-variation-settings: 'opsz' #{$size}px;
+  }
+}
+
+.-icon-grad-25 {
+  font-variation-settings: 'GRAD' -25;
+}
+
+.icon-grad-0 {
+  font-variation-settings: 'GRAD' 0;
+}
+
+.icon-grad-200 {
+  font-variation-settings: 'GRAD' 200;
+}
+
+.icon-fill-0 {
+  font-variation-settings: 'FILL' 0;
+}
+
+.icon-fill-1 {
+  font-variation-settings: 'FILL' 1;
+}

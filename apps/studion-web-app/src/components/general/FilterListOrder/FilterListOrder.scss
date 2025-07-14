@@ -1,0 +1,9 @@
+.filter-list-order {
+  .select-field {
+    .select-field__wrapper {
+      --select-field-bg: var(--black-100);
+      --select-field-border: solid var(--black-100) 1px;
+      --select-field-border-radius: 10rem;
+    }
+  }
+}

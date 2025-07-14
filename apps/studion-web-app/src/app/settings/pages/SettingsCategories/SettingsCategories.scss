@@ -1,0 +1,49 @@
+.categories-container {
+  max-width: 760px;
+
+  .text-description {
+    margin: 1.5em 0 4em;
+    font-size: 1em;
+  }
+
+  .draggable-item-col {
+    &.name-col {
+      width: 24.5%;
+    }
+
+    &.count-col {
+      width: 14.5%;
+    }
+
+    .dropdown-content-list {
+      a.is-disabled {
+        pointer-events: initial;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    .draggable .datatable .th {
+      font-size: 1em;
+    }
+
+    .draggable-item-col {
+      &.name-col {
+        max-width: 100px;
+      }
+
+      p {
+        font-size: 1.2em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .categories-container {
+    max-width: 100%;
+  }
+}

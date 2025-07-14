@@ -1,0 +1,45 @@
+.catalog-solution__tag {
+  font-size: 1.2em;
+  letter-spacing: 0.6px;
+  color: var(--text-color);
+  padding: 6px 0;
+}
+
+.catalog-solution__card {
+  cursor: pointer;
+  margin-bottom: 7px;
+
+  .generic-card__body {
+    padding: 11px 13px 5px 13px;
+  }
+
+  .card-title {
+    margin-bottom: 0.6em;
+  }
+
+  .card-solution__categories {
+    &.wrapper-card__categories {
+      margin: 0;
+    }
+
+    .card-categories {
+      position: absolute;
+      left: 0;
+      padding: 0 13px;
+    }
+
+    .card-categories.hidden-categories {
+      bottom: 42px;
+      margin-bottom: 0;
+    }
+  }
+
+  .generic-card__actions {
+    padding-bottom: 7px;
+  }
+
+  .access-button {
+    padding: 0;
+    font-size: 1rem;
+  }
+}

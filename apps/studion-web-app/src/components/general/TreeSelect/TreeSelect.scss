@@ -1,0 +1,178 @@
+:root {
+  --tree-select-height: 45px;
+  --tree-select-bg: var(--black-50);
+  --tree-select-border: solid var(--black-100) 1px;
+  --tree-select-border-radius: 8px;
+  --tree-select-padding: 0px 0px 0px 15px;
+
+  --tree-select-label-color: var(--black-800);
+  --tree-select-label-font-size: 16px;
+  --tree-select-label-font-weight: 500;
+
+  --tree-select-placeholder-color: var(--black-500);
+  --tree-select-placeholder-font-size: 16px;
+
+  --tree-select-input-text-color: var(--black-800);
+  --tree-select-input-font-size: 16px;
+
+  --tree-select-help-color: var(--black-800);
+  --tree-select-counter-color: var(--black-800);
+
+  --tree-select-details-color: var(--black-800);
+  --tree-select-hint-color: var(--black-800);
+
+  --tree-select-required-status-color: var(--primary-color);
+
+  // input status disabled
+  --tree-select-disabled-status-color: var(--black-400);
+}
+
+.tree-select {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__label {
+    font-family: var(--font-family);
+    color: var(--tree-select-label-color);
+    font-size: var(--tree-select-label-font-size);
+    font-weight: var(--tree-select-label-font-weight);
+    line-height: 16.8px;
+  }
+  &__wrapper {
+    .vue-treeselect {
+      &__control {
+        align-items: center;
+        background: var(--tree-select-bg);
+        border: var(--tree-select-border);
+        border-radius: var(--tree-select-border-radius);
+        height: var(--tree-select-height);
+        padding: var(--tree-select-padding);
+      }
+
+      &__placeholder {
+        top: 5px;
+        font-size: var(--tree-select-placeholder-font-size);
+        color: var(--tree-select-placeholder-color);
+      }
+
+      &:is(.vue-treeselect--focused) {
+        .vue-treeselect__control {
+          border: solid var(--primary-color) 1px;
+        }
+      }
+
+      &__menu {
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+        margin: {
+          top: 5px;
+          bottom: 5px;
+        }
+        border: var(--tree-select-border);
+        border-radius: var(--tree-select-border-radius);
+      }
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      &__label-container {
+        font-family: var(--font-family);
+        color: var(--black-500);
+        font-size: 14px;
+        padding: 8px;
+        font-weight: 500;
+      }
+
+      &__checkbox {
+        border: solid var(--primary-color) 1px;
+
+        &--checked,
+        &--indeterminate {
+          background-color: var(--primary-color);
+        }
+      }
+
+      &__option {
+        &--highlight {
+          background-color: var(--black-50);
+
+          .vue-treeselect__checkbox:is(.vue-treeselect--checked) {
+            border: solid var(--primary-color) 1px;
+            background-color: var(--primary-color);
+          }
+        }
+      }
+
+      &__multi-value-item {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        padding: 4px 8px 4px 8px;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        border-radius: 10rem;
+        font-family: var(--font-family);
+      }
+
+      &__multi-value-label {
+        font-size: 14px;
+      }
+
+      &__value-remove {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        border: none;
+      }
+
+      &__icon-container{
+        display: none;
+      }
+    }
+
+    .vue-treeselect--open {
+      .vue-treeselect__control {
+        border-radius: var(--tree-select-border-radius);
+      }
+    }
+  }
+  &__details {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--font-family);
+  }
+}
+
+.label {
+  &__required {
+    font-size: 16px;
+    color: var(--primary-color);
+    font-weight: 500;
+  }
+}
+
+.details {
+  &__hint {
+    color: var(--tree-select-hint-color);
+    font-style: italic;
+  }
+}
+
+.--error {
+  --tree-select-border: solid var(--error-900) 1px;
+  --tree-select-hint-color: var(--error-900);
+  --tree-select-input-text-color: var(--error-900);
+  --tree-select-placeholder-color: var(--error-900);
+}
+
+.--disabled {
+  --tree-select-label-color: var(--tree-select-disabled-status-color);
+  --tree-select-border: solid var(--tree-select-disabled-status-color) 1px;
+  --tree-select-hint-color: var(--tree-select-disabled-status-color);
+  --tree-select-input-text-color: var(--tree-select-disabled-status-color);
+  --tree-select-placeholder-color: var(--black-400);
+}

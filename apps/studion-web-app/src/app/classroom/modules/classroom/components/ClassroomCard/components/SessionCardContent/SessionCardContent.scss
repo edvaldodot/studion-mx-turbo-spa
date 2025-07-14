@@ -1,0 +1,93 @@
+.session-card-content {
+  column-gap: 40px;
+
+  &.separator {
+    border-bottom: 1px solid #e3e3d3;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__action-certificate {
+    width: fit-content;
+    span {
+      text-decoration: underline;
+      color: var(--text-color);
+      &:hover {
+        color: var(--primary-500);
+      }
+    }
+  }
+
+  &__enrollments-title{
+    font-family: var(--font-family);
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .session-card-content-block {
+    margin-bottom: 20px;
+    overflow: hidden;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+
+    strong {
+      display: block;
+      font-family: var(--font-family);
+      font-size: 1.6em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  }
+
+  .session-card-content-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    > div {
+      display: flex;
+      gap: 24px;
+    }
+  }
+
+  .session-card-content__info > div {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .session-card-content-block-title {
+    font-family: var(--font-family);
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+    span {
+      font-weight: normal;
+    }
+  }
+
+  .session-card-content-block-description li {
+    font-size: 1.6em;
+    margin: 5px 0;
+
+    &:before {
+      content: '• ';
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    column-count: auto;
+
+    .session-card-content-block-title {
+      font-size: 1.8em;
+    }
+
+    .session-card-content-container {
+      margin-bottom: 20px;
+    }
+  }
+}

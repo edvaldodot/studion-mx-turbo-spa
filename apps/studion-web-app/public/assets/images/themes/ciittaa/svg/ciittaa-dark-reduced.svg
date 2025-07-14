@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31.183" height="33.661" viewBox="0 0 31.183 33.661">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_4346" data-name="Caminho 4346" d="M1048,369h7.939v15.423H1048Zm0,0" transform="translate(-1048 -369)" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Caminho_4349" data-name="Caminho 4349" d="M1071,239h13.095v11.75H1071Zm0,0" transform="translate(-1071 -239)" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="Caminho_4352" data-name="Caminho 4352" d="M1023,196.707h5.61v12.627H1023Zm0,0" transform="translate(-1023 -196.707)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="_1" data-name="1" transform="translate(-414.267 -196.707)">
+    <g id="Grupo_10123" data-name="Grupo 10123" transform="translate(429.921 214.945)" clip-path="url(#clip-path)">
+      <path id="Caminho_4345" data-name="Caminho 4345" d="M1051.072,369.575c-2.987,1.223-2.385,6.125-1.348,8.64,1.408,3.384,3.891,3.572,5.142,6.776,1.558-3.548,2.478-7.007,1.183-10.172C1054.724,371.44,1053.113,369.357,1051.072,369.575Zm0,0" transform="translate(-1048.783 -369.501)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+    <path id="Caminho_4347" data-name="Caminho 4347" d="M915.524,295.8c.031.933-3.329,1.287-5.305,1.849-6.407,1.869-7.608-2.18-10.106-3.552,2.592-.949,4-3.322,7.778-2.932C911.554,291.418,914.3,292.807,915.524,295.8Zm0,0" transform="translate(-485.847 -84.418)" fill="#fff" fill-rule="evenodd"/>
+    <g id="Grupo_10124" data-name="Grupo 10124" transform="translate(432.355 201.184)" clip-path="url(#clip-path-2)">
+      <path id="Caminho_4348" data-name="Caminho 4348" d="M1072.112,250.315c.313,1.88,4.048.15,7.794-1.746,4.4-2.241,3.182-6.036,4.752-9.034-2.686,1.113-5.431-.359-7.928,1.866C1073.427,244.424,1070.482,250.008,1072.112,250.315Zm0,0" transform="translate(-1071.58 -239.479)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+    <path id="Caminho_4350" data-name="Caminho 4350" d="M1094.078,351.206c.664.208.838.853,1.314,1.389,1.69,1.453,3.712,1.57,6.056.523a11.221,11.221,0,0,0,1.718-1.211,5.181,5.181,0,0,0-3.855-1.283c-1.61.076-1.448-.55-3.73.206C1095.064,350.968,1094.578,351.319,1094.078,351.206Zm0,0" transform="translate(-659.28 -137.47)" fill="#fff" fill-rule="evenodd"/>
+    <g id="Grupo_10125" data-name="Grupo 10125" transform="translate(427.275 196.707)" clip-path="url(#clip-path-3)">
+      <path id="Caminho_4351" data-name="Caminho 4351" d="M1027.13,209.128c-1.279-.54-2.542-.614-3.724-5-.468-3.582,1.4-5.082,2.088-7.538,1.095,2.223,3.2,3.065,3.322,6.8C1029.182,208.02,1027.615,208.056,1027.13,209.128Zm0,0" transform="translate(-1023.296 -196.602)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+    <path id="Caminho_4353" data-name="Caminho 4353" d="M985.072,358.414c.153.982.615,1.772-1.505,4.06-1.863,1.5-3.473.855-5.188,1.263.887-1.43.559-3.057,2.664-4.373C983.6,357.482,984.263,358.494,985.072,358.414Zm0,0" transform="translate(-555.828 -144.41)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+@use "sass:string";
+$fontsFamily: ('Thin': 100, 'Light': 300, 'Regular': 400, 'Bold': 700, 'Black': 900, 'ThinItalic': 100, 'LightItalic': 300, 'BoldItalic': 700, 'BlackItalic': 900);
+
+@each $family, $weight in $fontsFamily {
+  @font-face {
+    font-family: "Lato-#{$family}";
+    src: url("/assets/fonts/Lato-#{$family}.ttf");
+  }
+
+  .lato-#{string.to-lower-case($family)} {
+    font-family: "Lato-#{$family}", system-ui !important;
+    font-weight: $weight;
+    font-style: normal;
+  }
+}

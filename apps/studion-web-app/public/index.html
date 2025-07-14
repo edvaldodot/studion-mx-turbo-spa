@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content>
+    <meta name="apple-mobile-web-app-status-bar-style" content>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content>
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+  <body>
+    <div id="app">
+      <div id="notSupported" style="margin: 0 auto; padding: 0; display: none; height: 100%; width: 100%;">
+        <div class="container" style="display: table-cell; text-align: center; padding: 10px 15px;">
+          <img alt="Logomarca do StudiOn" height="35px" src="/assets/images/themes/default/lgo/studion-white.png" style="display: block; margin: 40px auto;" width="150px">
+          <img alt="Logomarca do Internet Explorer com uma aeronave espacial orbitando" height="210px" src="/assets/images/themes/default/fto/ie-support-rocket.png" style="margin: 0 auto; padding-left: 25px;" width="400px">
+          <h1 id="header-title" style="width: 400px; margin: 20px auto; color: #FFFFFF; font-size: 24px; font-family: Quicksand, sans-serif; font-weight: bold; text-align: center;">O STUDION NÃO É COMPATÍVEL COM ESTE NAVEGADOR</h1>
+          <p id="description" style="color: #FFFFFF; font-size: 16px; font-weight: lighter; font-family: Roboto, sans-serif; width: 600px; margin: 30px auto;">Infelizmente o StudiOn não é compatível com o seu navegador. Você pode arrumar isso baixando um outro navegador.</p>
+          <div class="footer" style="position: fixed; left: 0; bottom: 20px; width: 100%; color: #000; text-align: center;">
+            <div style="display: block; margin: 0 auto;">
+              <img alt="Logomarca do StudiOn" src="/assets/images/themes/default/lgo/studion-white.png" style="width: 50px; height: 12px;">
+            </div>
+            <span id="footer" style="font-family:  Lato-Regular, sans-serif; color: #DDDDDD">© COPYRIGHT 2017 | DOT digital group | Dúvidas? Acesse <a class="help-link" href="https://studionmx.zendesk.com/hc/pt-br" style="color: #00ADEF" target="_blank">HelpCenter StudiOn</a></span>
+          </div>
+        </div>
+      </div>
+      <div id="initial-loading" style="display: none; width: 100%; height: 100%;">
+        <div class="spinner-container">
+          <svg class="spinner" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+            <g id="ellipse-1" transform="translate(300,300) rotate(0)">
+              <ellipse rx="10.037943" ry="11.164552" transform="scale(0.99622,0.895692) translate(1.958028,-223.35703)" fill="#dddddd" stroke-width="0"/>
+            </g>
+            <g id="ellipse-2" transform="translate(300,300) rotate(0)">
+              <ellipse rx="20.075887" ry="22.329104" transform="scale(0.99622,0.895692) translate(0.541421,-223.498668)" fill="#dddddd" stroke-width="0"/>
+            </g>
+            <g id="ellipse-3" transform="translate(300,300) rotate(0)">
+              <ellipse rx="30.11383" ry="32.076024" transform="scale(0.99622,0.935278) translate(1.018274,-215.131133)" fill="#dddddd" stroke-width="0"/>
+            </g>
+            <g id="ellipse-4" transform="translate(300,300) rotate(0)">
+              <ellipse rx="37.5" ry="37.5" transform="translate(1.862742,-201.380144)" fill="#dddddd" stroke-width="0"/>
+            </g>
+            <g id="ellipse-5" transform="translate(300,300) rotate(0)">
+              <ellipse rx="43" ry="43" transform="scale(1.2,1.2) translate(0.256298,-166.628894)" fill="#dddddd" stroke-width="0"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <style id="initial-spinner-style">
+        .spinner-container {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0,0,0,0.7);
+          z-index: 9998;
+        }
+        .spinner, .spinner-canvas {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          width: 100px;
+        }
+        .spinner #ellipse-1 {
+          animation: ellipse-1__kf 1000ms linear infinite normal forwards;
+        }
+        .spinner #ellipse-2 {
+          animation: ellipse-2__kf 1000ms linear infinite normal forwards;
+        }
+        .spinner #ellipse-3 {
+          animation: ellipse-3__kf 1000ms linear infinite normal forwards;
+        }
+        .spinner #ellipse-4 {
+          animation: ellipse-4__kf 1000ms linear infinite normal forwards;
+        }
+        .spinner #ellipse-5 {
+          animation: ellipse-5__kf 1000ms linear infinite normal forwards;
+        }
+        @keyframes ellipse-1__kf {
+          0% {
+            transform: translate(300px, 300px) rotate(0deg);
+            animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+          }
+          100% {
+            transform: translate(300px, 300px) rotate(360deg);
+          }
+        }
+        @keyframes ellipse-2__kf {
+          0% {
+            transform: translate(300px, 300px) rotate(0deg);
+            animation-timing-function: cubic-bezier(0.6, 0, 1, 1);
+          }
+          100% {
+            transform: translate(300px, 300px) rotate(360deg);
+          }
+        }
+        @keyframes ellipse-3__kf {
+          0% {
+            transform: translate(300px, 300px) rotate(0deg);
+            animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+          }
+          100% {
+            transform: translate(300px, 300px) rotate(360deg);
+          }
+        }
+        @keyframes ellipse-4__kf {
+          0% {
+            transform: translate(300px, 300px) rotate(0deg);
+            animation-timing-function: cubic-bezier(0.2, 0, 1, 1);
+          }
+          100% {
+            transform: translate(300px, 300px) rotate(360deg);
+          }
+        }
+        @keyframes ellipse-5__kf {
+          0% {
+            transform: translate(300px, 300px) rotate(0deg);
+            animation-timing-function: cubic-bezier(0.465, 0.415, 0.855, 0.99);
+          }
+          100% {
+            transform: translate(300px, 300px) rotate(360deg);
+          }
+        }
+      </style>
+    </div>
+  </body>
+</html>
+<style id="cj_28198b36">
+  body {
+    display: none;
+  }
+</style>
+<script type="text/javascript">
+if (self === top) {
+  const cj28198b36 = document.getElementById('cj_28198b36')
+  cj28198b36.parentNode.removeChild(cj28198b36)
+}
+var notSupportElement = document.getElementById('notSupported')
+if (notSupportElement) {
+  const lang = window.navigator.browserLanguage
+  if (lang && lang.substring(0, 2) === 'en') {
+    document.getElementById('header-title').innerHTML = 'STUDION IS NOT COMPATIBLE WITH THIS NAVIGATOR'
+    document.getElementById('description').innerHTML = 'Unfortunately StudiOn is not compatible with your browser. You can fix this by downloading another browser.'
+    document.getElementById('footer').innerHTML = '© COPYRIGHT 2017 | DOT digital group | Doubts? Access <a class="help-link" href="https://studionmx.zendesk.com/hc/pt-br" target="_blank" style="color: #00ADEF">HelpCenter StudiOn</a>'
+  }
+  if (lang && lang.substring(0, 2) === 'es') {
+    document.getElementById('header-title').innerHTML = 'STUDION NO ES COMPATIBLE CON ESTE NAVEGADOR'
+    document.getElementById('description').innerHTML = 'Lamentablemente, StudiOn no es compatible con su navegador. Puede solucionar esto descargando otro navegador.'
+    document.getElementById('footer').innerHTML = '© COPYRIGHT 2017 | DOT digital group | Dudas? Acceso <a class="help-link" href="https://studionmx.zendesk.com/hc/pt-br" target="_blank" style="color: #00ADEF">HelpCenter StudiOn</a>'
+  }
+  if (lang && lang.substring(0, 2) === 'zh') {
+    document.getElementById('header-title').innerHTML = 'STUDION 与这位导航员不相容'
+    document.getElementById('description').innerHTML = '很遗憾，StudiOn与您的浏览器不兼容。 您可以通过下载其他浏览器来解决此问题'
+    document.getElementById('footer').innerHTML = '© COPYRIGHT 2017 | DOT digital group | 有问题吗？访问 <a class="help-link" href="https://studionmx.zendesk.com/hc/pt-br" target="_blank" style="color: #00ADEF">HelpCenter StudiOn</a>'
+  }
+  document.body.style.background = "url('/assets/images/themes/default/bkg/background_IE_error.png')"
+  notSupportElement.style.display = 'table'
+}
+</script>

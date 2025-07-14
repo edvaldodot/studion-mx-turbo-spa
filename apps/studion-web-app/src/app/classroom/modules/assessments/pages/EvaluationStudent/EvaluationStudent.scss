@@ -1,0 +1,37 @@
+.evaluation-student {
+  .evaluation-file-question {
+    margin-top: 40px;
+  }
+  .correct-flag{
+    color: var(--primary-color);
+    font-weight: bold;
+    font-family: var(--font-family);
+  }
+  .grade-type {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+
+    .select-choice {
+      flex: 1;
+    }
+  }
+  .evaluation-question-correction{
+    width: 100%;
+  }
+  .evaluation-question-form {
+    margin-top: 20px;
+  }
+
+  .btn-next {
+    transform: rotate(0deg);
+  }
+
+  &.--view-mode {
+    .evaluation-question-feedback,
+    .evaluation-status {
+      box-shadow: none;
+    }
+  }
+}

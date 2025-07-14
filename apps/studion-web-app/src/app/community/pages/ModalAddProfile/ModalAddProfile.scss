@@ -1,0 +1,60 @@
+.modal-add-profile {
+  form {
+    max-width: 766px;
+
+    .input-group {
+      max-width: 520px;
+      margin: 0 auto 20px;
+    }
+  }
+
+  .form-section {
+    .form-section-title {
+      font-size: 2.4em;
+      color: var(--text-color);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .datatable-title {
+      text-transform: none;
+      text-align: left;
+      color: var(--text-color);
+      font-family: var(--font-family);
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    .datatable-description {
+      text-transform: none;
+      text-align: left;
+      color: var(--text-color);
+      font-family: var(--font-family);
+    }
+
+    .datatable-wrapper {
+      padding: 0;
+    }
+  }
+
+  .platform_environment h3,
+  .classroom_environment h3 {
+    padding-top: 45px;
+    padding-bottom: 25px;
+    font-size: 1.8em;
+    color: var(--text-color);
+    padding-inline: 22px;
+    line-height: 1.4em;
+    text-transform: uppercase;
+  }
+
+  .datatable-permission {
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 0;
+    padding: 22px;
+
+    .td {
+      height: 76px;
+    }
+  }
+}

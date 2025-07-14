@@ -1,0 +1,12 @@
+.cwatch {
+  &-content {
+    background-color: var(--surface-200);
+    margin: 5%;
+
+    &__video {
+      background-color: var(--text-color);
+      margin: 0 auto;
+      max-width: 700px;
+    }
+  }
+}

@@ -1,0 +1,266 @@
+.form-mediation__configs {
+  .ql-editor {
+    p {
+      color: var(--text-color);
+    }
+  }
+
+  .ql-picker-options {
+    z-index: 10;
+  }
+
+  .mediation-schedule {
+    margin: 30px 0 48px;
+
+    &__form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      & > span {
+        font-size: 1.6em;
+        padding-top: 2em;
+      }
+    }
+
+    .form-item {
+      margin-bottom: 0;
+    }
+
+    &__days {
+      width: 65px;
+    }
+
+    &__period {
+      width: 100px;
+    }
+
+    &__tips {
+      font-size: 1.2em;
+      font-style: italic;
+    }
+
+    &__reference {
+      .form-select-wrapper .form-input {
+        padding-right: 40px;
+      }
+    }
+  }
+
+  .tags {
+    margin-top: 16px;
+
+    span {
+      display: block;
+      padding: 0 0 16px 0;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+      gap: 16px;
+
+      li {
+        font-size: 1.4em;
+        font-weight: bolder;
+        cursor: pointer;
+
+        color: var(--primary-500);
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+
+  .announcements-toggle-fixed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+
+    &__title {
+      margin-bottom: 18px;
+      font-size: 1.4em;
+      color: var(--text-color);
+    }
+  }
+
+  &.collapsed {
+    .form-item.is-disabled {
+      .form-input {
+        color: inherit;
+        border-bottom-color: inherit;
+        pointer-events: none;
+      }
+
+      .form-input-append,
+      .form-input-counter {
+        display: none;
+      }
+    }
+  }
+
+  .body-editor {
+    border-radius: 4px;
+    margin-top: 8px;
+
+    > .form-input-wrapper {
+      background: var(--primary-500);
+    }
+
+    .form-item-tools {
+      background: var(--surface-200);
+    }
+
+    .form-item-tools {
+      display: flex;
+      height: auto;
+      background: var(--surface-200);
+
+      .form-editor-toolbar {
+        height: auto;
+        float: initial;
+      }
+
+      .tag-selector {
+        display: flex;
+        align-items: center;
+
+        .dropdown {
+          height: 100%;
+          display: flex;
+        }
+      }
+    }
+
+    .message-card-attachment-item {
+      background-color: #ddd;
+      margin: 4px;
+    }
+
+    .message-card-attachment-inner {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form-input-messages-container {
+      margin-right: 10px;
+    }
+  }
+
+  .forum-form {
+    opacity: 1;
+
+    &.modal-add-video-open {
+      opacity: 0;
+    }
+
+    &.input-editor-forum-form {
+      margin-bottom: 65px;
+      max-width: 583px;
+      width: 100%;
+    }
+
+    .form-item {
+      margin-bottom: 30px;
+
+      .form-input-wrapper.input-editor-forum-form {
+        background-color: white;
+      }
+
+      &.has-error.has-focus {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .interaction-form {
+    &__container {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-end;
+      gap: 10px;
+
+      .form-item {
+        max-width: 70px;
+        margin-bottom: 0;
+      }
+
+      .form-group-description {
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .form-input-messages-container {
+      margin-top: 10px;
+
+      &.dark {
+        color: var(--alert-900);
+      }
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    .form-item.theme-snow .form-item-tools {
+      position: initial;
+
+      .form-editor-toolbar {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .card {
+      padding: 40px 15px;
+    }
+
+    .macros ul {
+      li {
+        width: 50%;
+      }
+    }
+
+    .remove-btn {
+      right: 0;
+    }
+  }
+
+  .input-text-editor {
+    background-color: var(--surface-0);
+    border-radius: 8px;
+    position: relative;
+
+    input {
+      border: none;
+      padding: 0 12px;
+    }
+
+    .form-item {
+      margin-bottom: 0;
+    }
+
+    .form-input-details {
+      padding: 0 12px;
+      border-top: 1px solid var(--gray);
+      border-bottom: 1px solid var(--gray);
+    }
+
+    .form-input-counter {
+      bottom: 0;
+      right: 12px;
+      top: initial;
+    }
+
+    .btn {
+      width: 100%;
+      background-color: var(--gray);
+      text-align: left;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
+}

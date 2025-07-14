@@ -1,0 +1,84 @@
+.search-header {
+  position: absolute;
+  left: 50%;
+  bottom: 45px;
+  margin-left: -200px;
+  width: 400px;
+}
+
+.search-header-title {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 3em;
+  color: var(--light-color);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-header-form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.faq {
+  margin-top: 50px;
+}
+
+.faq-title {
+  font-family: var(--font-family);
+  font-size: 2.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.faq-category {
+  font-family: var(--font-family);
+  font-size: 1.6em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.faq .accordion {
+  margin-bottom: 50px;
+}
+
+.faq .accordion-actions .btn {
+  margin-right: 10px;
+}
+
+.form-group-category .form-item {
+  width: 280px;
+}
+
+.form-group-category .btn-add-category {
+  margin-top: 15px;
+}
+
+.faq .accordion-actions {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  .faq-title {
+    font-size: 1.8em;
+  }
+
+  .faq-category {
+    font-size: 1.4em;
+  }
+
+  .modal .form-group-category .form-item {
+    width: 100%;
+    float: none;
+  }
+
+  .modal .form-group-category .btn-add-category {
+    float: none;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+}

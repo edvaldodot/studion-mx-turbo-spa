@@ -1,0 +1,17 @@
+.tree {
+  margin: 5em 0;
+
+  .tree-body {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .tree {
+    .tree-body {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}

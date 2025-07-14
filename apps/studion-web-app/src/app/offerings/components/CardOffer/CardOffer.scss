@@ -1,0 +1,125 @@
+.generic-card__body .card-offer__header {
+  padding: 0 45px 0 0;
+
+  .card-subtitle {
+    margin-bottom: 0;
+  }
+}
+
+.card-offer__category {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #848484;
+  transition: font-size 0.5s;
+  margin-bottom: 0.3em;
+}
+
+.card-offer__options {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.card-offer__options__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card-offer__options .dropdown-link,
+.card-offer__options .btn {
+  color: var(--primary-500);
+}
+
+.card-offer__published {
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--text-color);
+  position: absolute;
+  left: 20px;
+  top: 16px;
+  z-index: 3;
+  transition: font-size 0.5s;
+}
+
+.wrapper-card__categories.card-offer__categories {
+  margin: 0;
+}
+
+.card-offer__categories .card-categories {
+  position: absolute;
+  left: 0;
+  padding: 0 20px;
+}
+
+.card-offer__categories .card-categories.hidden-categories {
+  bottom: 42px;
+  margin-bottom: 0;
+}
+
+.generic-card__actions.card-offer__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card-offer__actions {
+  flex: 1;
+}
+
+.card-offer__rating {
+  float: right;
+  height: 40px;
+  padding: 0px;
+  padding-right: 10px;
+}
+
+.card-offer-price-wrapper {
+  line-height: 40px;
+  float: right;
+  margin-right: 10px;
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+
+.card-offer-price {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.card-offer-old-price {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.2em;
+  text-decoration: line-through;
+}
+
+.card-offer-ribbon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -15px;
+  background: var(--primary-color);
+  color: var(--text-color);
+  line-height: 30px;
+  padding: 0 10px 0 20px;
+  font-family: var(--font-family);
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.card-offer-ribbon:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 10px;
+  border-color: transparent transparent transparent #fff;
+}

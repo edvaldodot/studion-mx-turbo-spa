@@ -1,0 +1,32 @@
+.avatar-like-in-post {
+  $size: 36px;
+  $speed: 0.1s;
+
+  display: flex;
+  div {
+    width: $size * 0.6;
+    transition: width $speed;
+    img,
+    .icon {
+      position: relative;
+      width: $size - 2px;
+      height: $size - 2px;
+      border: 2px solid var(--surface-border);
+      border-radius: 50%;
+      background-color: var(--surface-0);
+      transition: margin $speed;
+    }
+  }
+
+  &__tooltip {
+    p {
+      font-size: 0.7em;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .avatar-like-in-post {
+    $size: 26px;
+  }
+}

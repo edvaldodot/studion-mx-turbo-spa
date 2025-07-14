@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(0,0,0,0);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #FFF;
+      }
+    </style>
+  </defs>
+  <g id="ic_book_black_24px" transform="translate(3 3)">
+    <rect id="hit" class="cls-1" width="30" height="30" transform="translate(-3 -3)"/>
+    <path id="Path_774" data-name="Path 774" class="cls-2" d="M0,0H24V24H0Z"/>
+    <path id="Sala_de_aula" data-name="Sala de aula" class="cls-3" d="M14.749,7.908A3.362,3.362,0,0,0,18.066,4.2a3.328,3.328,0,1,0-3.317,3.707m0,3.9a14.891,14.891,0,0,0-9.61-3.951.43.43,0,0,0-.439.39V19.664a.385.385,0,0,0,.39.39,14.5,14.5,0,0,1,9.61,3.951,14.891,14.891,0,0,1,9.61-3.951.385.385,0,0,0,.39-.39V8.3a.373.373,0,0,0-.439-.39A14.551,14.551,0,0,0,14.749,11.81Z" transform="translate(-2.7 -0.248)"/>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "name": "Studion.mx",
+  "icons": [
+      {
+          "src": "/static/images/themes/default/ico/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+      }
+  ],
+  "theme_color": "#5C2E91",
+  "background_color": "#5C2E91"
+}

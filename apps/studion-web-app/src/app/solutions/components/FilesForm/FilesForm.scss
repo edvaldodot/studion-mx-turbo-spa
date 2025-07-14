@@ -1,0 +1,46 @@
+.files-form {
+  width: 100%;
+  margin: 0;
+
+  .form-item {
+    &.is-disabled:not(.theme-dark)  {
+      opacity: .3;
+
+      .form-input-file-label {
+        color: var(--primary-color);
+      }
+    }
+
+    .form-input-wrapper {
+      opacity: 0;
+    }
+  }
+
+  .datatable-wrapper {
+    &.is-disabled {
+      opacity: .5;
+    }
+
+    .datatable {
+      margin: 20px auto;
+    }
+
+    td {
+      .clamp-line {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        word-break: break-all;
+      }
+    }
+  }
+
+  .empty-message {
+    margin: 0 auto 20px;
+  }
+
+  &.theme-dark .form-input-messages-container {
+    color: var(--alert-900);
+  }
+}

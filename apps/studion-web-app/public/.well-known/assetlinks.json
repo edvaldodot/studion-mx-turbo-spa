@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.studionmx.senarfic.twa",
+      "sha256_cert_fingerprints": [
+        "F3:FB:D8:E9:BC:5C:10:81:BB:F7:4D:AC:D6:8B:40:8D:32:C4:4D:28:B3:2B:9D:B7:04:B9:F7:F5:FC:78:79:6C"
+      ]
+    }
+  }
+]

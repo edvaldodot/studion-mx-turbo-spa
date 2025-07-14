@@ -1,0 +1,105 @@
+.datatable__chat {
+  max-width: 100%;
+  position: relative;
+  overflow-y: auto;
+  .datatable {
+    .th:first-of-type,
+    .td:first-of-type {
+      padding-left: 15px;
+    }
+
+    .td {
+      height: 74px;
+
+    }
+
+    .th,
+    .td {
+      vertical-align: middle;
+      padding-right: 30px;
+    }
+  }
+}
+
+.management-chat__table {
+  $width: 100%;
+
+  .datatable {
+    width: $width;
+
+    .clamp-line {
+      word-break: keep-all;
+    }
+
+    th .clamp-line {
+      height: 55px;
+    }
+
+    .td-text {
+      line-height: 1.2;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+
+  .datatable-wrapper {
+    padding-bottom: 4px;
+
+    .tr-mobile {
+      display: grid;
+      grid-template-columns: auto auto;
+
+      .td:first-of-type,
+      .td:last-of-type,
+      .td {
+        border-radius: 0;
+      }
+
+      .td {
+        padding: 10px;
+      }
+
+      :nth-child(2n) {
+        &.td-actions {
+          display: flex;
+          justify-content: right;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 921px) and (max-width: 1220px) {
+  .datatable__chat .datatable {
+    .th,
+    .td {
+      padding-right: 20px;
+    }
+
+    .th:nth-child(4),
+    .td:nth-child(4) {
+      padding-right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .datatable__chat .datatable {
+    .td.td-actions .dropdown .icon {
+      margin-top: 15px;
+    }
+
+    .td:last-child {
+      padding-right: 0px;
+    }
+
+    .td-text {
+      line-height: 1.4em;
+    }
+
+    .td-text-header {
+      font-weight: bold;
+    }
+  }
+}

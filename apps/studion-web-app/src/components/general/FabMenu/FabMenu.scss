@@ -1,0 +1,145 @@
+.fabmenu {
+  &__area {
+    bottom: 13px;
+    right: 20px;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 10000;
+    touch-action: none;
+    -ms-touch-action: none;
+
+    &.draggin {
+      .fabmenu__button.options {
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+
+  &__tip {
+    background-color: #4c4c4c;
+    color: var(--text-color);
+    padding: 6px 12px 6px 10px;
+    border-radius: 4px;
+    position: fixed;
+    right: 76px;
+    bottom: 24px;
+    z-index: 99999;
+    width: max-content;
+    pointer-events: none;
+
+    .icon {
+      width: 12px;
+      height: 12px;
+      margin-right: 6px;
+    }
+  }
+
+  &__generic {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &.to-right {
+      align-items: flex-start;
+      transform: translateX(calc(100% - 49px));
+
+      .fabmenu__button {
+        flex-direction: row-reverse;
+      }
+    }
+
+    &.to-top {
+      flex-direction: column-reverse;
+      transform: translateY(calc(100% + 60px));
+
+      &.to-right {
+        transform: translate(calc(100% - 49px), calc(100% + 60px));
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: #fff;
+    margin: 8px 0;
+    background: var(--secondary-color);
+    border-radius: 20px;
+
+    &:disabled {
+      opacity: 0.5;
+    }
+
+    &.rotate {
+      .fabmenu__icon {
+        transform: rotateZ(180deg) scale(1.02);
+      }
+    }
+
+    &.normal {
+      .fabmenu__icon {
+        transform: rotateZ(0) scale(1.02);
+      }
+    }
+
+    &.options {
+      border-radius: 50%;
+      transition: all 0.25s ease-out;
+      transform: rotateZ(90deg);
+      margin: 0;
+      margin-top: 8px;
+
+      &.open {
+        transform: rotateZ(180deg);
+      }
+    }
+  }
+
+  &__label {
+    padding: 0 15px 0 20px;
+    color: #fff;
+    font-size: 1.6em;
+    line-height: 1;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: var(--accent-light-color);
+    transform: scale(1.02);
+
+    &.options {
+      height: 47.9px;
+      width: 47.9px;
+      border-radius: 50%;
+      background: var(--primary-color);
+    }
+
+    .icon {
+      max-width: 20px;
+
+      &.icon-chatbot-lamp {
+        max-width: 24px;
+        margin-left: 3px;
+      }
+    }
+  }
+}
+
+.fabmenu-transition-enter-active,
+.fabmenu-transition-leave-active {
+  transition: all 0.25s ease-out;
+}
+
+.fabmenu-transition-enter,
+.fabmenu-transition-leave-to {
+  opacity: 0;
+  transform: translateY(30px) scaleY(0.975);
+}

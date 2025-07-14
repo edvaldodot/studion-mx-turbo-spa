@@ -1,0 +1,51 @@
+{
+  "GET_ALL": [
+    {
+      "id": 1,
+      "course_id": null,
+      "category_id": 1,
+      "question": "Sed eum a et rem?",
+      "answer": "Deserunt mollit anim id est laborum.",
+      "position": 1,
+      "active": true,
+      "attachment": "02397423c09u20necu3.png"
+    },
+    {
+      "id": 2,
+      "course_id": 1,
+      "category_id": 2,
+      "question": "Sed eum a et rem?",
+      "answer": "Deserunt mollit anim id est laborum.",
+      "position": 2,
+      "active": true,
+      "attachment": "osdifmos09m03309.png"
+    }
+  ],
+  "GET_ONE": {
+    "id": 1,
+    "course_id": null,
+    "category_id": 1,
+    "question": "Sed eum a et rem?",
+    "answer": "Deserunt mollit anim id est laborum.",
+    "position": 1,
+    "active": true,
+    "attachment": "02397423c09u20necu3.png"
+  },
+  "FAQ_CATEGORIES": [
+    {
+      "id": 1,
+      "name": "SCORM",
+      "alias": "scorm"
+    },
+    {
+      "id": 2,
+      "name": "Communication Tools",
+      "alias": "communication-tools"
+    },
+    {
+      "id": 3,
+      "name": "Messages",
+      "alias": "messages"
+    }
+  ]
+}

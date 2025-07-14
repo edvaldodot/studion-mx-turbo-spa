@@ -1,0 +1,42 @@
+.notes-list {
+  .notes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+
+    @media screen and (max-width: 1024px) {
+      justify-content: center;
+    }
+
+    .note {
+      width: 220px;
+      height: 300px;
+    }
+  }
+
+  .open-note {
+    .note {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 99991;
+      width: 50vw;
+
+      .content {
+        min-height: 18em;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+    }
+  }
+}

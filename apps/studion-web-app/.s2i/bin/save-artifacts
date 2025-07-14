@@ -1,0 +1,6 @@
+#!/bin/sh
+
+if [ "$(ls /tmp/node_modules 2>/dev/null)" ]; then
+    cd /tmp 2>/dev/null
+    tar cf - node_modules
+fi

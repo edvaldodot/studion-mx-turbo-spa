@@ -1,0 +1,168 @@
+* {
+    --file-field-height: 45px;
+    --file-field-bg: var(--black-50);
+    --file-field-border: solid var(--black-100) 1px;
+    --file-field-border-radius: 8px;
+    --file-field-padding: 0px 0px 0px 15px;
+    --file-field-prepend-color: var(--black-800);
+    --file-field-append-color: var(--black-800);
+
+    --file-field-file-font-size: 16px;
+    --file-field-file-text-color: var(--black-800);
+    
+    --file-field-label-color: var(--black-800);
+    --file-field-label-font-size: 16px;
+    --file-field-label-font-weight: 500;
+    
+    --file-field-placeholder-color: var(--black-500);
+    --file-field-placeholder-font-size: 16px;
+    
+    --file-field-input-text-color: var(--black-800);
+    --file-field-input-font-size: 16px;
+    
+    --file-field-hint-color: var(--black-800);
+    --file-field-details-counter-color: var(--black-800);
+    
+    // password
+    --file-field-icon-visibility-color: var(--black-800);
+    
+    // file status disabled
+    --file-field-disabled-status-color: var(--black-400);
+}
+
+.file-field {
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    z-index: 1;
+    gap: 8px;
+    
+    &__label {
+        font-family: var(--font-family);
+        color: var(--file-field-label-color);
+        font-size: var(--file-field-label-font-size);
+        font-weight: var(--file-field-label-font-weight);
+        line-height: 16.8px;
+        text-transform: uppercase;
+        display: inline-block;
+        position: absolute;
+        padding: 12px 0;
+        cursor: pointer;
+        font-size: 1.6em;
+        font-weight: 900;
+        line-height: 1em;
+        z-index: 2;
+        left: 0;
+        top: 0;
+    }
+    &__wrapper {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--file-field-bg);
+        border: var(--file-field-border);
+        border-radius: var(--file-field-border-radius);
+        height: var(--file-field-height);
+        
+        input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: transparent;
+            padding: {
+                top: 13px;
+                bottom: 13px;
+                left: 13px;
+            }
+            font-size: var(--file-field-file-font-size);
+            color: var(--file-field-file-text-color);
+        }
+        input::placeholder {
+            font-size: var(--file-field-placeholder-font-size);
+            color: var(--file-field-placeholder-color);
+        }
+        input::-webkit-inner-spin-button {
+            appearance: none;
+        }
+        
+        input:is(input:disabled) {
+            &::placeholder {
+                font-size: var(--file-field-placeholder-font-size);
+                color: var(--file-field-placeholder-color);
+            }
+        }
+        
+        &:has(.wrapper__input:focus) {
+            border: solid var(--primary-color) 1px;
+        }
+        
+        input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 30px var(--file-field-bg) inset;
+        }
+    }
+    &__input {
+        position: absolute;
+        cursor: pointer;
+        z-index: 1;
+        left: 0;
+        top: 0;
+
+        &::file-selector-button {
+            display: none;
+        }
+    }
+    &__input-value {
+        font-family: var(--font-family);
+        color: var(--file-field-file-text-color);
+        font-size: var(--file-field-file-font-size);
+        font-weight: var(--file-field-label-font-weight);
+    }
+    &.--error {
+        --file-field-border: solid var(--error-900) 1px;
+        --file-field-hint-color: var(--error-900);
+        --file-field-input-text-color: var(--error-900);
+        --file-field-placeholder-color: var(--error-900);
+    }
+    &.--disabled {
+        --file-field-details-counter-color: var(--file-field-disabled-status-color);
+        --file-field-border: solid var(--file-field-disabled-status-color) 1px;
+        --file-field-hint-color: var(--file-field-disabled-status-color);
+        --file-field-input-text-color: var(--file-field-disabled-status-color);
+        --file-field-icon-visibility-color: var(--file-field-disabled-status-color);
+        --file-field-append-color: var(--file-field-disabled-status-color);
+        --file-field-prepend-color: var(--file-field-disabled-status-color);
+        
+        .file-field {
+            &__label {
+                pointer-events: none;
+            }
+            &__input {
+                pointer-events: none;
+                opacity: 0;
+            }
+            &__input-value {
+                --file-field-file-text-color: var(--file-field-disabled-status-color);
+                pointer-events: none;
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+    &.has-value {
+        --file-field-label-color: var(--file-field-disabled-status-color);
+        --file-field-details-counter-color: var(--file-field-disabled-status-color);
+        --file-field-border: solid var(--file-field-disabled-status-color) 1px;
+        --file-field-hint-color: var(--file-field-disabled-status-color);
+        --file-field-input-text-color: var(--file-field-disabled-status-color);
+        --file-field-icon-visibility-color: var(--file-field-disabled-status-color);
+        --file-field-append-color: var(--file-field-disabled-status-color);
+        --file-field-prepend-color: var(--file-field-disabled-status-color);
+    
+        .file-field {
+            &__input {
+                display: none;
+            }
+        }
+    }
+}

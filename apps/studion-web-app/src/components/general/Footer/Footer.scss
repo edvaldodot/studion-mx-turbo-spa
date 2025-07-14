@@ -1,0 +1,39 @@
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  color: var(--text-color);
+  text-align: center;
+
+  .logo-image {
+    width: 65px;
+    height: 13px;
+  }
+
+  .copyright {
+    display: block;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+
+  .footer.theme-dark {
+    color: var(--primary-700);
+  }
+
+  .help-link {
+    font-weight: bold;
+    opacity: 0.7;
+    color: unset;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding: 0 20px;
+
+    .copyright {
+      font-size: 0.8em;
+    }
+  }
+}

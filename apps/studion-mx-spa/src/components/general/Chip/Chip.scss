@@ -1,0 +1,21 @@
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 10rem;
+  width: 128px;
+  height: 40px;
+  font-family: var(--font-family);
+  font-size: 16px;
+
+  &.chip--primary {
+    background-color: var(--primary-color);
+    color: var(--text-contrast-primary-color);
+  }
+
+  &.chip--secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-contrast-secondary-color);
+  }
+}

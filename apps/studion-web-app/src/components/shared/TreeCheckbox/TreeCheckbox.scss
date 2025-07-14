@@ -1,0 +1,29 @@
+.checkbox-branches__header{
+  color: var(--text-color);
+
+  .checkbox-header__item p{
+    font-family: var(--font-family);
+    font-size: 1.6em;
+    margin-bottom: 14px;
+  }
+}
+.checkbox-branches__error{
+    font-family: var(--font-family);
+    color: var(--primary-500);
+    font-size: 1.6em;
+}
+
+.checkbox-branches{
+  .tree{
+    margin: 5em 0px 0px 0px;
+  }
+  .form-input-details{
+    margin-bottom: 5em;
+  }
+  &.theme-dark{
+    .form-input-messages-container{
+      color: var(--alert-900);
+    }
+    color: var(--primary-500);
+  }
+}

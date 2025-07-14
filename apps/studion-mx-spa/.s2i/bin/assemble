@@ -1,0 +1,24 @@
+#!/bin/sh
+echo -e "[`date '+%Y-%m-%d %H:%M:%S'`]" Build start...
+
+# download and install the latest version of Yarn if not already installed
+if ! command -v yarn >/dev/null 2>&1; then
+  echo -e "[`date '+%Y-%m-%d %H:%M:%S'`]" Installing Yarn...
+  npm i -g yarn
+fi
+
+# gather production data
+cd /opt/app-root/src
+
+mv /tmp/src/* ./
+
+echo -e "[`date '+%Y-%m-%d %H:%M:%S'`]" Cleaning yarn cache...
+yarn cache clean
+
+echo -e "[`date '+%Y-%m-%d %H:%M:%S'`]" Installing dependencies...
+yarn install
+DEP_RETVAL=$?
+
+# fixing permissions
+fix-permissions ./
+

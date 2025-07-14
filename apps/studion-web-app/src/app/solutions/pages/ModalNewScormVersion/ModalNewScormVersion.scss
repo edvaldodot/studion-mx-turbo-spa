@@ -1,0 +1,23 @@
+.modal-scorm-version {
+  .scorm-version-list {
+    max-width: 480px;
+
+    margin: auto;
+    margin-top: 80px;
+
+    &__current {
+      .datatable-wrapper .datatable .td {
+        border: none;
+      }
+    }
+
+    .datatable-wrapper {
+      padding: 0;
+    }
+
+    h3 {
+      color: var(--text-color);
+      margin-bottom: 2em;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "dashboard:card.2.title": "O seu curso está disponível na opção salas de aula",
+  "dashboard:card.2.description": "Aproveite para conhecer um pouco mais sobre o universo do intercambista e descobrir como aproveitar melhor um intercâmbio com o curso que preparamos pra você. Bons estudos!",
+  "dashboard:card.2.description.2": "<strong>Em caso de dúvidas, fale com a gente através do e-mail: suporte_cursosbr@universia.com.br</strong>",
+  "dashboard.profile.new:modal.description.1": "Sabemos que você quer iniciar logo suas atividades, mas para você poder tirar o máximo proveito da plataforma, siga as instruções abaixo:",
+  "auth.username.recovery.confirm:message": "Logo mais ele já deve estar na sua caixa de entrada do e-mail <b>{email}</b>. Caso não consiga achar, cheque sua caixa de spam ou a lixeira. Se mesmo assim não localizar a mensagem, clique no botão <b>REENVIAR MENSAGEM</b>, logo abaixo ou entre em contato com a gente pelo e-mail <a href='suporte_cursosbr@universia.com.br'>suporte_cursosbr@universia.com.br</a>.",
+  "auth.recovery.confirm:msg.2": "<b>Caso não tenha recebido o e-mail</b>, cheque a lixeira ou sua caixa de spam ou entre em contato com a gente pelo e-mail <a href='suporte_cursosbr@universia.com.br'><strong>suporte_cursosbr@universia.com.br</strong></a>",
+  "classroom.panel.dashboard:announcements.empty.title": "Bem-vindo ao curso Experiência Internacional do Santander Universidades!",
+  "classroom.panel.dashboard:announcements.empty.description.1": "Você que se inscreveu no programa <strong>Santander Ibero-Americanas 2020</strong> está pronto para começar o seu intercâmbio sem sair de casa? Clique no botão “Acesse as suas aulas” e comece a sua jornada! Em caso de dúvidas, fale com a gente: <strong>suporte_cursosbr@universia.com.br</strong>.",
+  "classroom.messages.inbox:empty.title": "Em caso de dúvidas, fale com a gente: suporte_cursosbr@universia.com.br",
+  "classroom.messages.inbox:empty.message": "",
+  "classroom.messages.sent:empty.title": "Em caso de dúvidas, fale com a gente: suporte_cursosbr@universia.com.br",
+  "classroom.messages.sent:empty.message": "",
+  "classroom.messages.draft:empty.title": "Em caso de dúvidas, fale com a gente: suporte_cursosbr@universia.com.br",
+  "classroom.messages.draft:empty.message": "",
+  "classroom.messages.trash:empty.title": "Em caso de dúvidas, fale com a gente: suporte_cursosbr@universia.com.br"
+}

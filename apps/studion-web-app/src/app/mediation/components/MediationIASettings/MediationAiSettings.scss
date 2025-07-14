@@ -1,0 +1,15 @@
+.mediation-ia-settings {
+  &__data {
+    border-radius: 8px;
+    padding: 12px;
+    background-color: var(--gray);
+  }
+
+  .modal-confirm {
+    border-top: 8px solid var(--primary-color);
+  }
+
+  .modal-confirm-actions {
+    text-align: center;
+  }
+}

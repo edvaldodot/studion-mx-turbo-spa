@@ -1,0 +1,135 @@
+.modal-datatable-projetc {
+  .datatable-with-collapse {
+    .dttable {
+      padding: 0;
+
+      .tr-mobile {
+        display: grid;
+        grid-template-columns: 50% auto;
+
+        :nth-child(2n) {
+          &.td-actions {
+            display: flex;
+            justify-content: right;
+            width: 100%;
+          }
+
+          .dropdown-content {
+            left: auto;
+            right: 0;
+          }
+        }
+      }
+
+      .tr-parent-dropdown {
+        &.is-open {
+          background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        > td {
+          height: 75px;
+          .td-text {
+            &.clamp-line {
+              &.not-group {
+                background: var(--surface-0);
+                border-radius: 50px;
+                padding: 7px 32px;
+                width: 170px;
+                p {
+                  text-align: center;
+                  font-size: 12px;
+                  font-weight: bold;
+                  color: var(--text-dark);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .tr-dropdown {
+        .td-dropdown {
+          padding: 0;
+        }
+
+        .tr-dropdown-content {
+          background-color: rgba(0, 0, 0, 0.03);
+        }
+
+        &:not(.is-open) {
+          .td-dropdown {
+            border: none;
+          }
+        }
+      }
+
+      &.details {
+        .th {
+          padding-bottom: 0;
+          font-size: 1.4em;
+        }
+
+        td {
+          height: 75px;
+        }
+
+        .datatable-inner .datatable {
+          margin: 15px 0 0;
+
+          th:first-of-type,
+          td:first-of-type {
+            padding-left: 10px;
+          }
+
+          tbody:not(:last-child) {
+            tr td {
+              border-bottom: 1px solid var(--surface-border);
+            }
+          }
+        }
+      }
+
+      .btn-flat {
+        font-size: 1.4em;
+      }
+
+      @media screen and (max-width: 1023px) {
+        .tr-mobile {
+          border-bottom: 1px solid var(--surface-border);
+        }
+
+        &.details {
+          td {
+            height: unset;
+          }
+
+          .datatable-inner .datatable {
+            margin: 15px 0 0;
+
+            th:first-of-type,
+            td:first-of-type {
+              padding-left: 0;
+            }
+
+            tbody {
+              &:not(:last-child) {
+                tr td {
+                  border: 0;
+                }
+              }
+
+              tr {
+                padding: 0 10px;
+              }
+            }
+          }
+        }
+
+        .btn-flat {
+          font-size: 1.2em;
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}

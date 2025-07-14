@@ -1,0 +1,64 @@
+.nps-card {
+  background: #fff;
+  height: auto;
+  width: 90%;
+  border-radius: 10px;
+  padding-top: 10px;
+
+  .form-section {
+    border-bottom: 2px solid #e5e5e5;
+    margin-bottom: 10px;
+
+    &:first-of-type {
+      padding-top: 20px;
+    }
+
+    .text-description {
+      margin-bottom: 5px;
+
+      p {
+        font-weight: 300;
+        font-size: 16px;
+
+        &:last-of-type {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .config-form-title {
+    font-size: 20px;
+    text-transform: none;
+    margin-bottom: 15px;
+  }
+
+  .form-number-days-nps {
+    margin-top: 0;
+    width: 200px;
+  }
+
+  .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .content-survey-nps {
+    flex-grow: 1;
+  }
+
+  .check-enable-nps-item {
+    flex-shrink: 0;
+  }
+
+  .nps-controls-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .form-nps-last-section{
+    border-bottom: none;
+  }
+}

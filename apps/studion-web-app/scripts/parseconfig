@@ -1,0 +1,38 @@
+#!/usr/local/bin/node
+
+const fs = require('fs')
+const configPath = '/opt/app-root/src/configs'
+const isDevEnv = process.env.ENV_ALIAS === 'dev'
+const projectVars = [
+  'API_URL',
+  'FACEBADGE_URL',
+  'OAUTH_REDIRECT_URI',
+  'APP_KEY',
+  'APP_SECRET',
+  'THEME_NAME',
+  'THEME_COLOR',
+  'DEFAULT_ACCESSIBILITY',
+  'DEFAULT_LANGUAGE',
+  'DEFAULT_CURRENCY',
+  'DEFAULT_CURRENCY_SEPARATOR',
+  'GAMIFICATION_API_URL',
+  'GAMIFICATION_ADMIN_USER',
+  'GAMIFICATION_ADMIN_PASSWORD',
+  'HIDDEN_MENU_ITEMS',
+  'USER_INFO_READONLY',
+  'WHITE_LABEL',
+  'GAMIFICATION_ENABLE',
+  'REDIRECT_URL'
+]
+const configFileContent = projectVars.map(entry => {
+  let envEntry = process.env[entry]
+
+  if (envEntry === 'true') envEntry = true
+  if (envEntry === 'false') envEntry = false
+
+  return envEntry ? `export const ${entry} = '${envEntry}'` : null
+}).filter(entry => entry)
+
+if (Boolean(configFileContent.length) && !isDevEnv) {
+  fs.writeFileSync('src/config.js', configFileContent.join('\n') + '\n')
+}

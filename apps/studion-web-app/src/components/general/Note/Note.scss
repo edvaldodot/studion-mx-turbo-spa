@@ -1,0 +1,73 @@
+.note {
+  background-color: var(--secondary-700);
+  border-radius: 8px;
+  padding: 18px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+  justify-content: space-between;
+  color: var(--text-contrast-primary-color);
+
+  .note-options {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
+
+  .icon-wrapper {
+    cursor: pointer;
+  }
+
+  .note-main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .origin {
+      font-size: 1.4em;
+      color: var(--text-contrast-primary-color);
+    }
+
+    .title {
+      border-bottom: 1px solid var(--black-300);
+      padding-bottom: 8px;
+    }
+
+    .title,
+    .content {
+      font-size: 1.6em;
+    }
+
+    .content.--clamp {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  .note-footer {
+    color: var(--text-contrast-primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+
+  &.--list-mode {
+    cursor: pointer;
+  }
+
+  &.--view-mode {
+    .note-footer-info {
+      justify-content: space-between;
+      flex-direction: initial;
+    }
+  }
+}

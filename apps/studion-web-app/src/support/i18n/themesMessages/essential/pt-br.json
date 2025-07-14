@@ -1,0 +1,11 @@
+{
+  "global:menu.classroom": "Conteúdos",
+  "global:menu.faq": "Dúvidas frequentes",
+  "dashboard:card.2.title": "Acesse os Conteúdos",
+  "dashboard:card.2.description": "O seu curso está disponível. Você pode navegar pelo conteúdo e tirar suas dúvidas com a nossa equipe. Desejamos que você tenha uma ótima experiência",
+  "dashboard:card.2.btn.text": "Acesse os Conteúdos",
+  "classroom:header.title": "Conteúdos",
+  "classroom:header.description": "Clique sobre a Solução Educacional para realizar o acesso.",
+  "global:menu.classroom.lessons": "Conteúdos",
+  "global:menu.classroom.logout": "Sair do módulo"
+}

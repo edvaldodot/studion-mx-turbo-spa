@@ -1,0 +1,2809 @@
+{
+  "dot": {
+    "student": [
+      {
+        "image": "/assets/images/themes/dot/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/dot/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/dot/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/dot/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "escola-de-negocios": {
+    "student": [
+      {
+        "image": "/assets/images/themes/escola-de-negocios/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/escola-de-negocios/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/escola-de-negocios/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/escola-de-negocios/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "etec": {
+    "student": [
+      {
+        "image": "/assets/images/themes/etec/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/etec/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/etec/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/etec/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "biosyn": {
+    "student": [
+      {
+        "image": "/assets/images/themes/biosyn/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/biosyn/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/biosyn/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/biosyn/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "algar": {
+    "student": [
+      {
+        "image": "/assets/images/themes/algar/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/algar/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/algar/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/algar/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+
+  "ciittaa": {
+    "student": [
+      {
+        "image": "/assets/images/themes/ciittaa/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/ciittaa/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/ciittaa/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/ciittaa/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "jti": {
+    "student": [
+      {
+        "image": "/assets/images/themes/jti/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/jti/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/jti/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/jti/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "universidade-premierpet": {
+    "student": [
+      {
+        "image": "/assets/images/themes/universidade-premierpet/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/universidade-premierpet/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/universidade-premierpet/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/universidade-premierpet/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "cia-athletica": {
+    "student": [
+      {
+        "image": "/assets/images/themes/cia-athletica/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/cia-athletica/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/cia-athletica/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/cia-athletica/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "banco-mundial": {
+    "student": [
+      {
+        "image": "/assets/images/themes/banco-mundial/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/banco-mundial/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/banco-mundial/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/banco-mundial/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "agro-advance": {
+    "student": [
+      {
+        "image": "/assets/images/themes/agro-advance/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/agro-advance/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/agro-advance/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/agro-advance/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+
+  "prosperare": {
+    "student": [
+      {
+        "image": "/assets/images/themes/prosperare/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/prosperare/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/prosperare/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/prosperare/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "bayer-loja-propria": {
+    "student": [
+      {
+        "image": "/assets/images/themes/bayer-loja-propria/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/bayer-loja-propria/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/bayer-loja-propria/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/bayer-loja-propria/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "gotomkt": {
+    "student": [
+      {
+        "image": "/assets/images/themes/gotomkt/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/gotomkt/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/gotomkt/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/gotomkt/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "senar-go": {
+    "student": [
+      {
+        "image": "/assets/images/themes/senar-go/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/senar-go/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/senar-go/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/senar-go/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "senar-qualifica": {
+    "student": [
+      {
+        "image": "/assets/images/themes/senar-qualifica/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/senar-qualifica/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/senar-qualifica/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/senar-qualifica/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "senarms": {
+    "student": [
+      {
+        "image": "/assets/images/themes/senarms/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/senarms/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/senarms/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/senarms/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "senarba": {
+    "student": [
+      {
+        "image": "/assets/images/themes/senarba/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/senarba/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/senarba/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/senarba/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "forquimica": {
+    "student": [
+      {
+        "image": "/assets/images/themes/forquimica/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/forquimica/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/forquimica/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/forquimica/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "forma-escoop": {
+    "student": [
+      {
+        "image": "/assets/images/themes/forma-escoop/dashboard/ofertas_aluno.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/forma-escoop/dashboard/sala_de_aula_aluno.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/forma-escoop/dashboard/ofertas_admin.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/forma-escoop/dashboard/sala_de_aula_admin.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "alliance-one": {
+    "student": [
+      {
+        "image": "/assets/images/themes/alliance-one/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/alliance-one/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/alliance-one/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/alliance-one/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "tivit": [
+    {
+      "image": "/assets/images/themes/tivit/bkg/tivit_banner.png"
+    }
+  ],
+  "embratur": [
+    {
+      "image": "/assets/images/themes/embratur/fto/ofertas_aluno.png",
+      "url": {
+        "name": "classroom.index"
+      }
+    }
+  ],
+  "embratur-pt": [
+    {
+      "image": "/assets/images/themes/embratur-pt/gif/20191016_EMBRATUR_Banner_Interno_StudiOn_BR_LN.gif",
+      "url": {
+        "name": "classroom.index"
+      }
+    }
+  ],
+  "embratur-en": [
+    {
+      "image": "/assets/images/themes/embratur-en/gif/20191016_EMBRATUR_Banner_Interno_StudiOn_ING_LN.gif",
+      "url": {
+        "name": "classroom.index"
+      }
+    }
+  ],
+  "embratur-es": [
+    {
+      "image": "/assets/images/themes/embratur-es/gif/20191016_EMBRATUR_Banner_Interno_StudiOn_ESP_LN.gif",
+      "url": {
+        "name": "classroom.index"
+      }
+    }
+  ],
+  "embratur-zh-CN": [
+    {
+      "image": "/assets/images/themes/embratur-zh-CN/gif/20191016_EMBRATUR_Banner_Interno_StudiOn_MAN_LN.gif",
+      "url": {
+        "name": "classroom.index"
+      }
+    }
+  ],
+  "bbseguros": {
+    "student": [
+      {
+        "image": "/assets/images/themes/bbseguros/jpg/ofertas_aluno.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/bbseguros/png/sala_de_aula_aluno.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/bbseguros/jpg/ofertas_admin.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/bbseguros/png/sala_de_aula_admin.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "casadopapel": {
+    "student": [
+      {
+        "image": "/assets/images/themes/casadopapel/dashboard/ofertas_aluno.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/casadopapel/dashboard/sala_de_aula_aluno.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/casadopapel/dashboard/ofertas_admin.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/casadopapel/dashboard/sala_de_aula_admin.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "annapegova": [
+    {
+      "image": "/assets/images/themes/annapegova/png/ofertas-dashboard.png",
+      "url": {
+        "name": "offerings.list"
+      }
+    }
+  ],
+  "indasa": {
+    "student": [
+      {
+        "image": "/assets/images/themes/indasa/jpg/ofertas_aluno.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/indasa/jpg/sala_de_aula_aluno.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/indasa/jpg/ofertas_admin.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/indasa/jpg/sala_de_aula_admin.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "mente-extrema": {
+    "student": [
+      {
+        "image": "/assets/images/themes/mente-extrema/dashboard/ofertas_aluno.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/mente-extrema/dashboard/sala_de_aula_aluno.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/mente-extrema/dashboard/ofertas_admin.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/mente-extrema/dashboard/sala_de_aula_admin.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "comerc": [
+    {
+      "image": "/assets/images/themes/comerc/png/comerc-dashboard1.png",
+      "url": {
+        "name": "offerings.list"
+      }
+    }
+  ],
+  "finanto": {
+    "student": [
+      {
+        "image": "/assets/images/themes/finanto/dashboard/ofertas_aluno.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/finanto/dashboard/sala_de_aula_aluno.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/finanto/dashboard/ofertas_admin.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/finanto/dashboard/sala_de_aula_admin.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "pagbank": {
+    "student": [
+      {
+        "image": "/assets/images/themes/pagbank/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/pagbank/dashboard/dashboard-offering.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/pagbank/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/pagbank/dashboard/dashboard-classroom.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/pagbank/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/pagbank/dashboard/dashboard-offering.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/pagbank/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/pagbank/dashboard/dashboard-classroom.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "paripassu": {
+    "student": [
+      {
+        "image": "/assets/images/themes/paripassu/jpg/ofertas_aluno.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/paripassu/jpg/sala_de_aula_aluno.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/paripassu/jpg/ofertas_admin.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/paripassu/jpg/sala_de_aula_admin.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "safra": {
+    "student": [
+      {
+        "type": "card",
+        "image": "/assets/images/themes/safra/png/journey_banner.png",
+        "url": "https://jsacademy.dotgroup.com.br/offerings/2490",
+        "title": "dashboard:banners.journey.title",
+        "description": "dashboard:banners.journey.description"
+      }
+    ],
+    "managers": [
+      {
+        "type": "card",
+        "image": "/assets/images/themes/safra/png/journey_banner.png",
+        "url": "https://jsacademy.dotgroup.com.br/offerings/2490",
+        "title": "dashboard:banners.journey.title",
+        "description": "dashboard:banners.journey.description"
+      }
+    ]
+  },
+  "safra-v2": {
+    "student": [
+      {
+        "type": "card",
+        "image": "/assets/images/themes/safra-v2/png/journey_banner.png",
+        "url": "https://jsacademy.dotgroup.com.br/offerings/2490",
+        "title": "dashboard:banners.journey.title",
+        "description": "dashboard:banners.journey.description"
+      }
+    ],
+    "managers": [
+      {
+        "type": "card",
+        "image": "/assets/images/themes/safra-v2/png/journey_banner.png",
+        "url": "https://jsacademy.dotgroup.com.br/offerings/2490",
+        "title": "dashboard:banners.journey.title",
+        "description": "dashboard:banners.journey.description"
+      }
+    ]
+  },
+  "quanta": {
+    "student": [
+      {
+        "image": "/assets/images/themes/quanta/dashboard/ofertas_aluno.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/quanta/dashboard/sala_de_aula_aluno.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/quanta/dashboard/ofertas_admin.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/quanta/dashboard/sala_de_aula_admin.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "DEM": {
+    "student": [
+      {
+        "image": "/assets/images/themes/DEM/dashboard/ofertas_aluno.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/DEM/dashboard/sala_de_aula_aluno.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/DEM/dashboard/ofertas_admin.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/DEM/dashboard/sala_de_aula_admin.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "universia": [
+    {
+      "image": "/assets/images/themes/universia/dashboard/sala_de_aula_dashboard.png",
+      "url": {
+        "name": "classroom.index"
+      }
+    }
+  ],
+  "zurich": {
+    "student": [
+      {
+        "image": "/assets/images/themes/zurich/dashboard/sala_de_aula_aluno.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/zurich/dashboard/ofertas_admin.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      }
+    ]
+  },
+  "similarweb": {
+    "student": [
+      {
+        "image": "/assets/images/themes/similarweb/dashboard/ofertas_aluno.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/similarweb/dashboard/sala_de_aula_aluno.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/similarweb/dashboard/ofertas_admin.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/similarweb/dashboard/sala_de_aula_admin.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "governoangola": {
+    "student": [
+      {
+        "image": "/assets/images/themes/governoangola/dashboard/ofertas_aluno.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/governoangola/dashboard/sala_de_aula_aluno.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/governoangola/dashboard/ofertas_admin.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/governoangola/dashboard/sala_de_aula_admin.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "sena": {
+    "student": [
+      {
+        "image": "/assets/images/themes/sena/dashboard/ofertas_aluno.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/sena/dashboard/sala_de_aula_aluno.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/sena/dashboard/ofertas_admin.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/sena/dashboard/sala_de_aula_admin.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "senar": {
+    "student": [
+      {
+        "image": "/assets/images/themes/senar/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/senar/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/senar/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/senar/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "senarsc": {
+    "student": [
+      {
+        "image": "/assets/images/themes/senarsc/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/senarsc/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/senarsc/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/senarsc/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "essential": [
+    {
+      "image": "/assets/images/themes/essential/dashboard/essential-dashboard1.png"
+    }
+  ],
+  "ANPG": {
+    "student": [
+      {
+        "image": "/assets/images/themes/ANPG/dashboard/ofertas_aluno.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/ANPG/dashboard/sala_de_aula_aluno.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/ANPG/dashboard/ofertas_admin.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/ANPG/dashboard/sala_de_aula_admin.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "audaces": {
+    "student": [
+      {
+        "image": "/assets/images/themes/audaces/dashboard/ofertas_aluno.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/audaces/dashboard/sala_de_aula_aluno.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/audaces/dashboard/ofertas_admin.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/audaces/dashboard/sala_de_aula_admin.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "enlizt": [
+    {
+      "image": "/assets/images/themes/enlizt/dashboard/enlizt-dashboard1.png",
+      "url": {
+        "name": "classroom.index"
+      }
+    }
+  ],
+  "dot-vantagem": {
+    "student": [
+      {
+        "image": "/assets/images/themes/dot-vantagem/dashboard/ofertas_aluno.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/dot-vantagem/dashboard/sala_de_aula_aluno.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/dot-vantagem/dashboard/ofertas_admin.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/dot-vantagem/dashboard/sala_de_aula_admin.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "plus-capital": {
+    "student": [
+      {
+        "image": "/assets/images/themes/plus-capital/dashboard/ofertas_aluno.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/plus-capital/dashboard/sala_de_aula_aluno.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/plus-capital/dashboard/ofertas_admin.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/plus-capital/dashboard/sala_de_aula_admin.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "geracao-agro": {
+    "student": [
+      {
+        "image": "/assets/images/themes/geracao-agro/dashboard/ofertas_aluno.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/geracao-agro/dashboard/sala_de_aula_aluno.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/geracao-agro/dashboard/ofertas_admin.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/geracao-agro/dashboard/sala_de_aula_admin.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "loft": {
+    "student": [
+      {
+        "image": "/assets/images/themes/loft/dashboard/ofertas_aluno.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/loft/dashboard/sala_de_aula_aluno.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/loft/dashboard/ofertas_admin.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/loft/dashboard/sala_de_aula_admin.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "sebraesc-delas": {
+    "student": [
+      {
+        "image": "/assets/images/themes/sebraesc-delas/dashboard/ofertas_aluno.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/sebraesc-delas/dashboard/sala_de_aula_aluno.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/sebraesc-delas/dashboard/ofertas_admin.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/sebraesc-delas/dashboard/sala_de_aula_admin.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "ibkl": {
+    "student": [
+      {
+        "image": "/assets/images/themes/ibkl/dashboard/ofertas_aluno.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/ibkl/dashboard/sala_de_aula_aluno.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/ibkl/dashboard/ofertas_admin.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/ibkl/dashboard/sala_de_aula_admin.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "sabia": {
+    "student": [
+      {
+        "image": "/assets/images/themes/sabia/dashboard/ofertas_aluno.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/sabia/dashboard/sala_de_aula_aluno.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/sabia/dashboard/ofertas_admin.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/sabia/dashboard/sala_de_aula_admin.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "bayer": {
+    "student": [
+      {
+        "image": "/assets/images/themes/bayer/dashboard/ofertas_aluno.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/bayer/dashboard/sala_de_aula_aluno.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/bayer/dashboard/ofertas_admin.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/bayer/dashboard/sala_de_aula_admin.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "bayer-cigarrinha": {
+    "student": [
+      {
+        "image": "/assets/images/themes/bayer-cigarrinha/dashboard/ofertas_aluno.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/bayer-cigarrinha/dashboard/sala_de_aula_aluno.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/bayer-cigarrinha/dashboard/ofertas_admin.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/bayer-cigarrinha/dashboard/sala_de_aula_admin.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "kenmare": {
+    "student": [
+      {
+        "image": "/assets/images/themes/kenmare/dashboard/ofertas_aluno.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/kenmare/dashboard/sala_de_aula_aluno.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/kenmare/dashboard/ofertas_admin.png",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/kenmare/dashboard/sala_de_aula_admin.png",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "studionmx": {
+    "student": [
+      {
+        "image": "/assets/images/themes/studionmx/dashboard/ofertas_aluno.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/studionmx/dashboard/sala_de_aula_aluno.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/studionmx/dashboard/ofertas_admin.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/studionmx/dashboard/sala_de_aula_admin.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "remax": {
+    "student": [
+      {
+        "image": "/assets/images/themes/remax/jpg/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/remax/jpg/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/remax/jpg/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/remax/jpg/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "schuster": {
+    "student": [
+      {
+        "image": "/assets/images/themes/schuster/png/ofertas_aluno.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/schuster/png/sala_de_aula_aluno.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/schuster/png/ofertas_admin.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/schuster/png/sala_de_aula_admin.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "sestsenat": {
+    "student": [
+      {
+        "image": "/assets/images/themes/sestsenat/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/sestsenat/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/sestsenat/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/sestsenat/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "winningbydesign": {
+    "student": [
+      {
+        "image": "/assets/images/themes/winningbydesign/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/winningbydesign/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/winningbydesign/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/winningbydesign/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "sebraedelassc": {
+    "student": [
+      {
+        "image": "/assets/images/themes/sebraedelassc/dashboard/ofertas_aluno.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/sebraedelassc/dashboard/sala_de_aula_aluno.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/sebraedelassc/dashboard/ofertas_admin.jpg",
+        "url": {
+          "name": "offerings.list"
+        }
+      },
+      {
+        "image": "/assets/images/themes/sebraedelassc/dashboard/sala_de_aula_admin.jpg",
+        "url": {
+          "name": "classroom.index"
+        }
+      }
+    ]
+  },
+  "unicesumar": {
+    "student": [
+      {
+        "image": "/assets/images/themes/unicesumar/dashboard/ofertas_aluno.png",
+        "card_image": "/assets/images/themes/unicesumar/dashboard/dashboard-offering.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/unicesumar/dashboard/sala_de_aula_aluno.png",
+        "card_image": "/assets/images/themes/unicesumar/dashboard/dashboard-classroom.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/unicesumar/dashboard/ofertas_admin.png",
+        "card_image": "/assets/images/themes/unicesumar/dashboard/dashboard-offering.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/unicesumar/dashboard/sala_de_aula_admin.png",
+        "card_image": "/assets/images/themes/unicesumar/dashboard/dashboard-classroom.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "unicred": {
+    "student": [
+      {
+        "image": "/assets/images/themes/unicred/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/unicred/dashboard/ofertas.jpg",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/unicred/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/unicred/dashboard/sala_de_aula.jpg",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/unicred/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/unicred/dashboard/ofertas.jpg",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/unicred/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/unicred/dashboard/sala_de_aula.jpg",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "sescoop": {
+    "student": [
+      {
+        "image": "/assets/images/themes/sescoop/dashboard/ofertas_aluno.png",
+        "card_image": "/assets/images/themes/sescoop/dashboard/dashboard-offering.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/sescoop/dashboard/sala_de_aula_aluno.png",
+        "card_image": "/assets/images/themes/sescoop/dashboard/dashboard-classroom.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/sescoop/dashboard/ofertas_admin.png",
+        "card_image": "/assets/images/themes/sescoop/dashboard/dashboard-offering.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/sescoop/dashboard/sala_de_aula_admin.png",
+        "card_image": "/assets/images/themes/sescoop/dashboard/dashboard-classroom.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "escoop": {
+    "student": [
+      {
+        "image": "/assets/images/themes/escoop/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/escoop/dashboard/dashboard-offering.jpg",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/escoop/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/escoop/dashboard/dashboard-classroom.jpg",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/escoop/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/escoop/dashboard/dashboard-offering.jpg",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/escoop/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/escoop/dashboard/dashboard-classroom.jpg",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "fabercastell": {
+    "student": [
+      {
+        "image": "/assets/images/themes/fabercastell/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/fabercastell/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/fabercastell/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/fabercastell/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "vitru": {
+    "student": [
+      {
+        "image": "/assets/images/themes/vitru/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/vitru/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/vitru/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/vitru/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "gympass": {
+    "student": [
+      {
+        "image": "/assets/images/themes/gympass/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/gympass/dashboard/ofertas.jpg",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/gympass/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/gympass/dashboard/sala_de_aula.jpg",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/gympass/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/gympass/dashboard/ofertas.jpg",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/gympass/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/gympass/dashboard/sala_de_aula.jpg",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "sommait": {
+    "student": [
+      {
+        "image": "/assets/images/themes/sommait/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/sommait/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/sommait/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/sommait/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "falconi": {
+    "student": [
+      {
+        "image": "/assets/images/themes/falconi/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/falconi/dashboard/ofertas.jpg",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/falconi/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/falconi/dashboard/sala_de_aula.jpg",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/falconi/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/falconi/dashboard/ofertas.jpg",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/falconi/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/falconi/dashboard/sala_de_aula.jpg",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "alice": {
+    "student": [
+      {
+        "image": "/assets/images/themes/alice/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/alice/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/alice/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/alice/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+
+  "default": {
+    "student": [
+      {
+        "image": "/assets/images/themes/default/fto/ofertas_aluno.png",
+        "card_image": "/assets/images/themes/default/fto/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/default/fto/sala_de_aula_aluno.png",
+        "card_image": "/assets/images/themes/default/fto/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/default/fto/ofertas_admin.png",
+        "card_image": "/assets/images/themes/default/fto/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/default/fto/sala_de_aula_admin.png",
+        "card_image": "/assets/images/themes/default/fto/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "cisru": {
+    "student": [
+      {
+        "image": "/assets/images/themes/cisru/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/default/fto/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/cisru/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/default/fto/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/cisru/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/default/fto/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/cisru/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/default/fto/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "uniasselvi": {
+    "student": [
+      {
+        "image": "/assets/images/themes/uniasselvi/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/uniasselvi/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/uniasselvi/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/uniasselvi/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "wikipet": {
+    "student": [
+      {
+        "image": "/assets/images/themes/wikipet/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/wikipet/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/wikipet/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/wikipet/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "sescoop-parana": {
+    "student": [
+      {
+        "image": "/assets/images/themes/sescoop-parana/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/sescoop-parana/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/sescoop-parana/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/sescoop-parana/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "sebrae-mt": {
+    "student": [
+      {
+        "image": "/assets/images/themes/sebrae-mt/dashboard/ofertas_aluno.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/sebrae-mt/dashboard/sala_de_aula_aluno.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/sebrae-mt/dashboard/ofertas_admin.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/sebrae-mt/dashboard/sala_de_aula_admin.png",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  },
+  "caixa": {
+    "student": [
+      {
+        "image": "/assets/images/themes/caixa/dashboard/ofertas_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.student.1.title",
+        "description": "dashboard:banners.default.student.1.description"
+      },
+      {
+        "image": "/assets/images/themes/caixa/dashboard/sala_de_aula_aluno.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.student.2.title",
+        "description": "dashboard:banners.default.student.2.description"
+      }
+    ],
+    "managers": [
+      {
+        "image": "/assets/images/themes/caixa/dashboard/ofertas_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/ofertas.png",
+        "url": {
+          "name": "offerings.list"
+        },
+        "title": "dashboard:banners.default.managers.1.title",
+        "description": "dashboard:banners.default.managers.1.description"
+      },
+      {
+        "image": "/assets/images/themes/caixa/dashboard/sala_de_aula_admin.jpg",
+        "card_image": "/assets/images/themes/studionmx/dashboard/sala_de_aula.png",
+        "url": {
+          "name": "classroom.index"
+        },
+        "title": "dashboard:banners.default.managers.2.title",
+        "description": "dashboard:banners.default.managers.2.description"
+      }
+    ]
+  }
+}

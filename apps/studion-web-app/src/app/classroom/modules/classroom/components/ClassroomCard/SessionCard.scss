@@ -1,0 +1,15 @@
+.session-card__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+
+  .classroom-card__type {
+    padding-right: 10px;
+  }
+}
+
+.btn-show-details{
+  &.reenroll{
+    margin-left: 40px;
+  }
+}

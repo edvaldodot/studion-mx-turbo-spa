@@ -1,0 +1,434 @@
+.featured-content,
+.dashboard-news {
+  position: relative;
+
+  .VueCarousel-wrapper {
+    padding-top: 18px;
+  }
+}
+
+.center .dashboard-layout .featured-content {
+  height: 100%;
+}
+
+.featured-content .tabs {
+  margin-bottom: 2em;
+}
+
+.featured-content .tabs-link.is-active:after {
+  background: var(--dashboard-tabs-active-decoration-color);
+}
+
+.featured-content-container {
+  .actions-group {
+    min-height: 24px;
+    margin-bottom: 2em;
+  }
+
+  .actions-group .btn {
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+
+.featured-content .empty-message {
+  height: 79%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.featured-content .carousel {
+  position: relative;
+}
+
+.featured-content .carousel__navs {
+  margin: 15px 0 0;
+  justify-content: flex-end;
+}
+
+.featured-content .cart-title {
+  max-height: 46px;
+  overflow: hidden;
+}
+.student-progress__actions {
+  font-size: 14px;
+  text-transform: initial;
+  font-family: var(--font-family);
+  font-weight: bold;
+}
+.content-progress--empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: var(--dashboard-empty-box-text-color);
+  height: 285px;
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+}
+.content-progress--empty::before {
+  content: '';
+  position: absolute;
+  height: 285px;
+  width: 100%;
+  opacity: 0.16;
+  border-radius: 10px;
+}
+.content-progress__title--empty {
+  font-size: 1.6rem;
+}
+.content-progress__subtitle--empty {
+  font-size: 1.2rem;
+}
+.content-progress__card {
+  border-radius: 10px;
+  overflow: hidden;
+
+  .generic-card__actions {
+    padding: 0 0.6em 0.6em;
+  }
+
+  .card__progress {
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    background-color: #00000080;
+  }
+
+  .card__progress-menu {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.overall-progress {
+  &__cards {
+    .card-wrapper {
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    .generic-card {
+      background-color: unset;
+      box-shadow: unset;
+    }
+  }
+  &__header {
+    display: flex;
+    gap: 10px;
+
+    .tabs__wrapper:before {
+      bottom: 20px;
+      padding-right: 50px;
+    }
+  }
+}
+
+.overall-progress__title {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 1.4em;
+  color: var(--dashboard-featured-title-color);
+}
+
+.content-progress__card {
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+}
+
+.overall-progress__cards {
+  display: flex;
+
+  .generic-card {
+    &__body {
+      margin-top: 20px;
+    }
+  }
+}
+.overall-progress__card {
+  border-radius: 10px;
+  position: relative;
+  bottom: 0;
+  min-width: 15em;
+  aspect-ratio: 1;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.overall-progress__card:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.overall-progress__card.--pending {
+  background-color: var(--alert-900);
+}
+
+.overall-progress__card.--initial {
+  background-color: var(--alert-500);
+}
+
+.overall-progress__card.--final {
+  background-color: var(--primary-color);
+}
+
+.overall-progress__card + .overall-progress__card {
+  margin-left: 0.8em;
+}
+
+.overall-progress__card strong {
+  font-size: 4.2em;
+}
+
+.overall-progress__card p {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+.featured-content-container .carousel {
+  min-width: 0;
+}
+
+.featured-content-container .VueCarousel-slide {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.dashboard-layout {
+  $gap: 25px;
+  gap: $gap;
+  margin-bottom: 3em;
+
+  .additional-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+    flex: 1 1 500px;
+    align-content: flex-start;
+  }
+
+  .conference-container {
+    flex: 1;
+    min-width: 300px;
+
+    .dashboard-conference-cards {
+      max-height: 224px;
+    }
+  }
+
+  .featured-content,
+  .conference-container,
+  .dashboard-news,
+  .overall-progress {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    flex: 1;
+    height: fit-content;
+
+    h3 {
+      font-size: 2.5em;
+      font-weight: normal;
+      margin-bottom: 28px;
+    }
+  }
+
+  .dashboard-news.empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 612px;
+    gap: 1rem;
+    text-align: center;
+    color: var(--text-color);
+
+    .empty {
+      &__title {
+        font-family: var(--font-family);
+        font-size: 1.5rem;
+        line-height: 1.875rem;
+      }
+
+      &__subtitle {
+        font-size: 1rem;
+        line-height: 1.313rem;
+      }
+    }
+  }
+
+  .overall-progress {
+    max-width: 515px;
+  }
+
+  .banners-container {
+    .banner-item {
+      box-shadow: none;
+      border-radius: 8px;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--primary-700);
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-500);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .card-dashboard {
+    float: none;
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .card-dashboard:last-child {
+    width: auto;
+  }
+
+  .card-dashboard-content {
+    height: auto;
+  }
+
+  .font-size {
+    &-1,
+    &-2 {
+      .overall-progress__cards {
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-left: -35px;
+        margin-right: -35px;
+      }
+    }
+  }
+
+  .overall-progress__card strong {
+    font-size: 3.8em;
+  }
+
+  .overall-progress__card p {
+    font-size: 1.4em;
+  }
+
+  .featured-content .empty-message {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .banners-container {
+    order: 0;
+  }
+
+  .overall-progress {
+    &__header {
+      display: flex;
+      gap: 10px;
+
+      .tabs__wrapper:before {
+        bottom: 1px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .featured-content .carousel__navs {
+    position: initial;
+    top: initial;
+    right: initial;
+  }
+
+  .dashboard-layout {
+    flex-direction: column-reverse;
+
+    .featured-content,
+    .conference-container,
+    .dashboard-news,
+    .overall-progress {
+      padding: 16px;
+
+      h3 {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+      }
+    }
+
+    .dashboard-news.empty {
+      flex: unset;
+      height: 415px;
+    }
+  }
+
+  .featured-content .carousel__navs {
+    bottom: -40px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .dashboard-layout {
+    .additional-boxes {
+      flex: unset;
+      order: 2;
+      max-width: 100%;
+
+      .overall-progress {
+        width: 100%;
+
+        &__cards {
+          padding: 0 0 6px;
+          overflow: auto;
+
+          &::-webkit-scrollbar {
+            height: 5px;
+          }
+          &::-webkit-scrollbar-track {
+            background: none;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: var(--black-500);
+            border-radius: 10px;
+          }
+          &::-webkit-scrollbar-thumb:hover {
+            background: var(--black-700);
+          }
+        }
+      }
+    }
+
+    .featured-content-container {
+      order: 3;
+    }
+
+    .banners-container {
+      width: 100%;
+      max-width: unset;
+
+      .VueCarousel-slide {
+        padding: 0 1px 6px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .overall-progress {
+    &__header {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+}

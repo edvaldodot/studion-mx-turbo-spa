@@ -1,0 +1,111 @@
+:root{
+  // RATING
+  --catalog-ratings-fill-color: var(--black-400);
+  --rating-color: #FFD055;
+  --inactive-rating-color: #ffffff00;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating.inline {
+  flex-direction: column;
+}
+
+.rating__title {
+  font-family: var(--font-family);
+  font-size: 2.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 0.5em;
+}
+
+.rating__subtitle {
+  font-family: var(--font-family);
+  font-size: 1.8em;
+  font-weight: 200;
+  color: var(--primary-color);
+}
+
+.rating__stars .vue-star-rating-inline {
+  margin-left: 15px;
+}
+
+.rating__label {
+  font-family: var(--font-family);
+  font-size: 1.6em;
+  font-weight: 200;
+  vertical-align: top;
+}
+
+.vue-star-rating-rating-text {
+  font-family: var(--font-family);
+  font-size: 1.3em;
+  line-height: 1;
+}
+
+.vue-star-rating-star {
+  vertical-align: middle;
+}
+
+.rating__total {
+  margin-left: 10px;
+  font-size: 1.3em;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+
+.rating__total-icon {
+  transform: translateY(-1px);
+}
+
+.rating__button.btn-primary {
+  font-size: 1.3em;
+  font-weight: 400;
+  border: none;
+  font-weight: initial;
+  margin-left: 5px;
+
+  .text {
+    text-decoration: underline;
+  }
+}
+
+.rating-section {
+  .rating__stars {
+    justify-content: center;
+    margin-bottom: 12px;
+    display: flex;
+  }
+}
+
+.modal-form {
+  .vue-star-rating {
+    justify-content: center;
+    margin: 5px 0 20px;
+  }
+
+  .rating__comment {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.rating-text {
+  font-family:  var(--font-family);
+  color: var(--text-color);
+  font-size: 2.2em;
+  margin: 2em 0 1em;
+}
+
+.rating.dark {
+  color: var(--text-color);
+}
+
+.rating.dark svg {
+  fill: var(--text-color);
+}

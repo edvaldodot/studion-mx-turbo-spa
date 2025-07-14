@@ -1,0 +1,24 @@
+.datatable-counter {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-family);
+  font-size: 1.6em;
+  color: var(--text-color);
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    min-width: 40px;
+    max-width: min-content;
+    background-color: var(--alert-900);
+    border-radius: 50%;
+    padding: 0 5px;
+    font-weight: bold;
+    color: var(--black-700);
+  }
+}

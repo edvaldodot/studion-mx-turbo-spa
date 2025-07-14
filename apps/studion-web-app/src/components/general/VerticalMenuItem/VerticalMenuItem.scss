@@ -1,0 +1,13 @@
+.vertical-menu-item {
+  position: relative;
+
+  &__notification-circle {
+    position: absolute;
+    left: -15px;
+    transform: translateY(-3px);
+
+    &.reduced {
+      transform: translate(45px, -8px);
+    }
+  }
+}

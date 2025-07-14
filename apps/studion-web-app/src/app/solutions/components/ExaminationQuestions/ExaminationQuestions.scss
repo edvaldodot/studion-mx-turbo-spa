@@ -1,0 +1,70 @@
+.examination-questions {
+  .files-form {
+    margin-bottom: 40px;
+
+    .empty-message {
+      margin-bottom: 40px;
+    }
+  }
+
+  .modal-form-box-inner {
+    &.is-recalculate {
+      border: 1px solid var(--alert-900);
+    }
+
+    .undo-action {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      .undo-message {
+        display: flex;
+        align-items: center;
+        font-size: 1.2em;
+        color: var(--alert-900);
+
+        svg {
+          margin-right: 5px;
+        }
+      }
+
+      .btn-flat {
+        font-size: 1.4em;
+        color: var(--alert-900);
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .modal-form-box-dots {
+    display: flex;
+    justify-content: flex-end;
+    bottom: 20px;
+    left: 20px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .question-disable-by-aggregate {
+    position: absolute;
+    top: auto;
+    left: auto;
+
+    height: 10%;
+    width: 70%;
+    z-index: 500;
+
+    .block-aggregate-area {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .z-index-feedback,
+  .z-index-points {
+    z-index: 501;
+  }
+}

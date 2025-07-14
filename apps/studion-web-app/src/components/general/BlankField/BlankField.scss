@@ -1,0 +1,44 @@
+.blank__field {
+  border: 0;
+  background-color: transparent;
+  border-bottom: 2px solid var(--primary-color);
+  font-size: 1.6em;
+  color: var(--text-color);
+  font-family: var(--font-family);
+  padding-right: 10px;
+
+  &:focus {
+    border-bottom: 2px solid var(--secondary-color);
+  }
+
+  &:disabled {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.25);
+    &.--correct {
+      border-bottom: 2px solid var(--secondary-color);
+    }
+  }
+}
+
+.generic-tooltip {
+  .answer {
+    font-size: 1.2em;
+  }
+  .answer__text {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    font-weight: normal;
+  }
+  .answer__title {
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+  }
+}
+.blank__wrapper {
+  position: relative;
+  display: inline;
+  .tooltip__activator {
+    position: absolute;
+    right: 2px;
+  }
+}

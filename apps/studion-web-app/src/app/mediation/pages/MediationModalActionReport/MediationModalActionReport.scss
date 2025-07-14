@@ -1,0 +1,25 @@
+.mediation-action-report {
+  .parent {
+    &.is-open {
+      background-color: rgba(#FFF, 0.2);
+    }
+  }
+  .tr-dropdown {
+    background-color: rgba(#FFF, 0.1);
+    .datatable-wrapper {
+      padding: 0;
+
+      .td-tag {
+        line-height: 1.2em;
+        padding: 5px 10px;
+      }
+
+      tbody td {
+        padding-block: 2em;
+      }
+      tbody:not(:last-child) {
+        border-bottom: 1px solid var(--surface-border);
+      }
+    }
+  }
+}

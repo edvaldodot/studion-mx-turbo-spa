@@ -1,0 +1,43 @@
+.menu {
+  width: 100%;
+
+  &__list {
+    width: 100%;
+    gap: 8px;
+    left: 0;
+    border-radius: 8px;
+    border: solid var(--black-100) 1px;
+    background-color: var(--surface-0);
+    z-index: 2;
+    max-height: 165px;
+    overflow-y: auto;
+  }
+  &__item {
+    display: flex;
+    font-family: var(--font-family);
+    font-size: 14px;
+    color: var(--black-500);
+    gap: 8px;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+
+    &:hover{
+      background-color: var(--black-50);
+    }
+
+    &:first-child:hover{
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    &:last-child:hover{
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
+  &__icon {
+  }
+  &__label {
+  }
+}

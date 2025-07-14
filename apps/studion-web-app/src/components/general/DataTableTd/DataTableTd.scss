@@ -1,0 +1,14 @@
+.td__generic {
+  .td-text {
+    line-height: 1.8em;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .clamp-line {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}

@@ -1,0 +1,21 @@
+.generic-tooltip {
+  .answer{
+   font-size: 1.2em;
+  }
+  .answer__text {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    font-weight: normal;
+  }
+  .answer__title {
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+  }
+}
+.tooltip__activator {
+  svg {
+    color: var(--secondary-color);
+    width: 14px;
+    height: 14px;
+  }
+}

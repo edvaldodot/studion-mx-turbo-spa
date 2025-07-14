@@ -1,0 +1,29 @@
+.nav-bar {
+  background: #fff;
+  height: 72px;
+  position: relative;
+  box-shadow: 0px 0px 12px 0px #00000014;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding-inline: 32px;
+  }
+  .breadcrumbs {
+    .text {
+      display: block;
+    }
+  }
+  .breadcrumbs .breadcrumbs__item {
+    text-transform: uppercase;
+    color: var(--primary-color-darker);
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .action-bar {
+    background: none;
+    width: unset !important;
+    box-shadow: none !important;
+  }
+}

@@ -1,0 +1,55 @@
+.not-found {
+  height: calc(100vh);
+  background: transparent linear-gradient(359deg, #345676 0%, #123352 100%) 0% 0% no-repeat
+    padding-box;
+  color: var(--text-color);
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  .logo {
+    margin-bottom: 40px;
+  }
+
+  .logo-image {
+    width: 150px;
+    height: 35px;
+  }
+}
+
+.not-found-content {
+  padding-top: 10px;
+}
+
+.not-found p {
+  font-family: var(--font-family);
+  font-size: 2.4em;
+  font-weight: bold;
+  margin-bottom: 50px;
+  max-width: 400px;
+}
+
+.not-found-image {
+  img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .not-found-content {
+    order: 2;
+  }
+
+  .not-found {
+    p {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+
+    button {
+      margin-bottom: 50px;
+    }
+  }
+}

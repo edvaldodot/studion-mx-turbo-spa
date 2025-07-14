@@ -1,0 +1,43 @@
+$colorsList: #E64848, #FFC14D, #01AFAA, #5C2E91, #350756, #4DC1FF, #48E6C2, #D867FA, #83DB37, #96D1CF, #9D85C1;
+
+.radio-colors {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .radio-item {
+    &.is-custom {
+      .radio-item__label {
+        width: 20px;
+        height: 20px;
+        padding-left: 0;
+        text-indent: 100%;
+        overflow: hidden;
+        border: 1px solid var(--black-400);
+        border-radius: 4px;
+        position: relative;
+
+        @each $color in $colorsList {
+          &[data-label='#{$color}'] {
+            background-color: $color;
+          }
+        }
+      }
+    }
+
+    &.is-checked {
+      .radio-item__label {
+        &:after {
+          content: '';
+          width: 14px;
+          height: 14px;
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          border: 2px solid #fff;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.modal-nickname-form {
+  .modal-confirm {
+    padding: 25px;
+    border-radius: 8px;
+    border-top: 6px solid var(--primary-color);
+    text-align: center;
+  }
+
+  .modal-confirm-content {
+    padding: 10px 0;
+  }
+
+  .modal-confirm-description p {
+    margin: 20px 0;
+    line-height: 24px;
+    color: var(--black-500);
+
+    &.bold {
+      font-weight: bold;
+    }
+  }
+
+  .modal-confirm-footer {
+    height: unset;
+
+    form {
+      margin: 25px auto;
+      max-width: 520px;
+
+      .form-input-messages-container {
+        text-align: left;
+
+      }
+    }
+  }
+}

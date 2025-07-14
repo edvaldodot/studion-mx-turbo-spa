@@ -1,0 +1,31 @@
+.app-timer {
+  font-size: 10px;
+  font-family: var(--font-family);
+  margin: 8px auto;
+  width: min-content;
+  text-align: center;
+  p {
+    font-size: 1.4em;
+    margin-bottom: 2em;
+    font-weight: bold;
+  }
+  section {
+    display: flex;
+    gap: 18px;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  &__timer {
+    font-size: 1.4em;
+  }
+  &__meter,
+  &__divider {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+}

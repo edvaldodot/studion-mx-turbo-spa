@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="69.21" viewBox="0 0 237.03 163.88">
+  <title>studion</title>
+  <path id="path1" class="path path1" fill="none" stroke="#01AFAA" stroke-width="30" stroke-dashoffset="548" stroke-dasharray="548" d="M134.21,54.78S119.43,15.85,79.21,15c-40-.83-62.67,32.45-64,69.17,0,0,0,57.17,59.67,65.83,0,0,44.55,1.62,59.17-41,0,0,10-47.83,43.52-48.57,0,0,14.31-2.76,29.65,10.57,0,0,14.42,11,14.42,25.42l.62,63.55">
+    <animate attributeType="XML" attributeName="stroke-dashoffset" from="548" to="0" begin="0s" dur="1500ms"/>
+    <animate attributeType="XML" attributeName="stroke-dashoffset" from="0" to="548" begin="1500ms" dur="1500ms"/>
+  </path>
+</svg>

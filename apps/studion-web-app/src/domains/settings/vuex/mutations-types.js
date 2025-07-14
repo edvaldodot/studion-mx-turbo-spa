@@ -1,0 +1,5 @@
+export const SET_ALL_NOTIFICATIONS = 'settings/notifications/SET_ALL'
+export const SET_EMAIL_NOTIFICATION_HEADER = 'settings/email_notifications_header/SET'
+export const SET_ALLOW_PROFILE_CHANGE_IMAGE = 'settings/allow_change_profile_image'
+export const SET_ENABLED_FEATURES = 'settings/enabledFeatures'
+export const SET_DISPLAY_PREFERENCES = 'settings/displayPreferences'

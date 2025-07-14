@@ -1,0 +1,22 @@
+.user-enrollments-list__wrap {
+  .horizontal-switch__wrapper {
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .filter-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .spacer {
+      display: none;
+    }
+  }
+  .datatable {
+    td, th {
+      &:not(:last-child) {
+        padding-right: 15px;
+      }
+    }
+  }
+}

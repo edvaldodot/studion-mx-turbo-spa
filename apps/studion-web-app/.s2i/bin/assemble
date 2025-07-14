@@ -1,0 +1,81 @@
+#!/bin/sh
+echo -e "[`date '+%Y-%m-%d %H:%M:%S'`]" Build start...
+
+export ENV_MANAGER_BASE_URL=${ENV_MANAGER_BASE_URL:-env-manager:8080}
+export ENV_PATH=${ENV_PATH:-./environments}
+
+# download and install the latest version of Yarn if not already installed
+if ! command -v yarn >/dev/null 2>&1; then
+  echo -e "[`date '+%Y-%m-%d %H:%M:%S'`]" Installing Yarn...
+  npm i -g yarn
+fi
+
+# config
+mkdir /opt/app-root/src/config
+curl --fail ${ENV_MANAGER_BASE_URL}/environments?customPath=${ENV_PATH} > /opt/app-root/src/config/configs.json
+
+# build
+cd /tmp/src
+
+echo -e "[`date '+%Y-%m-%d %H:%M:%S'`]" Cleaning yarn cache...
+if [ ${PRINT_BUILD_LOG:-0} -eq 1 ]; then
+  yarn cache clean
+else
+  yarn cache clean >/dev/null 2>&1
+fi
+
+echo -e "[`date '+%Y-%m-%d %H:%M:%S'`]" Installing dependencies...
+
+if [ "$(ls /tmp/artifacts/ 2>/dev/null)" ]; then
+    echo "---> Restoring previous build artifacts ..."
+    mv /tmp/artifacts/* /tmp/src/
+fi
+
+if [ ${PRINT_BUILD_LOG:-0} -eq 1 ]; then
+  yarn install
+else
+  yarn install >/dev/null 2>&1
+fi
+DEP_RETVAL=$?
+
+echo -e "[`date '+%Y-%m-%d %H:%M:%S'`]" Building application...
+
+if [ ${PRINT_BUILD_LOG:-0} -eq 1 ]; then
+  yarn run build
+else
+  yarn run build >/dev/null 2>&1
+fi
+BUILD_RETVAL=$?
+if [ $DEP_RETVAL -ne 0 ] || [ $BUILD_RETVAL -ne 0 ]; then
+  echo -e 'ERROR: Build failed!'
+  exit 1
+fi
+
+# gather production data
+cd /opt/app-root/src
+for data in dist public emkt index.js
+do
+  mv /tmp/src/"$data" ./
+done
+echo -e "[`date '+%Y-%m-%d %H:%M:%S'`]" Installing web server...
+yarn add micro@9.4.0 >/dev/null 2>&1
+yarn add serve-handler@6.1.3 >/dev/null 2>&1
+yarn add compression@1.7.4 >/dev/null 2>&1
+SERVE_RETVAL=$?
+if [ $SERVE_RETVAL -ne 0 ]; then
+  echo -e 'ERROR: Static server is not available!'
+  exit 1
+fi
+
+# fixing permissions
+fix-permissions ./
+
+# preserve node_modules to save-artifacts
+mv /tmp/src/node_modules /tmp
+
+# clean up
+echo -e "[`date '+%Y-%m-%d %H:%M:%S'`]" Cleaning up...
+rm -rf /tmp/src
+
+# and... we are done
+echo -e "[`date '+%Y-%m-%d %H:%M:%S'`]" Build ended...

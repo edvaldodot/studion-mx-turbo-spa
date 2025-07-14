@@ -1,0 +1,32 @@
+.progress-container {
+  width: 100%;
+  height: 2.3em;
+  padding: 0.4em;
+  border-width: 0.2em;
+  border-style: solid;
+  border-radius: 50px;
+}
+
+.progress-bar {
+  height: 1.1em;
+  max-width: 100%;
+  background-color: var(--secondary-color);
+  border-radius: 50px;
+  transition: 200ms ease-in-out;
+}
+
+.progress-container.default {
+  border-color: var(--secondary-color);
+}
+
+.default .progress-bar {
+  background-color: var(--secondary-color);
+}
+
+.progress-container.error {
+  border-color: var(--alert-700);
+}
+
+.error .progress-bar {
+  background-color: var(--alert-700);
+}

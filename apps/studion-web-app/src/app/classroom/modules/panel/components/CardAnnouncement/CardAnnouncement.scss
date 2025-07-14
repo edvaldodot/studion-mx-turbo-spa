@@ -1,0 +1,171 @@
+.card-announcement {
+  box-shadow: none;
+
+  .card-featured-text {
+    word-break: break-word;
+  }
+
+  .card-padding-top {
+    padding-top: 40px;
+  }
+
+  .card-fixed {
+    padding-top: 40px;
+    border-left: 10px solid var(--primary-color);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &.card-fixed {
+    .generic-card__body {
+      padding-top: 50px;
+      border-left: 10px solid var(--primary-color);
+    }
+  }
+
+  .user-profile {
+    flex: 1;
+
+    &__image,
+    &__icon {
+      width: 40px;
+      height: 40px;
+      color: var(--black-500);
+    }
+  }
+
+  &__info {
+    text-align: right;
+    margin-right: 30px;
+  }
+
+  &__status {
+    display: block;
+    font-family: var(--font-family);
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--black-500);
+  }
+
+  &__date {
+    font-size: 1.2em;
+    color: var(--black-500);
+  }
+
+  &__options {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: left;
+
+    .dropdown-link {
+      color: var(--primary-700);
+    }
+  }
+
+  &__description {
+    overflow: hidden;
+    line-height: 1.4;
+    word-break: break-word;
+
+    img {
+      max-width: 100%;
+    }
+
+    ul,
+    ol {
+      font-size: 1.6em;
+      margin: 0.5em 0 0.5em 2em;
+
+      li {
+        display: list-item;
+        width: fit-content;
+      }
+    }
+
+    ol {
+      list-style: decimal;
+    }
+
+    ul {
+      list-style: initial;
+    }
+  }
+
+  &__read-more {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 0) 100%);
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: flex-end;
+
+    &:hover {
+      color: var(--text-color);
+    }
+  }
+}
+
+.font-size-1,
+.font-size-2 {
+  .card-announcement {
+    &__info {
+      top: 35px;
+      right: 15px;
+    }
+  }
+}
+
+.user-profile {
+  &__image-wrapper {
+    float: left;
+    margin-right: 10px;
+  }
+
+  &__image {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__position,
+  &__name {
+    display: block;
+    line-height: 18px;
+    font-family: var(--font-family);
+  }
+
+  &__position {
+    font-size: 1.4em;
+  }
+
+  &__name {
+    font-size: 1.4em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+  }
+}
+
+.modal-card-card-announcement {
+  &__content {
+    ol,
+    ul {
+      li {
+        display: list-item;
+        width: fit-content;
+
+        &::before {
+          content: none;
+        }
+      }
+    }
+  }
+}

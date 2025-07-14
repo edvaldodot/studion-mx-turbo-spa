@@ -1,0 +1,67 @@
+.class-time-timer {
+  max-width: 90%;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: var(--secondary-color);
+  margin: 16px auto;
+  color: var(--text-color);
+
+  &--minimal {
+    padding: 0;
+    width: max-content;
+  }
+
+  h3 {
+    font-size: 1.7em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+
+  .icon-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  .app-timer {
+    > section {
+      gap: 1px;
+    }
+    &__meter,
+    &__divider {
+      color: var(--text-color);
+    }
+    &__timer {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    position: fixed;
+    max-width: 100%;
+    width: 90%;
+    top: 50px;
+    left: 5%;
+    text-align: left;
+    padding-left: 70px;
+    p {
+      display: inline-block;
+      font-size: 1.2em;
+    }
+    .app-timer {
+      font-size: 0.7em;
+      display: inline-block;
+      margin-left: 1em;
+      margin-top: 0;
+      p {
+        display: none;
+      }
+    }
+    .icon-wrapper {
+      position: absolute;
+      left: 15px;
+      top: 30px;
+    }
+  }
+}

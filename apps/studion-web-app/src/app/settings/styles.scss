@@ -1,0 +1,384 @@
+.settings {
+  .config-form {
+    max-width: 480px;
+    margin: 60px auto 70px;
+  }
+
+  .config-form .btn-flat {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .config-form-title {
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 35px;
+  }
+
+  .form-section {
+    .text-description {
+      margin-top: -10px;
+      margin-bottom: 60px;
+    }
+
+    .notifications {
+      margin: 0 -30px;
+      .notification__group {
+        &:last-of-type{
+          margin-bottom: 60px;
+        }
+      }
+    }
+
+    .text-description p {
+      font-weight: 100;
+      font-size: 1.4em;
+      margin-bottom: 20px;
+
+      &:last-of-type {
+        margin-bottom: 40px;
+      }
+    }
+
+    .datatable-wrapper {
+      margin-bottom: 60px;
+    }
+  }
+
+  .accordion-item-title {
+    line-height: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .config-certificate-model {
+    padding: 40px 0;
+  }
+
+  .config-certificate-model-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-size: 1.8em;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: var(--primary-500);
+  }
+}
+
+.certificate-preview {
+  width: 620px;
+  margin: 0 auto 80px;
+}
+
+.certificate-preview-options {
+  height: 40px;
+  background: var(--surface-200);
+
+  .btn {
+    color: var(--primary-500);
+  }
+  .btn.is-active {
+    background: var(--primary-color);
+    color: var(--text-color);
+  }
+  .certificate-preview-title {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: var(--font-family);
+    font-size: 1.6em;
+    font-weight: bold;
+    text-transform: uppercase;
+    min-width: 460px;
+    margin: 0 10px;
+  }
+}
+
+.certificate-preview-container {
+  height: 440px;
+  background: var(--surface-0);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.certificate-preview-header-title {
+  position: absolute;
+  top: 55px;
+  left: 90px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 2em;
+  color: var(--primary-color);
+}
+
+.certificate-preview-header-date {
+  position: absolute;
+  top: 85px;
+  left: 90px;
+  font-size: 1.2em;
+  color: var(--primary-color);
+}
+
+.certificate-preview-logo {
+  position: absolute;
+  top: 55px;
+  right: 65px;
+  max-width: 100px;
+  height: auto;
+}
+
+.certificate-preview-signature {
+  position: absolute;
+  right: 65px;
+  bottom: 45px;
+  min-width: 140px;
+  text-align: center;
+}
+
+.certificate-preview-signature-image {
+  max-width: 140px;
+  height: auto;
+}
+
+.certificate-preview-signature-name {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  border-top: 2px solid var(--primary-color);
+}
+
+.certificate-preview-signature-position {
+  display: block;
+  font-size: 1.2em;
+}
+
+.certificate-preview-body {
+  position: absolute;
+  left: 90px;
+  right: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+
+  .name {
+    display: block;
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: var(--primary-500);
+  }
+}
+
+.certificate-preview-code {
+  position: absolute;
+  left: 50px;
+  bottom: 40px;
+}
+
+.certificate-preview-code-area {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 5px;
+  border: 1px solid var(--accent-light-color);
+  overflow: hidden;
+}
+
+.certificate-preview-code-area {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.certificate-preview-code-text {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 195px;
+}
+
+.certificate-preview-code-text {
+  .text {
+    display: block;
+    margin: 5px 0;
+    font-size: 0.9em;
+  }
+  .powered {
+    display: block;
+    font-size: 0.8em;
+  }
+  span.powered .icon-studion {
+    vertical-align: top;
+    height: 7px;
+    width: 30px;
+  }
+}
+
+/* CERTIFICATE MODEL CLASSIC */
+.model-type-01 {
+  .certificate-preview-body .name {
+    font-family: var(--font-family);
+    font-weight: normal;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid var(--primary-color);
+  }
+  .certificate-preview-header-title {
+    font-family: var(--font-family);
+    font-weight: normal;
+  }
+}
+
+/* CERTIFICATE ALIGN CENTER */
+.align-center {
+  .certificate-preview-header-title {
+    top: 100px;
+    right: 90px;
+    text-align: center;
+  }
+
+  .certificate-preview-header-date {
+    top: 125px;
+    right: 90px;
+    text-align: center;
+  }
+
+  .certificate-preview-body {
+    right: 90px;
+    text-align: center;
+  }
+
+  .certificate-preview-logo {
+    top: 40px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.modal-certificate-form .uploader {
+  margin: 0 auto;
+}
+
+.form-item-description.certificate-text-warning {
+  color: var(--text-color);
+  text-transform: none;
+  font-size: 1.4em;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.settings-email {
+  &.modal-form {
+    form {
+      max-width: 620px;
+    }
+  }
+
+  .modal-description {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .email-message {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .checkbox-sent {
+    margin: 25px 0;
+  }
+
+  .settings-days {
+    h4 {
+      color: var(--text-color);
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    p {
+      color: var(--text-color);
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .settings-email {
+    &.modal-form {
+      .accordion-item-content-inner {
+        padding: 0;
+      }
+    }
+  }
+
+  .settings .config-form {
+    margin: 60px 20px;
+  }
+
+  .certificate-preview {
+    width: auto;
+    margin-bottom: 40px;
+  }
+
+  .certificate-preview-options .certificate-preview-title {
+    min-width: auto;
+  }
+
+  .certificate-preview-code {
+    display: none;
+  }
+
+  .certificate-preview-container {
+    height: 280px;
+  }
+
+  .certificate-preview-header-title {
+    font-size: 0.9em;
+    top: 20px;
+    left: 20px;
+  }
+
+  .certificate-preview-options .certificate-preview-title {
+    font-size: 1.4em;
+    margin: 0 0 0 5px;
+  }
+
+  .certificate-preview-header-date {
+    font-size: 0.4em;
+    top: 35px;
+    left: 20px;
+  }
+
+  .certificate-preview-logo {
+    width: 40px;
+    height: auto;
+    top: 20px;
+    right: 20px;
+  }
+
+  .certificate-preview-body {
+    font-size: 0.6em;
+    left: 20px;
+    right: 20px;
+  }
+
+  .certificate-preview-body .name {
+    font-size: 17px;
+  }
+
+  .settings .config-certificate-model {
+    min-height: 495px;
+  }
+
+  .settings .draggable-item-col.text-right {
+    padding-right: 18px;
+  }
+}

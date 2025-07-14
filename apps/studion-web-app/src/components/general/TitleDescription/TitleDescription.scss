@@ -1,0 +1,28 @@
+.title-description {
+  &__container {
+    margin-bottom: 80px;
+    &.dark {
+      .title-description__title {
+        color: var(--text-color);
+      }
+
+      .title-description__description {
+        color: var(--text-color);
+      }
+    }
+  }
+  &__title {
+    font-family: var(--font-family);
+    letter-spacing: 0.8px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  &__description {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    opacity: 0.5;
+    margin-bottom: 4px;
+  }
+}

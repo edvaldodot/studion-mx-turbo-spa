@@ -1,0 +1,1 @@
+export const SET_ATTENDANCE_LISTS = 'Attendance/ATTENDANCE_LISTS'

@@ -1,0 +1,63 @@
+.classroom-cards__card {
+  position: relative;
+  padding: 14px;
+  padding-bottom: 5em;
+  border-radius: 8px;
+  flex-grow: 1;
+
+  h3 {
+    font-size: 1.4em;
+    margin-top: 6px;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+  }
+
+  > .icon {
+    background: var(--disabled-color);
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    padding: 6px;
+    margin-bottom: 6px;
+    color: var(--primary-color);
+  }
+  .actions-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 4px;
+    .btn {
+      .icon-wrapper + .text {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  background-color: var(--surface-card);
+  color: var(--text-color);
+
+  &.--primary {
+    background-color: var(--primary-color);
+  }
+
+  &.--disabled {
+    background-color: var(--disabled-color);
+    > .icon {
+      color: var(--black-500);
+      background: rgba(#000, 0.1);
+    }
+  }
+
+  &.--highlight {
+      background-color: var(--primary-color);
+  }
+
+  &.--primary,
+  &.--highlight {
+      .btn, .icon, h3, p {
+      color: #ffffff;
+      }
+  }
+}

@@ -1,0 +1,128 @@
+.main-content > .center.forum-evaluation__component {
+  margin-top: 30px;
+
+  .btn-back {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  .forum-discussion-card {
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: 1024px) {
+    .btn-back {
+      margin-top: 15px;
+    }
+  }
+}
+
+.forum-evaluation__header {
+  .header__title {
+    font-family: var(--font-family);
+    font-size: 1.6em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  .header__student {
+    font-family: var(--font-family);
+    font-size: 2.4em;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+}
+
+.forum-evaluation__correction {
+  border: 1px solid #00000040;
+  padding: 15px;
+  border-radius: 8px;
+
+  .correction__title {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+
+
+  .correction__feedback {
+    display: flex;
+    width: 100%;
+
+    .form-item {
+      flex: 1;
+    }
+  }
+
+  .btn-secondary {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: #fff;
+
+    &:focus,
+    &:hover {
+      border-color: var(--accent-light-color);
+      background-color: var(--accent-light-color);
+      color: #fff;
+    }
+  }
+
+  .correction__actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .form-item-details {
+    margin-bottom: 20px;
+    min-height: 21px;
+  }
+
+  .correction__grade {
+    display: flex;
+    justify-items: flex-start;
+    align-items: flex-end;
+    gap: 15px;
+    margin-bottom: 8px;
+
+    .form-item {
+      width: 150px;
+      margin: 0;
+    }
+
+    .remaining__grade {
+      font-size: 0.875rem;
+    }
+
+    .remaining__number {
+      font-size: 1rem;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+  }
+
+  .correction__author {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      max-width: 100%;
+    }
+
+    svg {
+      color: rgba(0, 0, 0, 0.5);
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

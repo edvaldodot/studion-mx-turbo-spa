@@ -1,0 +1,47 @@
+.modal .batch-list.empty-message {
+  margin-top: 100px;
+}
+
+.modal .modal-description {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.modal .modal-description p {
+  margin-bottom: 40px;
+}
+
+.modal .add-new-batch {
+  margin: 40px 0;
+
+  &.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 720px) {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+}
+
+.status-column-batch {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+
+  .td-tag {
+    margin-top: 15px;
+    padding: 0 10px;
+    max-width: 130px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .modal .datatable .td-tag {
+    display: block;
+  }
+}

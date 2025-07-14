@@ -1,0 +1,159 @@
+.examination-form {
+  .form-item-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .p-editor {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  .input-editor-evaluation-form {
+    border-radius: 5px;
+    background: var(--surface-200);
+    margin-bottom: 40px;
+
+    .form-label {
+      color: var(--text-color);
+    }
+
+    .form-item-tools {
+      position: static;
+      padding: 0;
+      background: var(--surface-200);
+    }
+
+    .form-editor {
+      caret-color: var(--text-color);
+      border-radius: 5px 5px 0px 0px;
+      background: var(--surface-0);
+
+      p {
+        color: var(--text-color);
+        font-size: 1.6em;
+        font-weight: 100;
+        line-height: 1em;
+      }
+
+      ul,
+      li {
+        color: var(--text-color);
+      }
+    }
+
+    .form-input-details {
+      background: var(--surface-0);
+
+      .form-input-counter {
+        color: var(--text-color);
+      }
+    }
+  }
+
+  .form-group {
+    position: relative;
+
+    .tips {
+      position: absolute;
+      right: 0;
+      top: 1em;
+      z-index: 999;
+    }
+
+    &.disabled {
+      cursor: default;
+      opacity: 0.5;
+    }
+
+    .form-group-description {
+      font-size: 0.875rem;
+      line-height: 1.3em;
+      margin: 16px 15px 0 0;
+    }
+
+    &.examination-points {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      align-items: baseline;
+
+      .evaluation-total {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .evaluation-total-questions {
+        span {
+          display: inline-block;
+          text-align: center;
+          font-family: var(--font-family);
+          color: var(--black-700);
+          background-color: var(--alert-900);
+          line-height: 40px;
+          height: 40px;
+          border-radius: 40px;
+          padding: 2px 16px;
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    width: 100%;
+
+    &.question-config .form-item-horizontal {
+      padding: 0;
+      width: 100%;
+      justify-content: space-between;
+
+      .form-radio-item {
+        margin: 0;
+      }
+    }
+  }
+
+  .form-group-description {
+    line-height: 1.5em;
+  }
+
+  .timer-settings.form-item {
+    width: 100%;
+  }
+
+  .radio-group-items.form-item {
+    margin-top: 12px;
+    display: block;
+    width: 100%;
+  }
+
+  .form-radio-item {
+    display: flex;
+    gap: 10px;
+
+    .icon-help {
+      position: relative;
+      transform: unset;
+      top: unset;
+      left: unset;
+    }
+  }
+
+  .radio-group-subitems {
+    margin-left: 30px;
+  }
+
+}
+
+.aggregate-pre-project-examination {
+  padding-left: 40px;
+
+  .select-examination {
+    margin-left: 30px;
+  }
+}

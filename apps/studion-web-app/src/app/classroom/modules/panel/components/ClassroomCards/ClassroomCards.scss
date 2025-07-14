@@ -1,0 +1,42 @@
+.classroom-cards {
+  margin-top: 2em;
+
+  &__cards {
+    display: flex;
+    gap: 12px;
+  }
+
+  .actions-message {
+    padding: 10px;
+    font-size: 1.4em;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-family: var(--font-family);
+  }
+
+  .certificate-card {
+    min-width: 300px;
+  }
+
+  .app-timer {
+    margin: 0;
+    display: inline-block;
+    font-size: 0.5em;
+    > section {
+      gap: 1px;
+    }
+    &__timer {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__cards {
+      flex-direction: column;
+      .classroom-cards__card {
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

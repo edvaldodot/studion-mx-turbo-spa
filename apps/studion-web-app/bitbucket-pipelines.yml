@@ -1,0 +1,28 @@
+definitions:
+  steps:
+    - step: &build-step
+        image: maven:3.3.9
+        name: SonarQube analysis
+        script:
+          - pipe: sonarsource/sonarqube-scan:1.0.0
+            variables:
+              SONAR_HOST_URL: ${SONAR_HOST_URL} # Get the value from the repository/workspace variable.
+              SONAR_TOKEN: ${SONAR_TOKEN} # Get the value from the repository/workspace variable. You shouldn't set secret in clear text here.
+    - step: &build-step2
+        image: curlimages/curl:latest
+        name: Preparing Build
+        script:
+          - echo "Iniciando pipe"
+          - curl -X POST -H 'Content-Type application/json' -d '{}' https://okd3-hom-aws.dotgroup.com.br:8443/apis/build.openshift.io/v1/namespaces/jenkins/buildconfigs/studion-spa-pipeline/webhooks/4e0e228e462ede53/generic
+  caches:
+    sonar: ~/.sonar
+
+clone:
+  depth: full
+
+pipelines:
+  branches:
+    '{master}': # or the name of your main branch
+      - step: *build-step
+    '{homolog}': # or the name of your branch
+      - step: *build-step2

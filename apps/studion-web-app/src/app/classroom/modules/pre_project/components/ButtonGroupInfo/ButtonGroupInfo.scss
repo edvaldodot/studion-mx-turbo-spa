@@ -1,0 +1,19 @@
+.button-group-info {
+  background: var(--primary-color);
+  color: #FFF;
+  cursor: pointer;
+
+  @mixin box($size) {
+    height: $size;
+    width: $size;
+  }
+
+  &.is-medium {
+    @include box(41px);
+    border-radius: 50%;
+
+    .icon {
+      @include box(21px);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.whiteboard-sdk-css-root {
+  .icon-wrapper {
+    background: transparent !important;
+    svg.icon {
+      padding: 0 !important;
+      border-radius: 0 !important;
+    }
+  }
+}
+
+.chat-rtf-box__editor-outer,
+.new-chat-message__container {
+  p {
+    font-size: 1em !important;
+  }
+}
+
+.meeting-info-container__wrapper,
+.participants-section-container__participants-footer-bottom .btn-sm:nth-child(1) {
+  display: none !important;
+}

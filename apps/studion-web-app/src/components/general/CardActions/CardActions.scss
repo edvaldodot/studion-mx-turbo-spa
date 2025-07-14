@@ -1,0 +1,14 @@
+.generic-card__actions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 1.6em 1.6em 1.6em;
+
+  &.--centered {
+    justify-content: center;
+  }
+
+  &.--no-padding {
+    padding: 0;
+  }
+}

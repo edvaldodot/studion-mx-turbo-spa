@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageHeader.vue matches the snapshot 1`] = `
+"<div class="page-header">
+  <div class="page-header__content">
+    <div class="page-header__indicator">
+      <div>Indicator Content</div>
+    </div>
+    <div class="page-header__section">
+      <div>Section Content</div>
+    </div>
+    <div class="page-header__description">
+      <div>Description Content</div>
+    </div>
+  </div>
+  <div class="page-header__actions">
+    <div>Actions Content</div>
+  </div>
+</div>"
+`;

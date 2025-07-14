@@ -1,0 +1,615 @@
+* {
+  --bg-modal-default: var(--black-50);
+}
+
+.modal-blocker {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  z-index: 100000 !important;
+  background: rgba(#45484c, 0.7) !important;
+  text-align: center;
+}
+
+.modal-blocker:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.modal {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  z-index: 110;
+  text-align: left;
+  margin: 20px 0;
+  width: 1000px;
+  &.fill-inner-modal {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.modal .btn-back {
+  display: inline-block;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.modal .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--text-color);
+}
+
+.modal-content {
+  margin-top: 70px;
+}
+
+.modal-form {
+  margin-top: 70px;
+}
+
+.modal-form .tabs {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.modal-form form {
+  max-width: 520px;
+  margin: 50px auto;
+
+  &.filter-search-form {
+    margin: 0;
+  }
+}
+
+.centered-form {
+  max-width: 480px;
+  margin: auto;
+}
+
+.modal-form.is-expanded form {
+  max-width: 1000px;
+}
+
+.modal-form .datatable {
+  margin-top: 40px;
+  margin-bottom: 60px;
+
+  &.my-0 {
+    margin-block: 0;
+  }
+}
+
+.modal-subtitle {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--alert-900);
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.modal-title {
+  font-family: var(--font-family);
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 50px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text-color) !important;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.modal-title.is-capitalize {
+  text-transform: none;
+}
+
+.modal-sub-title {
+  font-family: var(--font-family);
+  font-size: 2.5em;
+  margin-bottom: 1.5em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--text-color) !important;
+}
+
+.modal-description {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.modal-description p {
+  color: var(--text-color) !important;
+  line-height: 1.6em;
+}
+
+.modal-description .description-accomplished {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.modal-form .form-submit {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-form .form-section-title,
+.modal-form .form-item-description {
+  color: var(--text-color) !important;
+}
+
+.modal-form .btn-flat {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.modal-form-box {
+  margin-bottom: 20px;
+}
+
+.modal-form-box-close {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.modal-form-box-title {
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 1.6em;
+  color: var(--text-color) !important;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  &.disabled {
+    opacity: 0.5;
+  }
+}
+
+.modal-form-box-inner {
+  background: var(--primary-color);
+  width: calc(100% + 80px);
+  margin-left: -40px;
+  padding: 20px 40px;
+  position: relative;
+}
+
+
+
+.modal-enroll {
+  margin-top: 20px;
+}
+
+.modal-enroll-offer-category {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--alert-900);
+  margin-bottom: 10px;
+}
+
+.modal-enroll-offer-title {
+  font-family: var(--font-family);
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--text-color) !important;
+  margin-bottom: 40px;
+}
+
+.modal-enroll-title {
+  font-family: var(--font-family);
+  font-size: 4em;
+  font-weight: bold;
+  color: var(--text-color) !important;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.modal-enroll-subtitle {
+  font-family: var(--font-family);
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--text-color);
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.modal-enroll .datatable {
+  margin-bottom: 80px;
+}
+
+.modal-batch + .empty-message .btn {
+  margin-top: 50px;
+}
+
+.modal-batch-enroll-title {
+  color: var(--secondary-color);
+  margin-top: 50px;
+  text-transform: unset;
+}
+
+.modal-batch-enroll-subtitle {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-color);
+  text-transform: unset;
+  margin-bottom: 35px;
+}
+
+.modal-spaced {
+  margin-top: 80px;
+  text-align: center;
+}
+
+
+.btn-back + .modal-message {
+  margin-top: 100px;
+}
+
+.modal-message {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.modal-message-offer-category {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--alert-900);
+  margin-bottom: 10px;
+}
+
+.modal-message-offer-title {
+  font-family: var(--font-family);
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--text-color) !important;
+  margin-bottom: 40px;
+}
+
+.modal-message-title {
+  font-family: var(--font-family);
+  font-size: 4em;
+  font-weight: bold;
+  color: var(--text-color) !important;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.modal-message-description {
+  margin-bottom: 60px;
+}
+
+.modal-message-description p {
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.modal-message-description p strong {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+
+.modal-confirm {
+  width: 650px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.modal-confirm .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: rgba(0, 0, 0, 0.5);
+
+  &.back {
+    right: unset;
+    left: 10px;
+    text-transform: uppercase;
+  }
+}
+
+.modal-confirm-content {
+  padding: 0 10px;
+}
+
+.modal-confirm-title {
+  font-family: var(--font-family);
+  font-size: 4em;
+  margin-bottom: 10px;
+}
+
+.modal-confirm-description p {
+  margin-bottom: 15px;
+}
+
+.modal-confirm-description li {
+  padding-left: 10px;
+  font-size: 1.6em;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.modal-confirm-description li:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-confirm-footer {
+  height: 35px;
+  margin-top: 25px;
+}
+
+.modal-confirm-footer .btn-cancel {
+  float: right;
+}
+
+.modal-confirm-footer .btn-right {
+  float: right;
+}
+
+.modal-confirm-footer .btn-left {
+  float: left;
+}
+
+
+.modal-chat-participants {
+  max-width: 365px;
+  margin: 70px auto 0;
+  transform: translateX(80px);
+}
+
+.modal-chat-user {
+  max-height: 50px;
+  margin-bottom: 40px;
+}
+
+.modal-chat-user-image-wrapper {
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+}
+
+.modal-chat-user-image-wrapper .icon {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-chat-user-name {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.8em;
+  color: var(--text-color) !important;
+  line-height: 30px;
+}
+
+.modal-chat-user-status {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--text-color) !important;
+  line-height: 20px;
+}
+
+
+.modal-conference-participants {
+  max-width: 365px;
+  margin: 70px auto 0;
+  transform: translateX(80px);
+}
+
+.modal-conference-user {
+  max-height: 50px;
+  margin-bottom: 40px;
+}
+
+.modal-conference-user-image-wrapper {
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+}
+
+.modal-conference-user-image-wrapper .icon {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-conference-user-name {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.8em;
+  color: var(--text-color) !important;
+  line-height: 30px;
+}
+
+.modal-conference-user-status {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--text-color) !important;
+  line-height: 20px;
+}
+
+.modal-iframe {
+  margin-top: 50px;
+  width: 1000px;
+  height: 600px;
+}
+
+.modal-iframe .iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-form-first-access .modal-description {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.modal-description .flat {
+  color: var(--text-color);
+}
+
+.modal-description .flat:hover {
+  color: var(--alert-900);
+}
+
+.modal-evaluation-enrollment {
+  margin-top: 20px;
+}
+
+.modal-evaluation-enrollment-category {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--alert-900);
+  margin-bottom: 10px;
+}
+
+.modal-evaluation-enrollment-title {
+  font-family: var(--font-family);
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--text-color) !important;
+  margin-bottom: 40px;
+}
+
+.modal-evaluation-title {
+  font-family: var(--font-family);
+  font-size: 4em;
+  font-weight: bold;
+  color: var(--text-color) !important;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.modal-evaluation-subtitle {
+  font-family: var(--font-family);
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--text-color);
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+
+
+
+.tr-colspan.tbody-td .td {
+  border-color: var(--primary-500);
+}
+
+.modal .datatable .td {
+  border-bottom: 1px solid var(--primary-500);
+}
+
+.modal .datatable .td.td-dropdown {
+  border-bottom: 0;
+}
+
+.modal-batchprogress {
+  max-width: 545px;
+  margin: 0 auto;
+}
+
+.modal-batchprogress p {
+  font-family: var(--font-family);
+  font-size: 1.6em;
+  text-align: center;
+  color: var(--text-color);
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .modal {
+    width: auto;
+    margin: 20px;
+  }
+  .modal-inner-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .modal {
+    width: calc(100% - 40px);
+    margin: 20px;
+  }
+  .modal .btn-back {
+    font-size: 1.2em;
+  }
+  .modal-form {
+    margin-top: 40px;
+  }
+  .modal-subtitle {
+    font-size: 1.2em;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  .modal-title {
+    font-size: 2.4em;
+    line-height: 30px;
+  }
+
+  .modal-confirm {
+    width: auto;
+    padding: 20px;
+  }
+  .modal-evaluation-title {
+    font-size: 2.4em;
+  }
+  .modal-evaluation-subtitle {
+    font-size: 1.8em;
+  }
+}
+
+
+.modal-solution-tools-import-media .pagination-pages {
+  margin-bottom: 20px;
+}
+

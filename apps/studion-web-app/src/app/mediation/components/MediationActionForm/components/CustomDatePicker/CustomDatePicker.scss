@@ -1,0 +1,31 @@
+.custom-date-picker {
+  .select-group {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    &__item {
+      flex: 1;
+
+      .form-input-wrapper {
+        max-width: 65px;
+      }
+    }
+
+    .form-item-description {
+      font-size: 1.8em;
+    }
+
+    .input-message {
+      position: relative;
+
+      .message {
+        font-size: 1.6em;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 70px;
+      }
+    }
+  }
+}

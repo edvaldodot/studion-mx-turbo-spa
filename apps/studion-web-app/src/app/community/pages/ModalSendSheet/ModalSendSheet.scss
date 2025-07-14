@@ -1,0 +1,17 @@
+.modal-send-sheet {
+  &--sample-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .topic-list {
+    max-width: calc(100vw - 20px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .modal-description {
+    width: 715px;
+    max-width: 100%;
+    margin: 40px auto 80px;
+  }
+}

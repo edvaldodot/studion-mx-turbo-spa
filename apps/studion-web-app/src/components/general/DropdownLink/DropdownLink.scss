@@ -1,0 +1,32 @@
+.dropdown .dropdown-content-link {
+  display: block;
+  color: var(--primary-color);
+  padding: 10px 20px;
+
+  &.uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.dropdown-content-link:hover {
+  background: #eee;
+}
+
+.dropdown-content-link.is-active {
+  font-weight: bold;
+}
+
+.dropdown-content-link.is-disabled,
+.dropdown-content-link.is-disabled .icon {
+  color: var(--black-500);
+}
+
+.dropdown-content-link .icon {
+  color: var(--secondary-color);
+  margin-right: 2px;
+}
+
+.dropdown-content-link .text {
+  display: inline-block;
+  vertical-align: middle;
+}

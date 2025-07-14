@@ -1,0 +1,191 @@
+.graphic-user-progress__component {
+  --percentage-in: 0;
+  --percentage-out: 0;
+  --spacing-graphs: 35px;
+  --line-size: 22px;
+  --width-out: 260px;
+  --width-in: calc(var(--width-out) - (var(--spacing-graphs) * 2));
+  --color-out: var(--alert-900);
+  --color-in: var(--alert-700);
+  --bg-shadow-graph: var(--black-200);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.graphic-user-progress__info,
+.graphic-user-progress__header {
+  color: var(--text-color);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  > * {
+    padding: 2.5px;
+  }
+}
+
+.graphic-user-progress__header {
+  margin-bottom: 1em;
+}
+
+.graphic-user-progress__info {
+  font-size: 1.5em;
+}
+
+.graphic-user-progress__footer {
+  margin-top: 1em;
+  font-size: 0.9em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  > * {
+    padding: 5px 10px;
+  }
+}
+
+.graphic-user-progress__title {
+  font-weight: bold;
+  position: relative;
+
+  &.--dot::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 4px);
+    left: -10px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+  }
+
+  &.--out::before {
+    background-color: var(--color-out);
+  }
+
+  &.--in::before {
+    background-color: var(--color-in);
+  }
+}
+
+.graphic-user-progress__status {
+  font-size: 1.5em;
+  font-family: var(--font-family);
+}
+
+.graphic-user-progress__label {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.graphic-user-progress__area {
+  aspect-ratio: 1;
+  width: 100%;
+  position: relative;
+  width: var(--width-out);
+
+  @keyframes p {
+    from {
+      --p: 0;
+    }
+  }
+}
+
+.graphic-user-progress__inner {
+  display: flex;
+  aspect-ratio: 1;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+}
+
+.graphic-user-progress__out-area {
+  --p: var(--percentage-out);
+  --color-line: var(--color-out);
+  --w: var(--width-out);
+}
+
+.graphic-user-progress__in-area {
+  --p: var(--percentage-in);
+  --color-line: var(--color-in);
+  --w: var(--width-in);
+
+  padding: var(--spacing-graphs);
+  width: var(--width-out);
+  aspect-ratio: 1;
+  position: absolute;
+  top: 0;
+}
+
+.graphic-user-progress__shadow-in,
+.graphic-user-progress__shadow-out {
+  position: absolute;
+  top: 0;
+  aspect-ratio: 1;
+  border: var(--line-size) solid var(--bg-shadow-graph);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.graphic-user-progress__shadow-out {
+  width: var(--w);
+}
+
+.graphic-user-progress__shadow-in {
+  top: var(--spacing-graphs);
+  width: var(--w);
+}
+
+.graphic-user-progress__out,
+.graphic-user-progress__in {
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: inline-grid;
+  place-content: center;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  &:before {
+    inset: 0;
+    background: radial-gradient(farthest-side, var(--color-line) 98%, #0000) top/var(--line-size)
+        var(--line-size) no-repeat,
+      conic-gradient(var(--color-line) calc(var(--p) * 1%), #0000 0);
+
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      #0000 calc(99% - var(--line-size)),
+      #000 calc(100% - var(--line-size))
+    );
+
+    mask: radial-gradient(
+      farthest-side,
+      #0000 calc(99% - var(--line-size)),
+      #000 calc(100% - var(--line-size))
+    );
+  }
+
+  &:after {
+    inset: calc(50% - var(--line-size) / 2);
+    background: var(--color-line);
+    transform: rotate(calc(var(--p) * 3.6deg)) translateY(calc(50% - var(--w) / 2));
+  }
+
+  &.--no-round:before {
+    background-size: 0 0, auto;
+  }
+
+  &.--no-round:after {
+    content: none;
+  }
+}

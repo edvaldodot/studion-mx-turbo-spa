@@ -1,0 +1,42 @@
+.share {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.share-title {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.6em;
+  font-weight: bold;
+  color: var(--primary-500er);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.share-link {
+  display: inline-block;
+  vertical-align: middle;
+  color: var(--primary-color);
+}
+
+.share-link + .share-link {
+  margin-left: 12px;
+}
+
+.share-link:hover {
+  color: var(--primary-color);
+}
+
+
+.share.theme-dark .share-title {
+  color: var(--text-color);
+}
+
+.share.theme-dark .share-link {
+  color: var(--text-color);
+}
+
+.share.theme-dark .share-link:hover {
+  color: var(--alert-900);
+}
+

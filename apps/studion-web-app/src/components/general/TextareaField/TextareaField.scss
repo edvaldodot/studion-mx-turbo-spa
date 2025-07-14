@@ -1,0 +1,121 @@
+:root {
+  --textarea-field-min-height: 140px;
+  --textarea-field-height: 45px;
+  --textarea-field-bg: var(--black-50);
+  --textarea-field-border: solid var(--black-100) 1px;
+  --textarea-field-border-radius: 8px;
+  --textarea-field-padding: 0px 0px 0px 0px;
+
+  --textarea-field-label-color: var(--black-800);
+  --textarea-field-label-font-size: 16px;
+  --textarea-field-label-font-weight: 500;
+
+  --textarea-field-placeholder-color: var(--black-500);
+  --textarea-field-placeholder-font-size: 16px;
+
+  --textarea-field-input-text-color: var(--black-800);
+  --textarea-field-input-font-size: 16px;
+
+  --textarea-field-help-color: var(--black-800);
+  --textarea-field-counter-color: var(--black-800);
+
+  --textarea-field-details-color: var(--black-800);
+  --textarea-field-hint-color: var(--black-800);
+  --textarea-field-details-counter-color: var(--black-800);
+
+  --textarea-field-required-status-color: var(--primary-color);
+
+  // input status disabled
+  --textarea-field-disabled-status-color: var(--black-400);
+}
+
+.textarea-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__label {
+    font-family: var(--font-family);
+    color: var(--textarea-field-label-color);
+    font-size: var(--textarea-field-label-font-size);
+    font-weight: var(--textarea-field-label-font-weight);
+    line-height: 16.8px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: var(--textarea-field-bg);
+    border: var(--textarea-field-border);
+    border-radius: var(--textarea-field-border-radius);
+    padding: var(--textarea-field-padding);
+    min-height: var(--textarea-field-min-height);
+    height: auto;
+
+    textarea {
+      width: 100%;
+      border: none;
+      background: transparent;
+      padding: 8px;
+      font-size: var(--textarea-field-input-font-size);
+      color: var(--textarea-field-input-text-color);
+      resize: none;
+    }
+    textarea::placeholder {
+      font-size: var(--textarea-field-placeholder-font-size);
+      color: var(--textarea-field-placeholder-color);
+    }
+    textarea::-webkit-inner-spin-button {
+      appearance: none;
+    }
+
+    &:has(.wrapper__textarea:focus){
+      border: solid var(--primary-color) 1px;
+    }
+
+    textarea:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 30px var(--textarea-field-bg) inset;
+    }
+  }
+  &__append {
+  }
+  &__details {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--font-family);
+    &:has(.details__hint),
+    &:has(.input-message) {
+      justify-content: space-between;
+    }
+  }
+}
+.wrapper {
+  &__textarea {
+  }
+}
+.details {
+  &__hint {
+    color: var(--textarea-field-hint-color)
+  }
+  &__counter {
+    color: var(--textarea-field-details-counter-color);
+  }
+}
+
+.--error {
+  --textarea-field-border: solid var(--error-900) 1px;
+  --textarea-field-hint-color: var(--error-900);
+  --textarea-field-input-text-color: var(--error-900);
+  --textarea-field-placeholder-color: var(--error-900);
+}
+
+.--disabled {
+  --textarea-field-label-color: var(--textarea-field-disabled-status-color);
+  --textarea-field-details-counter-color: var(--textarea-field-disabled-status-color);
+  --textarea-field-border: solid var(--textarea-field-disabled-status-color) 1px;
+  --textarea-field-hint-color: var(--textarea-field-disabled-status-color);
+  --textarea-field-input-text-color: var(--textarea-field-disabled-status-color);
+  --textarea-field-icon-visibility-color: var(--textarea-field-disabled-status-color);
+}

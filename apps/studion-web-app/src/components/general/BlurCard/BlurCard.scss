@@ -1,0 +1,26 @@
+.blur-card {
+  border-radius: 8px;
+  overflow-y: scroll;
+  position: relative;
+
+  .blur__wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent linear-gradient(360deg, var(--surface-0) 0%, #ffffff00 0%);
+    transition: background 0.3s ease-in-out;
+    pointer-events: none;
+    &.--blur {
+      background: transparent linear-gradient(360deg, var(--surface-0) 0%, #ffffff00 30%);
+    }
+  }
+
+  &.--hide-scrollbar {
+    &::-webkit-scrollbar {
+      appearance: none;
+      width: 0;
+    }
+  }
+}

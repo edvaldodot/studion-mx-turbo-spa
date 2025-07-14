@@ -1,0 +1,382 @@
+:root {
+  --font-family: var(--font-family);
+  --date-picker-height: 45px;
+  --date-picker-bg: var(--black-50);
+  --date-picker-border: solid var(--black-100) 1px;
+  --date-picker-border-radius: 8px;
+  --date-picker-padding: 0px 0px 0px 15px;
+
+  --date-picker-label-color: var(--black-800);
+  --date-picker-label-font-size: 16px;
+  --date-picker-label-font-weight: 500;
+
+  --date-picker-placeholder-color: var(--black-500);
+  --date-picker-placeholder-font-size: 16px;
+
+  --date-picker-input-text-color: var(--black-800);
+  --date-picker-input-font-size: 16px;
+
+  --date-picker-details-color: var(--black-800);
+  --date-picker-hint-color: var(--black-800);
+  --date-picker-details-counter-color: var(--black-800);
+
+  --date-picker-required-status-color: var(--primary-color);
+  --date-picker-icon-visibility-color: var(--black-800);
+
+  // input status disabled
+  --date-picker-disabled-status-color: var(--black-400);
+}
+
+.date-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+
+  &__label {
+    font-family: var(--font-family);
+    color: var(--date-picker-label-color);
+    font-size: var(--date-picker-label-font-size);
+    font-weight: var(--date-picker-label-font-weight);
+    line-height: 16.8px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--date-picker-bg);
+    border: var(--date-picker-border);
+    border-radius: var(--date-picker-border-radius);
+    height: var(--date-picker-height);
+    padding: var(--date-picker-padding);
+
+    input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: transparent;
+      padding: {
+        top: 13px;
+        bottom: 13px;
+      }
+      font-size: var(--date-picker-input-font-size);
+      color: var(--date-picker-input-text-color);
+    }
+    input::placeholder {
+      font-size: var(--date-picker-placeholder-font-size);
+      color: var(--date-picker-placeholder-color);
+    }
+    input::-webkit-inner-spin-button {
+      appearance: none;
+    }
+
+    &:has(.wrapper__input:focus) {
+      border: solid var(--primary-color) 1px;
+    }
+
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 30px var(--date-picker-bg) inset;
+    }
+  }
+  &__right-float {
+  }
+  &__details {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--date-picker-details-color);
+
+    &:has(.details__hint),
+    &:has(.input-message) {
+      justify-content: space-between;
+    }
+  }
+  &__calendar {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 320px;
+    position: absolute;
+    z-index: 999;
+    top: 75px;
+  }
+
+  &.--error {
+    --date-picker-border: solid var(--error-900) 1px;
+    --date-picker-hint-color: var(--error-900);
+    --date-picker-input-text-color: var(--error-900);
+    --date-picker-placeholder-color: var(--error-900);
+  }
+
+  &.--disabled {
+    --date-picker-label-color: var(--date-picker-disabled-status-color);
+    --date-picker-details-counter-color: var(--date-picker-disabled-status-color);
+    --date-picker-border: solid var(--date-picker-disabled-status-color) 1px;
+    --date-picker-hint-color: var(--date-picker-disabled-status-color);
+    --date-picker-input-text-color: var(--date-picker-disabled-status-color);
+    --date-picker-icon-visibility-color: var(--date-picker-disabled-status-color);
+  }
+
+}
+
+.wrapper {
+  &__input {
+  }
+  &__append {
+    color: var(--date-picker-icon-visibility-color);
+  }
+}
+.details {
+  &__hint {
+    font-family: var(--font-family);
+    color: var(--date-picker-hint-color);
+    font-weight: 500;
+    font-style: italic;
+  }
+}
+.calendar {
+  &__inner {
+    display: flex;
+  }
+  &__hint {
+    font-family: var(--font-family);
+    color: var(--date-picker-hint-color);
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+.inner {
+  &__button {
+  }
+  &__header {
+  }
+  &__container {
+    background-color: #ffffff;
+  }
+}
+.header {
+  &__label {
+  }
+  &__date {
+  }
+}
+.container {
+  &__calendar {
+  }
+  &__close {
+  }
+}
+
+// FLATPICKR
+
+.flatpickr-calendar {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.flatpickr-input {
+  cursor: text;
+}
+
+.flatpickr-input[disabled] {
+  cursor: default;
+}
+
+.flatpickr-months {
+  height: 40px;
+  position: relative;
+  user-select: none;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.flatpickr-prev-month,
+.flatpickr-next-month {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  text-align: center;
+  color: var(--black-800);
+
+  &.flatpickr-disabled {
+    pointer-events: none;
+    color: rgba(0, 0, 0, 0.25);
+  }
+}
+
+.flatpickr-prev-month {
+  left: 5px;
+}
+
+.flatpickr-next-month {
+  right: 5px;
+}
+
+.flatpickr-prev-month:hover,
+.flatpickr-next-month:hover {
+  color: var(--primary-color);
+}
+
+.flatpickr-current-month {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 1.6em;
+  font-weight: 500;
+  color: var(--primary-color);
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.flatpickr-current-month .cur-month {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.cur-month{
+  color: #45484C;
+}
+
+.flatpickr-current-month .numInputWrapper {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+  height: 40px;
+  padding-right: 20px;
+}
+
+.flatpickr-current-month .numInputWrapper span.arrowUp:after {
+  border-bottom-color: #45484C;
+}
+
+.flatpickr-current-month .numInputWrapper span.arrowDown:after {
+  border-top-color: #45484C;
+}
+
+.flatpickr-current-month input.cur-year {
+  background: transparent;
+  color: inherit;
+  cursor: default;
+  border: 0;
+  border-radius: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  pointer-events: none;
+  color: #45484C;
+}
+
+.flatpickr-innerContainer {
+  padding: 0 5px 5px;
+}
+
+.flatpickr-weekdays {
+  height: 30px;
+}
+
+.flatpickr-weekday {
+  font-size: 1.2em;
+  color: var(--black-500);
+  float: left;
+  line-height: 30px;
+  text-align: center;
+  width: 40px;
+  margin: 0 5px 0 0;
+}
+
+.flatpickr-weekday:last-child {
+  margin-right: 0;
+}
+
+.flatpickr-days {
+  position: relative;
+  width: 100% !important;
+}
+
+.flatpickr-calendar .dayContainer {
+  overflow: hidden;
+}
+
+.flatpickr-day {
+  float: left;
+  font-size: 1.4em;
+  color: var(--black-800);
+  background: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+
+.flatpickr-day:nth-child(7n + 7) {
+  margin-right: 0;
+}
+
+.flatpickr-day.today {
+  color: var(--secondary-color);
+}
+
+.flatpickr-day.prevMonthDay {
+  visibility: hidden;
+}
+
+.flatpickr-day.nextMonthDay {
+  display: none;
+}
+
+.flatpickr-day:hover,
+.flatpickr-day:focus,
+.flatpickr-day.selected,
+.flatpickr-day.selected:focus,
+.flatpickr-day.selected:hover {
+  background: var(--primary-color);
+  color: var(--text-contrast-primary-color);
+  font-weight: bold;
+}
+
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled:hover {
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.flatpickr-time {
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  display: flex;
+}
+
+.flatpickr-time .numInputWrapper {
+  opacity: 0.5;
+}
+
+.showTimeInput .flatpickr-time .numInputWrapper {
+  opacity: 1;
+}
+
+.flatpickr-time-separator {
+  display: none;
+}
+
+.form-input-datepicker.has-time .form-input-datepicker-btn {
+  display: block;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  margin-bottom: 0;
+}

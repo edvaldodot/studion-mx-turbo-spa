@@ -1,0 +1,352 @@
+.dashboard-layout {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 5em;
+  gap: 25px;
+
+  &.admin {
+    .featured-content-container {
+      flex: 1 2 400px;
+    }
+    .banners-container {
+      width: 100%;
+    }
+  }
+}
+
+.banners-container {
+  width: 30%;
+  max-width: 282px;
+
+  .carousel__navs {
+    justify-content: flex-end;
+  }
+}
+
+.featured-content-container {
+  width: 70%;
+  max-width: 700px;
+
+  @media screen and (max-width: 1321px) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.banners-container,
+.dashboard-news,
+.dashboard-conferences,
+.featured-content {
+  .VueCarousel-slide {
+    padding: 0 6px 6px;
+  }
+}
+
+.banners-container .VueCarousel-slide {
+  .generic-card {
+    height: 100%;
+  }
+  .generic-card__image {
+    position: static;
+  }
+  .generic-card__actions,
+  .generic-card__actions .btn {
+    color: var(--primary-color);
+    position: static;
+  }
+}
+
+.dashboard {
+  min-height: 100vh;
+  position: relative;
+  background: var(--dashboard-bg-color);
+
+  .slideshow {
+    margin-bottom: 25px;
+  }
+
+  .slideshow-pager-counter {
+    color: var(--dashboard-navs-control-color);
+  }
+
+  .slideshow-pager .btn {
+    color: var(--dashboard-navs-control-color);
+
+    &.is-disabled {
+      color: var(--dashboard-navs-control-color);
+      opacity: 0.6;
+    }
+  }
+
+  .VueCarousel {
+    margin-left: -3px;
+  }
+
+  .content-progress__card {
+    height: 100%;
+  }
+}
+
+.dashboard-header {
+  color: var(--dashboard-header-text-color);
+  margin-bottom: 10px;
+}
+
+.dashboard-header-title {
+  font-family: var(--font-family);
+  font-size: 3.6em;
+  font-weight: 900;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+
+.dashboard-header-description {
+  font-family: var(--font-family);
+  font-size: 1.8em;
+  line-height: 1em;
+  margin-bottom: 0;
+}
+
+.card-dashboard-list-all {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 25px;
+}
+
+.card-dashboard-list-all {
+  &.card-dashboard-list-all--gamification {
+    grid-template-columns: 74% 24%;
+    &.card-dashboard-list-all--cards-banner {
+      grid-template-columns: 100%;
+      grid-row-gap: 25px;
+    }
+  }
+}
+
+.gamification-card--vertical {
+  width: 30%;
+}
+
+.card-dashboard-list {
+  margin-bottom: 20px;
+}
+
+.card-dashboard {
+  background: var(--surface-section);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.card-dashboard-content {
+  padding: 20px;
+  min-height: 190px;
+}
+
+.card-dashboard-content .btn-flat {
+  margin-left: -10px;
+}
+
+.card-dashboard-footer {
+  padding: 0 10px 10px;
+}
+
+.card-dashboard-title {
+  font-family: var(--font-family);
+  font-size: 2.4em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  hyphens: manual;
+}
+
+.card-dashboard-description p {
+  margin-bottom: 8px;
+}
+
+.card-dashboard-image {
+  width: 150px;
+  margin: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--dashboard-minicard-background-image);
+  background-size: cover;
+
+  img {
+    display: var(--dashboard-minicard-image-display);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card-dashboard-classroom {
+  width: 75%;
+  float: left;
+}
+
+// .card-dashboard-ranking {
+//   width: 23%;
+//   float: right;
+// }
+
+.card-dashboard-ranking .btn-flat {
+  margin-left: -10px;
+}
+
+.card-dashboard-image--mobile {
+  display: none;
+}
+.card-dashboard-header {
+  display: grid;
+  grid-template-columns: auto;
+}
+.slideshow-list--transparent .slideshow-list {
+  background-color: transparent;
+}
+@media screen and (max-width: 1024px) {
+  .card-dashboard-list-all {
+    &.card-dashboard-list-all--gamification {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 100%;
+    }
+  }
+
+  .card-dashboard {
+    width: calc(35% - 20px);
+    margin-right: 20px;
+  }
+
+  .card-dashboard:last-child {
+    width: 30%;
+  }
+
+  .card-dashboard-title {
+    font-size: 2em;
+  }
+
+  // .card-dashboard-ranking {
+  //   width: 100%;
+  //   float: right;
+  // }
+
+  // .card-dashboard-ranking .card-dashboard-description p {
+  //   margin-bottom: 60px;
+  // }
+
+  .card-dashboard-list {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .dashboard .header-content {
+    height: auto;
+  }
+
+  .dashboard-header {
+    margin-bottom: 20px;
+  }
+
+  .dashboard-header-title {
+    font-size: 2.4em;
+  }
+
+  .dashboard-header-description {
+    font-size: 1.6em;
+  }
+
+  .card-dashboard {
+    float: none;
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .card-dashboard:last-child {
+    width: auto;
+  }
+
+  .card-dashboard-content {
+    height: auto;
+  }
+
+  .iframe-dashboard-mobile {
+    width: 100%;
+    top: 55px !important;
+    height: calc(100vh - 55px) !important;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-layout {
+    &.admin {
+      .featured-content-container {
+        flex: unset;
+      }
+      flex-direction: column-reverse;
+      .banners-container {
+        max-width: unset;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .banners-container {
+    width: 100%;
+    padding-right: initial;
+    margin-bottom: 2em;
+  }
+
+  .iframe-dashboard-mobile {
+    width: 100%;
+    top: 55px !important;
+    height: calc(100vh - 55px) !important;
+    overflow-y: scroll;
+  }
+  .banners-container {
+    width: 100%;
+    padding-right: initial;
+    margin-bottom: 2em;
+
+    .carousel__navs {
+      justify-content: space-between;
+    }
+  }
+
+  .featured-content-container {
+    width: 100%;
+    padding-left: initial;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card-dashboard-header {
+    grid-template-columns: auto auto;
+    h2 {
+      margin-left: 10px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .card-dashboard-image--mobile {
+    display: block;
+  }
+  .card-dashboard-image--desktop {
+    display: none;
+  }
+  .card-dashboard-image {
+    height: 115px;
+    margin: 0px;
+  }
+  .card-dashboard-description {
+    margin-top: 10px;
+  }
+}
+.iframe-dashboard {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  overflow-y: scroll;
+}

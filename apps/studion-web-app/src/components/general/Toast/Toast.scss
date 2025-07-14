@@ -1,0 +1,157 @@
+* {
+  --alert-toast-bg: var(--success-50);
+  --alert-toast-border: 1px solid var(--success-500);
+  --alert-toast-btn-close-color: var(--success-900);
+  --alert-toast-title-color: var(--success-900);
+  --alert-toast-message-color: var(--black-600);
+  --alert-toast-progress-stroke-color: var(--success-900);
+  --alert-toast-action-bg: var(--success-900);
+  --alert-toast-action-border-color: var(--success-900);
+}
+
+.alert-toast {
+  display: flex;
+  gap: 8px;
+  align-items: self-start;
+  will-change: transform;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9999;
+  width: 650px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  padding: 20px;
+  background: var(--alert-toast-bg);
+  border-radius: 8px;
+  border: var(--alert-toast-border);
+  transition: all 0.4s;
+
+  @media (max-width: 678px) {
+    width: 90%;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  // button close
+  --button-icon-hover-background: transparent;
+
+  &__wrapper {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+  }
+  &__body {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-family);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--alert-toast-title-color);
+  }
+  &__message {
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--alert-toast-message-color);
+    line-height: 150%;
+  }
+  &__action {
+    .button {
+      background-color: var(--alert-toast-action-bg);
+      border: var(--alert-toast-action-border-color);
+    }
+  }
+  &__close {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  &__btn-close {
+    color: var(--alert-toast-btn-close-color);
+    z-index: 2;
+  }
+  &__progress {
+    width: 31px;
+    height: 33px;
+    z-index: 1;
+  }
+  @keyframes progress-animation {
+    from {
+      --progress: 0;
+    }
+    to {
+      --progress: 100;
+    }
+  }
+  &__progress {
+    --size: 250px;
+    --half-size: calc(var(--size) / 2);
+    --stroke-width: 20px;
+    --radius: calc((var(--size) - var(--stroke-width)) / 2);
+    --circumference: calc(var(--radius) * 3.1415926536 * 2);
+    --dash: calc((var(--progress) * var(--circumference)) / 100);
+
+    circle {
+      cx: var(--half-size);
+      cy: var(--half-size);
+      r: var(--radius);
+      stroke-width: var(--stroke-width);
+      fill: none;
+      stroke-linecap: round;
+
+      &.fg {
+        transform: rotate(-90deg);
+        transform-origin: var(--half-size) var(--half-size);
+        stroke-dasharray: var(--dash) calc(var(--circumference) - var(--dash));
+        transition: stroke-dasharray 0.3s linear 0s;
+        stroke: var(--alert-toast-progress-stroke-color);
+      }
+    }
+  }
+
+  &__btn-close,
+  &__progress {
+    position: absolute;
+  }
+
+  &.--top {
+    bottom: unset;
+    top: 10px;
+  }
+
+  &.--error {
+    --alert-toast-bg: var(--error-50);
+    --alert-toast-border: 1px solid var(--error-500);
+    --alert-toast-btn-close-color: var(--error-900);
+    --alert-toast-title-color: var(--error-900);
+    --alert-toast-progress-stroke-color: var(--error-900);
+    --alert-toast-action-bg: var(--error-900);
+    --alert-toast-action-border-color: var(--error-900);
+  }
+
+  &.--warn {
+    --alert-toast-bg: var(--alert-50);
+    --alert-toast-border: 1px solid var(--alert-500);
+    --alert-toast-btn-close-color: var(--alert-900);
+    --alert-toast-title-color: var(--alert-900);
+    --alert-toast-progress-stroke-color: var(--alert-900);
+    --alert-toast-action-bg: var(--alert-900);
+    --alert-toast-action-border-color: var(--alert-900);
+  }
+}
+
+

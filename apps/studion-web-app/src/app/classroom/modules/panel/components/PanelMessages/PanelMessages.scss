@@ -1,0 +1,63 @@
+.classroom-panel {
+  .messages {
+    background-color: var(--surface-0);
+    margin-top: 2em;
+    padding: 8px;
+
+    &__wrapper {
+      position: relative;
+      margin-top: 2em;
+    }
+
+    &__card {
+      border: 1px solid var(--disabled-color);
+      border-radius: 8px;
+      padding: 17px 14px;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+
+      &__header {
+        display: flex;
+        justify-content: space-between;
+
+        img, .icon {
+          width: 40px;
+          height: 40px;
+          margin-right: 1em;
+          border-radius: 50%;
+        }
+      }
+
+      &__profile {
+        display: flex;
+        align-items: center;
+        margin-bottom: 9px;
+      }
+
+      &__body {
+        display: flex;
+        justify-content: space-between;
+        h2 {
+          font-family: var(--font-family);
+          font-size: 1.8em;
+        }
+      }
+    }
+
+    .empty-message {
+      margin-top: 5%;
+      margin-bottom: 6em;
+      h2 {
+        margin-bottom: 0;
+        font-size: 1.8em;
+        color: var(--primary-color);
+      }
+      p {
+        font-size: 1.6em;
+      }
+    }
+  }
+}

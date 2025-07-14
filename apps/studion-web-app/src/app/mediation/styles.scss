@@ -1,0 +1,87 @@
+.mediation-data-header {
+  text-align: center;
+  margin-bottom: 40px;
+
+  .mediation-data-title,
+  .mediation-data-description {
+    /* UI Properties */
+    text-align: center;
+    font-weight: normal;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    opacity: 1;
+  }
+  .mediation-data-title {
+    letter-spacing: 0.5px;
+    font-size: 2.6em;
+    margin-bottom: 10px;
+  }
+  .mediation-data-description {
+    letter-spacing: 0px;
+    font-size: 1.8em;
+  }
+  .mediation-data-tip {
+    font-size: 1.4em;
+    max-width: 540px;
+    letter-spacing: 0.7px;
+    margin: 3em auto 0 auto;
+    line-height: 1.5em;
+  }
+  .mediation-data-sub {
+    font-family: var(--font-family);
+    margin-top: 16px;
+    color: var(--black-500);
+  }
+}
+
+.mediation-list-actions {
+  .mediation-data-tip {
+    max-width: 100%;
+  }
+}
+
+.add-mediation-action-modal {
+  .form-mediation__configs {
+    max-width: 583px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .modal-description__tip p {
+    font-size: 1.4em;
+    margin-bottom: 2em;
+    color: var(--primary-700);
+    margin: 0 auto;
+    width: 540px;
+  }
+}
+
+.main-content-inner {
+  &.mediation {
+    padding-top: 100px;
+
+    .td-text.with-tooltip {
+      display: flex;
+      justify-content: space-between;
+      max-width: 115px;
+
+      .icon-wrapper {
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
+
+.form__mediation {
+  max-width: 100%;
+  width: 480px;
+  margin: 0 auto 40px;
+}
+
+@media screen and (max-width: 1023px) {
+  .main-content-inner {
+    &.mediation {
+      padding-top: 40px;
+    }
+  }
+}

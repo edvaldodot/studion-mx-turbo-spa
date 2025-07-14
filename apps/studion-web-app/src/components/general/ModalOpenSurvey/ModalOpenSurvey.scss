@@ -1,0 +1,36 @@
+.modal-information.modal-open-survey {
+  .modal-confirm {
+    padding: 45px 68px 33px;
+    .modal-confirm-title {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.modal-open-survey {
+  .modal-open-survey-img__nps {
+    height: 182px;
+    width: 182px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-open-survey-title {
+    font-family: var(--font-family);
+    margin-bottom: 20px;
+    line-height: 150%;
+    color: #45484C;
+    font-weight: 900;
+    font-size: 40px;
+  }
+
+  .modal-open-survey-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+  }
+}

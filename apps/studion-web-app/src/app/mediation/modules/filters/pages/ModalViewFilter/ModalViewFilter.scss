@@ -1,0 +1,31 @@
+.modal-view-filter.modal-form {
+  .tabs {
+    max-width: 520px;
+    margin: 50px auto;
+  }
+}
+
+.modal-show-results {
+  &__info {
+    color: var(--text-color);
+    max-width: 300px;
+    margin-top: 14px;
+    display: inline-block;
+
+    p {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__download {
+    padding-bottom: 10px;
+
+    span {
+      cursor: pointer;
+    }
+
+    .icon {
+      margin-right: 14px;
+    }
+  }
+}

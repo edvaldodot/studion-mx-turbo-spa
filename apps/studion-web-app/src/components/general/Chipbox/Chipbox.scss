@@ -1,0 +1,26 @@
+.chipbox {
+  width: fit-content;
+  padding: 3px 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #ffffff;
+  background-color: var(--black-700);
+  border-radius: 14px;
+
+  &.sessions {
+    background-color: var(--secondary-color);
+  }
+
+  &.trails,
+  &.offerings {
+    background-color: var(--primary-color);
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}

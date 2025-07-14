@@ -1,0 +1,34 @@
+[
+  {
+    "alias": "course",
+    "resource": "Topics"
+  },
+  {
+    "alias": "forum",
+    "resource": "Discussions"
+  },
+  {
+    "alias": "chat",
+    "resource": "Chat Rooms"
+  },
+  {
+    "alias": "conference",
+    "resource": "Conferences Rooms"
+  },
+  {
+    "alias": "poll",
+    "resource": "Polls"
+  },
+  {
+    "alias": "faq",
+    "resource": "FAQ"
+  },
+  {
+    "alias": "knowledgeBase",
+    "resource": "Knowledge Base"
+  },
+  {
+    "alias": "announcement",
+    "resource": "Announcements"
+  }
+]

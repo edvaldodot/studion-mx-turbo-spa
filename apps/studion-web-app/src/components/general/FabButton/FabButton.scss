@@ -1,0 +1,212 @@
+.fabbutton {
+  &__area {
+    width: 100%;
+    bottom: 13px;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10000;
+    touch-action: none;
+    -ms-touch-action: none;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__tip {
+    background-color: #4C4C4C;
+    color: var(--light-color);
+    padding: 6px 12px 6px 10px;
+    border-radius: 4px;
+    position: fixed;
+    right: 120px;
+    bottom: 52px;
+    z-index: 99999;
+    width: max-content;
+    pointer-events: none;
+
+    .icon {
+      width: 12px;
+      height: 12px;
+      margin-right: 6px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 900px;
+    box-shadow: 0px 0px 8px #00000029;
+    transform: translateX(0);
+
+    &:not(.next).prev {
+      transform: translateX(-39%);
+    }
+
+    &:not(.prev).next {
+      transform: translateX(39%);
+    }
+
+    .button-next,
+    .button-prev {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--surface-0);
+      margin: 8px 0;
+      background: var(--secondary-color);
+      width: 40vw;
+      height: 44px;
+
+      .button__area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+      }
+
+      p {
+        color: var(--primary-color);
+        text-transform: uppercase;
+        font-family: var(--font-family);
+        letter-spacing: 0.7px;
+        font-size: 1.2em;
+        font-weight: 900;
+      }
+
+      .button-icon {
+        color: var(--primary-color);
+      }
+
+      &:disabled p,
+      .button-icon--disabled {
+        opacity: 0.5;
+      }
+
+      &.rotate {
+        .fabbutton__icon {
+          transform: rotateZ(180deg);
+        }
+      }
+
+      &.normal {
+        .fabbutton__icon {
+          transform: rotateZ(0);
+        }
+      }
+
+      &.options {
+        margin: 0;
+        padding-inline: 20px;
+        background: var(--surface-0);
+      }
+    }
+
+    .button-next {
+      &.options {
+        border-radius: 0 900px 900px 0;
+      }
+
+      .button__area {
+        flex-direction: row;
+      }
+
+      .button-icon {
+        transform: rotate(180deg);
+      }
+    }
+
+    .button-prev {
+      &.options {
+        border-radius: 900px 0 0 900px;
+      }
+
+      .button__area {
+        flex-direction: row-reverse;
+      }
+    }
+
+    .wrapper-fabbutton__button {
+      background-color: var(--surface-0);
+      height: 44px;
+
+      &:not(.next).prev {
+        border-radius: 0 50% 50% 0;
+      }
+
+      &:not(.prev).next {
+        border-radius: 50% 0 0 50%;
+      }
+
+      &:not(.prev):not(.next) {
+        background: none;
+      }
+    }
+  }
+
+  &__generic {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 4px;
+    gap: 4px;
+    max-width: 182px;
+    width: 100%;
+    transform: translateX(39%);
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: left;
+    background: var(--surface-0);
+    border-radius: 20px;
+    width: 100%;
+    top: 718px;
+
+    &.options {
+      width: 50px;
+      height: 50px;
+      border: 3px solid var(--surface-0);
+      border-radius: 100%;
+      margin-top: -3px;
+    }
+  }
+
+  &__label {
+    padding-inline: 3px;
+    font-family: var(--font-family);
+    color: var(--primary-color);
+    font-size: 0.8em;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+    padding-top: 2px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: #ffffff;
+
+    &.options {
+      height: 44px;
+      width: 55px;
+      border-radius: 50%;
+      background: var(--secondary-color);
+    }
+
+    .icon {
+      max-width: 20px;
+    }
+  }
+}

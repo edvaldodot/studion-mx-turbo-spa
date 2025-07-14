@@ -1,0 +1,13 @@
+.filter-search {
+  &__form {
+    .input-field{
+      .input-field__wrapper{
+        --input-field-bg: var(--black-100);
+        --input-field-border: solid var(--black-100) 1px;
+        --input-field-border-radius: 10rem;
+      }
+    }
+  }
+  &__clear {
+  }
+}

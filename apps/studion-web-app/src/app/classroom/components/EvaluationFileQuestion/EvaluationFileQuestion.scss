@@ -1,0 +1,14 @@
+.evaluation-file-question {
+  > .form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 40px 0 0;
+  }
+
+  .files-form {
+    > .form-item {
+      margin-top: 2em !important;
+    }
+  }
+}

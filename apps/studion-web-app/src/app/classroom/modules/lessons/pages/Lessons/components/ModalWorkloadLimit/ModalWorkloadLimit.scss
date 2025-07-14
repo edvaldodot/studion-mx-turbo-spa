@@ -1,0 +1,27 @@
+.modal-workload-limit {
+  .pre-content {
+    color: var(--primary-color);
+    .icon-wrapper {
+      background-color: var(--primary-color);
+      border-radius: 50%;
+    }
+    p {
+      text-transform: initial;
+      margin-top: 1em;
+    }
+  }
+
+  &__timer {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 1em;
+    color: var(--primary-color);
+    text-transform: lowercase;
+  }
+
+  .modal-confirm {
+    .modal-confirm-actions {
+      justify-content: center;
+    }
+  }
+}

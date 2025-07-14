@@ -1,0 +1,182 @@
+:root {
+  --font-family: var(--font-family);
+  --select-field-height: 45px;
+  --select-field-bg: var(--black-50);
+  --select-field-border: solid var(--black-100) 1px;
+  --select-field-border-radius: 8px;
+  --select-field-padding: 0px 0px 0px 15px;
+
+  --select-field-label-color: var(--black-800);
+  --select-field-label-font-size: 16px;
+  --select-field-label-font-weight: 500;
+
+  --select-field-placeholder-color: var(--black-500);
+  --select-field-placeholder-font-size: 16px;
+
+  --select-field-input-text-color: var(--black-800);
+  --select-field-input-font-size: 16px;
+
+  --select-field-details-color: var(--black-800);
+  --select-field-hint-color: var(--black-800);
+
+  --select-field-required-status-color: var(--primary-color);
+
+  // input status disabled
+  --select-field-disabled-status-color: var(--black-400);
+}
+
+.select-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__label {
+    font-family: var(--font-family);
+    color: var(--select-field-label-color);
+    font-size: var(--select-field-label-font-size);
+    font-weight: var(--select-field-label-font-weight);
+    line-height: 16.8px;
+  }
+
+  &__required {
+    font-size: 16px;
+    color: var(--select-field-required-status-color);
+    font-weight: 500;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--select-field-bg);
+    border: var(--select-field-border);
+    border-radius: var(--select-field-border-radius);
+    height: var(--select-field-height);
+    padding: var(--select-field-padding);
+    position: relative;
+
+    input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: transparent;
+      padding: {
+        top: 13px;
+        bottom: 13px;
+      }
+      font-size: var(--select-field-input-font-size);
+      color: var(--select-field-input-text-color);
+    }
+
+    input::placeholder {
+      font-size: var(--select-field-placeholder-font-size);
+      color: var(--select-field-placeholder-color);
+    }
+
+    input::-webkit-inner-spin-button {
+      appearance: none;
+    }
+
+    &:has(.wrapper__input:focus){
+      border: solid var(--primary-color) 1px;
+    }
+
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 30px var(--select-field-bg) inset;
+    }
+  }
+  &__details {
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--select-field-details-color);
+
+    &__hint {
+      color: var(--select-field-hint-color);
+    }
+  }
+}
+.wrapper {
+  &__input {
+  }
+  &__right {
+  }
+  &__dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 8px;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 99 !important;
+    ul {
+      flex-direction: column;
+      background-color: var(--surface-0);
+      border-radius: 8px;
+      border: solid var(--black-100) 1px;
+      z-index: 1;
+      overflow: auto;
+    }
+  }
+  &__append {
+  }
+  &__append--clear {
+  }
+  &__append--pointer {
+    span {
+      .icon {
+        color: var(--text-color);
+      }
+    }
+  }
+  &__append--helper {
+  }
+}
+.dropdown {
+  &__item {
+    padding: 8px;
+    color: var(--black-500);
+    font-size: 14px;
+
+    &:hover {
+      &:last-child,
+      &:first-child{
+        border-radius: var(--select-field-border-radius);
+      }
+      background-color: var(--black-50);
+    }
+  }
+  &__item--empty-message {
+  }
+  &__item--loading {
+  }
+
+  &__hint{
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--select-field-hint-color);
+  }
+}
+.details {
+  &__message-warning {
+  }
+}
+
+.--error {
+  --select-field-border: solid var(--error-900) 1px;
+  --select-field-hint-color: var(--error-900);
+  --select-field-input-text-color: var(--error-900);
+  --select-field-placeholder-color: var(--error-900);
+}
+
+.--disabled {
+  --select-field-label-color: var(--select-field-disabled-status-color);
+  --select-field-border: solid var(--select-field-disabled-status-color) 1px;
+  --select-field-hint-color: var(--select-field-disabled-status-color);
+  --select-field-input-text-color: var(--select-field-disabled-status-color);
+  --select-field-icon-visibility-color: var(--select-field-disabled-status-color);
+}

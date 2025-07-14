@@ -1,0 +1,39 @@
+.modal-form-box--research {
+  color: var(--text-color);
+
+  .modal-form-box-ls-values {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+    .form-item {
+      width: 60px;
+    }
+    span {
+      font-size: 1.6em;
+      margin-bottom: 28px;
+    }
+  }
+
+  .modal-form-box-ls-markers {
+    &-n {
+      display: flex;
+      align-items: center;
+      gap: 2em;
+
+      .form-item {
+        width: 100%;
+      }
+
+      p {
+        margin-bottom: 1.8em;
+        width: 24px;
+      }
+    }
+
+    &-tip {
+      display: flex;
+      gap: 8px;
+    }
+  }
+}

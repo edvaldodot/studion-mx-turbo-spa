@@ -1,0 +1,76 @@
+.input-chip-container {
+  position: relative;
+  border-bottom: 1px solid var(--primary-color);
+  min-height: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+  .chip-closeable {
+    margin: 4px;
+    padding: 0px 4px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+
+    .chip-close-btn {
+      cursor: pointer;
+      opacity: 0.56;
+      margin-left: 8px;
+      color: var(--primary-color);
+    }
+  }
+
+  input {
+    flex: 1 1 auto;
+    width: 30px;
+    border: none;
+    outline: none;
+    padding: 4px 0px;
+    color: var(--text-color);
+    caret-color: var(--text-color);
+    background-color: transparent;
+
+    &::placeholder {
+      color: var(--text-color);
+      font-weight: lighter;
+    }
+  }
+
+  &.theme-dark {
+    border-bottom: 1px solid var(--text-color);
+
+    .chip-closeable svg {
+      color: var(--text-color);
+    }
+
+    input {
+      color: var(--text-color);
+      caret-color: var(--text-color);
+      &::placeholder {
+        color: var(--text-color);
+      }
+    }
+  }
+
+  .form-autocomplete-options {
+    top: calc(100% + 24px);
+  }
+}
+
+.chip-input__counter {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.theme-dark {
+  .chip-input__counter {
+    .form-input-counter {
+      color: var(--primary-700);
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.progress-toggle-list {
+  &__action {
+    color: var(--text-color);
+    span {
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 14px;
+    }
+  }
+}
+
+button.progress-toggle-list__action .text {
+  vertical-align: middle;
+}
+
+.progress-toggle-list__component {
+  --progress-color: var(--alert-900);
+  --completed-color: var(--secondary-color);
+  --progress-bg-color: var(--black-200);
+  --progress-item-border-color: var(--primary-400);
+}
+
+.progress-toggle-list__header {
+  display: flex;
+  align-items: center;
+
+  > * {
+    margin: 5px;
+  }
+}
+
+.progress-toggle-list__body {
+  margin-top: 1em;
+  margin-left: 3.5em;
+}
+
+.progress-toggle-list__title {
+  flex: 1;
+  span {
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 1.6em;
+    color: var(--text-color);
+    margin-bottom: 10px;
+  }
+}
+
+.progress-toggle-list__background {
+  flex: 1;
+  max-width: 150px;
+  position: relative;
+  background: var(--progress-bg-color);
+  border-radius: 4px;
+
+  @media (max-width: 450px) {
+    max-width: 60px;
+  }
+}
+
+.progress-toggle-list__line {
+  background: var(--progress-color);
+  height: 8px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.progress-toggle-list__info {
+  font-family: var(--font-family);
+  font-size: 1.5em;
+  color: var(--text-color);
+  width: 3em;
+  text-align: right;
+}
+
+.progress-toggle-list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-family);
+  font-size: 1.6em;
+  color: var(--text-color);
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid var(--black-200);
+
+  &:last-child {
+    border: none;
+  }
+
+  &.--completed {
+    &:before {
+      content: ' ';
+      position: absolute;
+      top: 15px;
+      left: 5px;
+      height: 8px;
+      width: 7px;
+      background-color: var(--bg-white);
+    }
+
+    .progress-toggle-list__icon {
+      color: var(--success-900);
+    }
+  }
+}
+
+.progress-toggle-list__icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 0.5em;
+  position: relative;
+}
+
+.progress-toggle-list__name {
+  flex: 1;
+}
+
+.progress-toggle-list__toggle-button {
+  margin-left: 0;
+  .icon-wrapper {
+    height: 24px;
+    width: 24px;
+  }
+}

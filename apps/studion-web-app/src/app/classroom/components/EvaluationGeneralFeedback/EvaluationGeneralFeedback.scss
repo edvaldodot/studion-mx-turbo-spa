@@ -1,0 +1,32 @@
+.evaluation-question-comment {
+  &.general-feedback {
+    margin-left: 40px;
+  }
+}
+
+.evaluation-question-general-feedback-user-image {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.evaluation-question-feedback {
+  &.general-feedback {
+    color: var(--text-color);
+    background-color: var(--primary-color);
+  }
+}
+
+.general-feedback {
+  &__title {
+    font-family: var(--font-family);
+    font-weight: bold;
+  }
+
+  &__body {
+    margin-left: 20px;
+  }
+
+  &__form {
+    margin-top: 20px;
+  }
+}

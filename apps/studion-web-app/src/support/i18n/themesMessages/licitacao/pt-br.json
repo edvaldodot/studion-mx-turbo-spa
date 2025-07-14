@@ -1,0 +1,9 @@
+{
+  "global:solution.description": "Objetivo",
+  "global:solution.class": "Conteúdo programático",
+  "global:form.description": "Objetivo",
+  "global:form.audience": "Público-alvo",
+  "global:form.programContent": "Conteúdo programático",
+  "offerings.view:offer.public.title": "Público-alvo",
+  "offerings.view:offer.public.programContent": "Conteúdo programático"
+}

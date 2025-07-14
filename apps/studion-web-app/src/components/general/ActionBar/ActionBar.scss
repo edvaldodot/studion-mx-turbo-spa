@@ -1,0 +1,48 @@
+.action-bar {
+  position: absolute;
+  top: 10px;
+  right: 32px;
+  height: 40px;
+  padding: 0;
+  z-index: 10;
+}
+
+.font-size-1 .dashboard .action-bar,
+.font-size-2 .dashboard .action-bar {
+  margin-right: 2em;
+}
+
+.action-bar-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.action-bar-item:first-child {
+  margin-left: 0;
+}
+
+.action-bar-link {
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.action-bar-link:hover {
+  color: var(--primary-color);
+}
+
+.action-bar-link.is-active {
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.dashboard {
+  .action-bar-link {
+    color: var(--dashboard-profile-icon-color);
+  }
+
+  .action-bar-link:hover {
+    color: var(--dashboard-profile-icon-color-hover);
+  }
+}

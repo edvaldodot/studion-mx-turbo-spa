@@ -1,0 +1,84 @@
+.modal-information.modal-group-creation {
+  .modal-confirm-title {
+    margin-bottom: 2rem;
+  }
+
+  .modal-confirm-footer {
+    margin-top: 30px;
+  }
+
+  .modal-confirm-actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  .user__user {
+    padding: 0.8em 0;
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+
+    .form-item {
+      margin-bottom: 0;
+      margin-left: auto;
+    }
+  }
+
+  .user__name {
+    word-break: break-word;
+    font-size: 1.6em;
+
+    span {
+      text-transform: lowercase;
+    }
+  }
+
+  .user__photo {
+    img,
+    .icon {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+  }
+
+  .datatable-wrapper {
+    margin-top: 30px;
+    padding: 0;
+
+    .th {
+      color: var(--black-500);
+    }
+
+    .td {
+      border-bottom-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .students-count {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-family);
+    font-size: 1.6em;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 1;
+      min-width: 40px;
+      max-width: min-content;
+      background-color: var(--alert-900);
+      border-radius: 50%;
+      padding: 0 5px;
+      font-weight: bold;
+    }
+  }
+
+  .empty-message p {
+    color: var(--black-500);
+  }
+}

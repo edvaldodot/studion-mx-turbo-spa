@@ -1,0 +1,25 @@
+.custom-instructions-form {
+  form {
+    display: flex;
+    gap: 12px;
+
+    button {
+      margin-top: 1em;
+      min-width: 150px;
+    }
+
+    .form-item:nth-child(2) {
+      flex: 1;
+    }
+  }
+
+  td {
+    font-size: 1.6em;
+  }
+
+  @media screen and (max-width: 1024px) {
+    form {
+      flex-wrap: wrap;
+    }
+  }
+}

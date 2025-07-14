@@ -1,0 +1,96 @@
+.mediation-list {
+  .datatable-wrapper {
+    .th:first-of-type,
+    .td:first-of-type:not(.td-dropdown) {
+      padding-left: 15px;
+    }
+
+    .tr-parent-dropdown.is-open {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .tr-dropdown {
+      .td-dropdown {
+        padding: 0;
+      }
+
+      .tr-dropdown-content {
+        background-color: rgba(0, 0, 0, 0.03);
+      }
+
+      .empty-message {
+        margin: 15px 0;
+
+        h2 {
+          font-size: 1.6em;
+          margin-bottom: 14px;
+        }
+
+        p {
+          font-size: 1.4em;
+        }
+      }
+    }
+
+    .dropdown-content-link {
+      &.is-disabled {
+        pointer-events: initial;
+      }
+    }
+
+    &.details {
+      padding: 0;
+
+      .datatable {
+        margin: 15px 0;
+      }
+
+      .th {
+        font-size: 1.4em;
+        padding-bottom: 14px;
+      }
+
+      td {
+        height: 40px;
+      }
+
+      .td-text {
+        font-size: 1.6em;
+      }
+    }
+  }
+}
+
+.duplicate_modal__checkbox {
+  &.form-item {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .mediation-list {
+    .datatable-wrapper {
+      .tr-dropdown {
+        .empty-message {
+          h2 {
+            font-size: 1.4em;
+          }
+
+          p {
+            font-size: 1.2em;
+          }
+        }
+      }
+
+      &.details {
+        .th {
+          font-size: 1.2em;
+        }
+
+        .td-text {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.avatar-list {
+  $size: 36px;
+  $speed: 0.1s;
+
+  display: flex;
+  div {
+    width: $size * 0.6;
+    transition: width $speed;
+    img,
+    .icon {
+      position: relative;
+      width: $size - 2px;
+      height: $size - 2px;
+      border: 2px solid var(--surface-border);
+      border-radius: 50%;
+      background-color: var(--surface-0);
+      transition: margin $speed;
+    }
+
+    &:hover {
+      width: $size + 4px;
+      margin-right: calc($size / 4);
+      img {
+        margin-left: calc($size / 3);
+      }
+    }
+    &:first-child:hover {
+      width: $size;
+      margin-right: 0;
+      img {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__tooltip {
+    max-width: 550px;
+
+    h3 {
+      font-size: 1em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+  }
+}

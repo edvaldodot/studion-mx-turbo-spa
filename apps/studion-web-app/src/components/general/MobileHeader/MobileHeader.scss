@@ -1,0 +1,24 @@
+.mobile-header {
+  position: relative;
+  height: 55px;
+  background: var(--secondary-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.mobile-header .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.mobile-header .logo-image {
+  display: block;
+  width: 30px;
+  height: 20px;
+}
+
+.mobile-header .btn-menu {
+  margin: 7px 10px;
+  color: rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,37 @@
+{
+  "editor.rulers": [{ "column": 100 }],
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.words": [
+    "devstack",
+    "facebadge",
+    "keycloak",
+    "scorm",
+    "studion",
+    "usecase",
+    "lodash",
+    "vimeo",
+    "vuex",
+    "rushstack",
+    "vuelidate",
+    "luxon",
+    "navs",
+    "testid",
+    "datatable",
+    "pgtr",
+    "gamification",
+    "powerbi",
+    "cropperjs",
+    "interactjs",
+    "smoothscroll-polyfill",
+    "vue-input-autowidth",
+    "vue-demi",
+    "gtag",
+    "hotjar",
+    "vuedraggable"
+  ],
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  }
+}

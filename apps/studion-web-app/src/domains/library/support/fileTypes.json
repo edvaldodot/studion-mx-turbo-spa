@@ -1,0 +1,54 @@
+{
+  "fileTypes":
+    [
+      {
+        "mime": [
+          "image/png",
+          "image/jpeg",
+          "image/svg+xml",
+          "image/gif",
+          "image/webp"
+        ],
+        "alias": "image"
+      },
+      {
+        "mime": [
+          "application/pdf"
+        ],
+        "alias": "pdf"
+      },
+      {
+        "mime": [
+          "audio/mp3",
+          "audio/ogg",
+          "audio/webm",
+          "audio/aac",
+          "audio/x-wav",
+          "audio/3gpp",
+          "audio/3gpp2"
+        ],
+        "alias": "music"
+      },
+      {
+        "mime": [
+          "video/mp4",
+          "video/ogg",
+          "video/webm",
+          "video/x-msvideo",
+          "video/mpeg",
+          "video/3gpp",
+          "video/3gpp2"
+        ],
+        "alias": "video"
+      },
+      {
+        "mime": [
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "application/msword",
+          "text/plain"
+        ],
+        "alias": "document"
+      }
+    ]
+}

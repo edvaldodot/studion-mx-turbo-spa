@@ -1,0 +1,55 @@
+.library-usage {
+  display: inline-block;
+  vertical-align: middle;
+  width: 340px;
+}
+
+.library-usage-used {
+  float: left;
+  font-size: 1.4em;
+  color: var(--black-500);
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.library-usage-total {
+  float: right;
+  font-size: 1.4em;
+  color: var(--black-500);
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.library-usage .progress-container {
+  height: 20px;
+  margin-bottom: 10px;
+  padding: 3px;
+}
+
+.library-usage .progress-container .progress-bar {
+  height: 10px;
+}
+
+@media screen and (max-width: 1250px) {
+  .library-usage {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .library-usage {
+    display: block;
+    width: auto;
+    margin: 0 10px 20px;
+    height: 45px;
+    position: relative;
+  }
+
+  .library-usage-control {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,142 @@
+.mobile-enroll-sessions .modal {
+  margin: 0;
+  width: calc(100% - 16px);
+
+  .modal-confirm-title {
+    margin-bottom: 14px;
+  }
+
+  .pre-content {
+    margin: 0;
+  }
+
+  .modal-confirm-actions {
+    justify-content: center;
+    padding-top: 40px;
+  }
+
+  .modal-responsive-title {
+    padding: 10px 10px;
+    font-size: 20px;
+  }
+
+  .modal-resposive-description {
+    color: var(--primary-color);
+  }
+
+  .modal-resposive-sub-description {
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 20px;
+  }
+
+  .modal-confirm-footer {
+    .datatable-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 40px 0px 20px;
+
+      &__name {
+        color: var(--text-color);
+        font-weight: bold;
+      }
+
+      &__date {
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+
+
+        &__initial {
+          font-weight: bold;
+          color: var(--text-color);
+          padding-right: 100px;
+        }
+
+        &__end {
+          font-weight: bold;
+          color: var(--text-color);
+          padding-right: 60px;
+        }
+      }
+    }
+
+    .datatable-content-header {
+      display: flex;
+      flex-direction: row;
+      width: 40%;
+
+
+
+      &__date__initial {
+        padding-right: 55px;
+      }
+    }
+
+    .session-item {
+      display: flex;
+      justify-content: space-between;
+      gap: 6px;
+      padding: 15px 0;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid rgba(#000, 0.1);
+      position: relative;
+
+      .name {
+        font-weight: bold;
+      }
+
+      .form-radio-item {
+        width: fit-content;
+
+        .form-radio {
+          inset: 0;
+          position: absolute;
+          z-index: 1;
+          opacity: 0;
+        }
+      }
+
+      &__session {
+        max-width: 50%;
+      }
+
+      &__radio-name {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .session-item {
+      .content {
+        flex: 1;
+
+        .name {
+          margin-bottom: 8px;
+          min-height: 2.375rem;
+          width: 100%;
+          max-width: 150ch;
+          word-break: break-word;
+          font-size: 0.875rem;
+          line-height: 1.188rem;
+        }
+
+        .dates {
+          display: flex;
+          gap: 14px;
+
+          .label {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.modal-card-card-announcement {
+  width: 100%;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+
+  .modal-title {
+    word-break: break-word;
+    text-align: left;
+    margin: 0px 0 20px;
+    color: var(--text-color);
+    font-size: 3.5em;
+    text-transform: none;
+  }
+
+  &__header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    text-align: right;
+  }
+
+  .font-size-1 &__info,
+  .font-size-2 &__info {
+    top: 35px;
+    right: 15px;
+  }
+
+  &__status {
+    display: block;
+    font-family: var(--font-family);
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+
+  &__date {
+    font-size: 1.6em;
+  }
+
+  &__content {
+    line-height: 1.4;
+    word-break: break-word;
+
+    img {
+      max-width: 100%;
+    }
+
+    ul, ol {
+      font-size: 1em;
+      margin: .5em 0 .5em 2em;
+    }
+    li::before {
+      content: unset;
+    }
+    ol {
+      list-style: decimal;
+    }
+    ul {
+      list-style: initial;
+    }
+  }
+
+  .user-profile {
+    flex: 1;
+
+    &__image-wrapper {
+      float: left;
+      margin-right: 10px;
+
+    }
+
+    &__image,
+    &__icon {
+      width: 40px;
+      height: 40px;
+      color: var(--black-500);
+    }
+
+    &__image {
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    &__position {
+      display: block;
+      line-height: 20px;
+      font-family: var(--font-family);
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+
+    &__name {
+      display: block;
+      line-height: 20px;
+      font-family: var(--font-family);
+      font-size: 1.6em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

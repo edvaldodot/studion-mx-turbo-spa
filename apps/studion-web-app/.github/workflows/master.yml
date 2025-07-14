@@ -1,0 +1,16 @@
+name: Master Workflow - Produção
+
+on:
+  workflow_dispatch: {} 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: curlimages/curl:latest
+    steps:
+      - name: Deploy Producao
+        run: |
+              echo "Running immediately on homolog branch."
+              echo "Iniciando pipe"
+              curl -X POST -H 'Content-Type application/json' -d '{}' https://okd3-hom-aws.dotgroup.com.br:8443/apis/build.openshift.io/v1/namespaces/jenkins/buildconfigs/studion-api-pipeline/webhooks/4e0e228e454ada84/generic

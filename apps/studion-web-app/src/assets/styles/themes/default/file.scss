@@ -1,0 +1,65 @@
+.form-input-file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.form-input-wrapper.file-2 .form-input-file-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.form-input-wrapper.file-2 .form-input {
+  background: white;
+  color: var(--primary-color);
+  border-bottom: none;
+  padding-left: 38px;
+}
+
+.form-input-wrapper.file-2 .form-input-append svg {
+  color: var(--primary-color) !important;
+}
+
+.form-input-file-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px 0;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1.6em;
+  font-weight: 900;
+  line-height: 1em;
+  text-transform: uppercase;
+  z-index: 2;
+  color: var(--primary-color);
+}
+
+.form-input-file-label:hover {
+  color: var(--primary-500);
+}
+
+.form-item.is-disabled .form-input-file-label,
+.form-item.is-disabled .form-input-file-label:hover {
+  cursor: default;
+  color: rgba(255,255,255,0.25);
+}
+
+/* THEME DARK */
+
+.theme-dark .form-input-file-label {
+  color: var(--light-color);
+}
+
+.theme-dark .form-input-file-label:hover {
+  color: var(--alert-900);
+}
+
+.theme-dark .form-input-file-label:active {
+  color: var(--alert-900);
+}
+

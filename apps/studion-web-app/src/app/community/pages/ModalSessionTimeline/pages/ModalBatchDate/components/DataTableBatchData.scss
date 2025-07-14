@@ -1,0 +1,155 @@
+.datatable__batch__data {
+  position: relative;
+
+  .form-input-message {
+    font-size: 1em;
+  }
+
+  .datatable {
+    .tr-body .icon-wrapper {
+      height: auto;
+    }
+
+    .td-check {
+      .form-checkbox-switch-item {
+        width: fit-content;
+      }
+    }
+
+    .th,
+    .td {
+      vertical-align: middle;
+      padding-right: 0px;
+    }
+
+    .th:nth-child(4),
+    .td:nth-child(4) {
+      padding-right: 15px;
+    }
+
+    .th:nth-child(1) {
+      display: flex;
+    }
+
+    .form-input-datepicker-inner .icon {
+      color: unset;
+    }
+
+    .td-datepicker {
+      padding-left: 20px;
+    }
+
+    .session-titles {
+      display: inline-block;
+      padding: 0 10px 0 10px;
+      margin-bottom: 10px;
+      word-break: break-word;
+      max-height: 60px;
+      overflow: hidden;
+    }
+
+    .session-dates {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 1.5em;
+      margin-bottom: 10px;
+    }
+  }
+}
+.batch-data__table {
+  --width: 100%;
+
+  .datatable {
+    width: var(--width);
+    .th:last-child {
+      padding-right: 0;
+    }
+
+    th .clamp-line {
+      font-weight: bold;
+      height: 40px;
+    }
+
+    .btn-evaluation {
+      color: var(--bg-header-admin);
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+  }
+
+  .datatable-wrapper {
+    padding-bottom: 4px;
+
+    .td-actions .checkbox-form-item {
+      transform: translateY(-5px);
+    }
+
+    .tr-mobile {
+      display: flex;
+      flex-direction: column;
+      padding-top: 10px;
+
+      :nth-child(1) {
+        &.td-actions {
+          border-bottom: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .batch-data__table .datatable {
+      .th,
+      .td {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 14;
+        padding-top: 9px;
+      }
+
+      .td {
+        display: block;
+        margin: 0;
+        height: auto;
+
+        &:first-child {
+          padding-top: 20px;
+        }
+
+        .clamp-line {
+          display: block;
+          font-size: 16px;
+        }
+
+        &.td-actions {
+          padding-bottom: 10px;
+
+          &.generic {
+            padding-right: 0;
+            border-bottom: 0;
+          }
+        }
+
+        .td-text-header {
+          font-weight: bold;
+        }
+      }
+
+      .td-text {
+        line-height: 2.4em;
+      }
+
+      .td-datepicker {
+        padding: 15px 0 0 0;
+      }
+
+      .session-titles {
+        max-height: none;
+        padding: 10px 0;
+        line-height: 1.5;
+      }
+  }
+}

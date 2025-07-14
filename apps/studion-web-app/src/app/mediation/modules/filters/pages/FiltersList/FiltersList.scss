@@ -1,0 +1,16 @@
+.filters {
+  .dropdown-content-link {
+    &.is-disabled {
+      pointer-events: auto;
+    }
+  }
+}
+
+.modal-confirm {
+  &__filters {
+    .modal-confirm-footer {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

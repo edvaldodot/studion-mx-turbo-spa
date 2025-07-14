@@ -1,0 +1,63 @@
+.card-chat__header.--overlayed:before {
+  width: 100%;
+  height: 40px;
+  background: var(--transparent-primary-gradient);
+}
+
+.card-chat__options .icon {
+  color: var(--text-color);
+}
+
+.card-chat__content {
+  height: 120px;
+  padding: 10px 20px;
+}
+
+.card-chat__title {
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.card-chat__dates span {
+  display: block;
+  font-size: 1.4em;
+  color: var(--black-700);
+  line-height: 20px;
+}
+
+.card-chat__status {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 1.4em;
+  color: var(--primary-500);
+  line-height: 20px;
+  margin-top: 5px;
+}
+
+.card-chat__status.is-waiting {
+  color: var(--primary-color);
+}
+
+.card-chat__status.is-closed {
+  color: var(--alert-500);
+}
+
+.card-chat__participants {
+  display: block;
+  font-size: 1.4em;
+  color: var(--black-500);
+  margin-top: 5px;
+}
+
+.card-chat__participants:hover {
+  text-decoration: underline;
+  color: var(--primary-500);
+}
+
+.card-chat__footer {
+  padding: 10px;
+  height: 60px;
+}

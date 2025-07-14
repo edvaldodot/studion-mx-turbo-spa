@@ -1,0 +1,239 @@
+.community .filter {
+  margin-bottom: 40px;
+}
+
+.community-sessions .datatable .tr-body .icon-wrapper {
+  height: auto;
+}
+
+.community.community-user .datatable .th,
+.community.community-user .datatable .td {
+  vertical-align: middle;
+  padding-right: 30px;
+}
+
+.community.community-user .datatable .th:nth-child(4),
+.community.community-user .datatable .td:nth-child(4) {
+  padding-right: 20px;
+}
+
+.community-sessions__table,
+.community-users__table {
+  --width: 100%;
+
+  .datatable {
+    width: var(--width);
+
+    .clamp-line {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    th .clamp-line {
+      height: 40px;
+    }
+
+    .vacancies {
+      min-width: 200px;
+    }
+
+    .question-feedback-icon {
+      margin-top: -8px;
+      svg {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: none;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--black-500);
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--black-700);
+  }
+}
+
+.datatable__sessions,
+.datatable__users {
+  position: relative;
+
+  .floating-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+    .empty-head,
+    .action {
+      width: 75px;
+      height: 73px;
+    }
+
+    .action {
+      margin: 2px 0;
+    }
+  }
+}
+
+.datatable__sessions {
+  .floating-actions {
+    .empty-head {
+      height: 39px;
+    }
+    .action {
+      height: 58px;
+    }
+  }
+}
+
+.community.community-sessions .datatable-wrapper,
+.community.community-user .datatable-wrapper {
+  overflow-x: auto;
+  padding-bottom: 4px;
+
+  .tr-mobile {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    :nth-child(2n) {
+      &.td-actions {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+      }
+
+      .dropdown-content {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+}
+.community__buttons {
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+.community.community-user .datatable .th:last-child {
+  padding-right: 0;
+}
+
+.community.community-user .datatable .td-user {
+  white-space: normal;
+  display: inline-flex;
+}
+
+.community.community-user .datatable .td-text {
+  line-height: 1.8em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.community.community-user .datatable .td-user .td-text.compact-lines {
+  display: -webkit-box;
+  max-height: 50px;
+}
+
+.community .batch-processing {
+  margin: 5px 0;
+}
+
+.community .batch-processing > span.bolder {
+  font-size: 0.9em;
+}
+
+.community .batch-processing .td-tag {
+  margin-top: 5px;
+}
+
+.community .batch-processing .td-tag span {
+  font-size: 0.8em;
+}
+
+.modal-add-group .generic-card.--rounded {
+  overflow: visible;
+}
+
+.group-user-table {
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 921px) and (max-width: 1220px) {
+  .community.community-user .datatable .th,
+  .community.community-user .datatable .td {
+    padding-right: 20px;
+  }
+
+  .community.community-user .datatable .th:nth-child(4),
+  .community.community-user .datatable .td:nth-child(4) {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .community .filter {
+    margin-bottom: 0;
+  }
+
+  .community.community-user .datatable .td .btn .text {
+    font-size: 14px;
+    padding-top: 9px;
+  }
+
+  .community.community-user .datatable .td.td-actions .dropdown .icon {
+    margin-top: 15px;
+  }
+
+  .community-users__table .td-actions {
+    position: static;
+
+    .dropdown {
+      width: fit-content;
+      display: block;
+    }
+  }
+
+  .community.community-user .datatable .th,
+  .community.community-user .datatable .td {
+    padding-right: 20px;
+  }
+
+  .community.community-user .datatable .td:last-child {
+    padding-right: 0px;
+  }
+
+  .community.community-user .datatable .td-text {
+    line-height: 1.4em;
+  }
+
+  .community.community-user .datatable .td.user-username {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .enrollment-colapse-data__action {
+    align-self: flex-start;
+  }
+}

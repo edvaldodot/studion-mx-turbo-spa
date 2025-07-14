@@ -1,0 +1,89 @@
+* {
+  --upload-image-background: var(--black-50);
+  --upload-image-required-status-color: var(--primary-color)
+}
+
+.upload-image {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+
+  &__label {
+    color: var(--black-800);
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  &__required {
+    font-size: 16px;
+    color: var(--upload-image-required-status-color);
+    font-weight: 500;
+  }
+  &__drop {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: absolute;
+  }
+  &__wrapper,
+  &__preview {
+    width: 100%;
+    height: 176px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 2px dashed var(--black-100);
+    background: var(--upload-image-background);
+  }
+  &__preview {
+    justify-content: end;
+  }
+  &__icon {
+    span {
+      font-size: 35px;
+    }
+  }
+  &__hint {
+    color: var(--black-800);
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  &__instructions {
+    color: var(--black-600);
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  &__preview {
+  }
+  &__change-image {
+    width: 285px;
+    border-radius: 900px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 16px;
+    padding: {
+      top: 8px;
+      bottom: 8px;
+    }
+  }
+}
+
+.--in-drag-over {
+  --upload-image-background: var(--black-100);
+}

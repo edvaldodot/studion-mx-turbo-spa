@@ -1,0 +1,191 @@
+:root {
+  --input-field-height: 45px;
+  --input-field-bg: var(--black-50);
+  --input-field-border: solid var(--black-100) 1px;
+  --input-field-border-radius: 8px;
+  --input-field-padding: 0px 0px 0px 15px;
+  --input-field-prepend-color: var(--black-800);
+  --input-field-append-color: var(--black-800);
+
+  --input-field-label-color: var(--black-800);
+  --input-field-label-font-size: 16px;
+  --input-field-label-font-weight: 500;
+
+  --input-field-placeholder-color: var(--black-500);
+  --input-field-placeholder-font-size: 16px;
+
+  --input-field-input-text-color: var(--black-800);
+  --input-field-input-font-size: 16px;
+
+  --input-field-help-color: var(--black-800);
+  --input-field-counter-color: var(--black-800);
+
+  --input-field-details-color: var(--black-800);
+  --input-field-hint-color: var(--black-800);
+  --input-field-details-counter-color: var(--black-800);
+
+  --input-field-required-status-color: var(--primary-color);
+
+  // password
+  --input-field-icon-visibility-color: var(--black-800);
+
+  // input status disabled
+  --input-field-disabled-status-color: var(--black-400);
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__label {
+    font-family: var(--font-family);
+    color: var(--input-field-label-color);
+    font-size: var(--input-field-label-font-size);
+    font-weight: var(--input-field-label-font-weight);
+    line-height: 16.8px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--input-field-bg);
+    border: var(--input-field-border);
+    border-radius: var(--input-field-border-radius);
+    height: var(--input-field-height);
+    padding: var(--input-field-padding);
+
+    input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: transparent;
+      padding: {
+        top: 13px;
+        bottom: 13px;
+      }
+      font-size: var(--input-field-input-font-size);
+      color: var(--input-field-input-text-color);
+    }
+    input::placeholder {
+      font-size: var(--input-field-placeholder-font-size);
+      color: var(--input-field-placeholder-color);
+    }
+    input::-webkit-inner-spin-button {
+      appearance: none;
+    }
+
+    input:is(input:disabled) {
+      &::placeholder {
+        font-size: var(--input-field-placeholder-font-size);
+        color: var(--input-field-placeholder-color);
+      }
+    }
+
+    &:has(.wrapper__input:focus) {
+      border: solid var(--primary-color) 1px;
+    }
+
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 30px var(--input-field-bg) inset;
+    }
+  }
+  &__prepend {
+    color: var(--input-field-prepend-color);
+  }
+  &__append {
+    display: flex;
+    align-items: center;
+    color: var(--input-field-append-color);
+
+    .percent {
+      padding: 4px;
+    }
+  }
+  &__btn-visibility {
+    .icon {
+      color: var(--input-field-icon-visibility-color);
+    }
+  }
+  &__controls {
+    display: flex;
+    flex-direction: column;
+  }
+  &__details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--font-family);
+    &:has(.details__hint),
+    &:has(.input-message) {
+      justify-content: space-between;
+    }
+  }
+}
+
+.label {
+  &__required {
+    font-size: 16px;
+    color: var(--input-field-required-status-color);
+    font-weight: 500;
+  }
+}
+
+.details {
+  color: var(--input-field-details-color);
+  &__hint {
+    color: var(--input-field-hint-color) !important;
+    font-weight: 500;
+    font-style: italic;
+  }
+}
+
+.prepend {
+  &__label {
+  }
+  &__icon {
+  }
+}
+.wrapper {
+  &__input {
+  }
+}
+.append {
+  &__label {
+  }
+}
+.controls {
+  &__add {
+  }
+  &__remove {
+  }
+}
+.details {
+  &__counter {
+    width: 100px;
+    text-align: right;
+    color: var(--input-field-details-counter-color);
+  }
+  &__password-mobile {
+  }
+}
+
+.--error {
+  --input-field-border: solid var(--error-900) 1px;
+  --input-field-hint-color: var(--error-900);
+  --input-field-input-text-color: var(--error-900);
+  --input-field-placeholder-color: var(--error-900);
+}
+
+.--disabled {
+  --input-field-label-color: var(--input-field-disabled-status-color);
+  --input-field-details-counter-color: var(--input-field-disabled-status-color);
+  --input-field-border: solid var(--input-field-disabled-status-color) 1px;
+  --input-field-hint-color: var(--input-field-disabled-status-color);
+  --input-field-input-text-color: var(--input-field-disabled-status-color);
+  --input-field-icon-visibility-color: var(--input-field-disabled-status-color);
+  --input-field-append-color: var(--input-field-disabled-status-color);
+  --input-field-prepend-color: var(--input-field-disabled-status-color);
+}

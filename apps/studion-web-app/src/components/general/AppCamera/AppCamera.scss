@@ -1,0 +1,29 @@
+.webcam-container {
+  position: relative;
+  margin: 0 auto;
+
+  video {
+    &.--invert {
+      transform: scale(-1, 1);
+    }
+  }
+
+  video,
+  canvas {
+    height: 310px;
+    width: 520px;
+  }
+
+  &__error {
+    color: var(--alert-700);
+    margin-top: 1em;
+  }
+
+  @media (max-width: 768px) {
+    video,
+    canvas {
+      height: 300px;
+      width: 225px;
+    }
+  }
+}

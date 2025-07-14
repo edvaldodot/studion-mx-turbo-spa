@@ -1,0 +1,25 @@
+.wrapper-card__categories {
+  margin: 5px 0;
+}
+
+.card-categories {
+  display: flex;
+  bottom: 10px;
+  width: 100%;
+  max-width: 400px;
+  z-index: 5;
+  overflow: hidden;
+
+  &.hidden-categories {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .chip {
+    margin: 4px 10px 4px 0;
+
+    &:first-child() {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.offering-item .enroll-section.mobile {
+  position: static;
+  margin: 0 -8px;
+  border-radius: unset;
+  background: var(--secondary-color);
+
+  .offer-price-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+
+    .btn {
+      background: var(--primary-color);
+      width: 100%;
+      border-radius: unset;
+      border: unset;
+      height: 60px;
+    }
+  }
+
+  .offer-info {
+    background: var(--bg-modal);
+    padding: 20px 8px 30px;
+  }
+
+  .offer-public-title {
+    margin-bottom: 20px;
+  }
+
+  .offer-public-description {
+    line-height: 1.188rem;
+  }
+}

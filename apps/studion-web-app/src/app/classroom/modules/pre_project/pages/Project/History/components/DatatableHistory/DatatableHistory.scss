@@ -1,0 +1,16 @@
+.datatable-history {
+  .tag {
+    background-color: var(--gray);
+    padding: 4px 18px;
+    border-radius: 36px;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .tag {
+      font-size: 0.9em;
+    }
+  }
+}

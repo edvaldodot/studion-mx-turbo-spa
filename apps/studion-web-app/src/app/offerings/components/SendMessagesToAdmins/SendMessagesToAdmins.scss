@@ -1,0 +1,53 @@
+.send-messages-to-admins {
+  margin-block: 42px;
+
+  h2 {
+    font-family: var(--font-family);
+    font-size: 1.6em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00000080;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-family: var(--font-family);
+  }
+
+  &__checkbox {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+  }
+
+  &__label-input {
+    margin-block: 10px;
+    font-size: 1.6em;
+    font-weight: normal;
+    line-height: 1.3em;
+    letter-spacing: 0.8px;
+    color: #000000B3;
+  }
+
+  &__text {
+    padding-left: 42px;
+    font-size: 1.4em;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1.3em;
+    letter-spacing: 0.7px;
+    color: #000000B3;
+  }
+
+}
+
+.mode-dark {
+  h2,
+  .send-messages-to-admins__label-input,
+  .send-messages-to-admins__text {
+    color: var(--text-color);
+  }
+}

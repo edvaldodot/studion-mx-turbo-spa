@@ -1,0 +1,19 @@
+.panel-event {
+  margin-top: 2em;
+  &__content {
+    background-color: var(--surface-0);
+    border-radius: 8px;
+
+    .event-section {
+      > h3 {
+        font-size: 1.4em;
+        text-transform: uppercase;
+        padding: 18px 14px;
+      }
+    }
+
+    .btn {
+      margin: 8px 10px;
+    }
+  }
+}

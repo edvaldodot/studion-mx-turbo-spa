@@ -1,0 +1,28 @@
+.search-bar {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.search-form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+}
+
+.search-form .form-item {
+  margin-bottom: 0;
+}
+
+.search-form .form-input {
+  padding-right: 40px;
+}
+
+.search-bar.is-open .search-bar-link {
+  color: var(--text-color);
+}
+
+.search-bar.is-always-open .search-form {
+  right: 10px;
+}

@@ -1,0 +1,32 @@
+* {
+  --search-add-button-bg: var(--primary-color);
+  --search-add-button-border: solid var(--primary-color) 1px;
+
+   // input status disabled
+   --search-disabled-status-color: var(--black-400);
+}
+
+.search-add {
+  &__add {
+    background-color: var(--search-add-button-bg);
+    border: var(--search-add-button-border);
+    padding: {
+      right: 8px;
+      left: 8px;
+    };
+    color: var(--button-text-color);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 144px;
+    height: 45px;
+    font-family: var(--font-family);
+    margin: {
+      right: -16px;
+    }
+  }
+}
+
+.--disabled {
+  --search-add-button-bg: var(--search-disabled-status-color);
+  --search-add-button-border: solid var(--search-disabled-status-color) 1px;
+}

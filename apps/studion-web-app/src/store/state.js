@@ -1,0 +1,30 @@
+export default {
+  feedback: {
+    title: null,
+    message: null,
+    type: null,
+  },
+  fetching: 0,
+  language: null,
+  accessibility: false,
+  accessibilityFontSize: 0,
+  audioVolumeStorage: 50,
+  fullscreen: false,
+  showSurvey: false,
+  footerHidden: false,
+  menuOpen: false,
+  menuExpanded: true,
+  integrationAppMode: false,
+  hideFabMenu: false,
+  chatbot: {
+    showWindow: { isOpen: false, insideModal: false },
+    updatePosition: false,
+  },
+  availableLanguages: {},
+  isSavingBlocked: false,
+  pauseIdleTimer: false,
+  zendeskChatbot: {
+    isOpen: false,
+  },
+  announceKitUnreads: 0,
+}

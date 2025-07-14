@@ -1,0 +1,18 @@
+.preferences {
+  &__wrapper {
+    position: relative;
+  }
+  &__button {
+  }
+  &__form-wrapper {
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    background-color: var(--surface-0);
+    border: 1px solid var(--black-100);
+    border-radius: 8px;
+    padding: 16px;
+    z-index: 99;
+    text-transform: none;
+  }
+}

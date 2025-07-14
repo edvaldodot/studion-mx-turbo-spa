@@ -1,0 +1,7 @@
+{
+  "global:profile.menu.1": "Mi catastro",
+  "profile:header.title": "Mi catastro",
+  "dashboard.profile.new:modal.description.2": "Si no desea rellenar esta información ahora sólo tiene que hacer clic en 'LLENAR MÁS TARDE' en la parte superior de esta página. Algunos recursos, como las matrículas y el acceso a la sala de clase, serán inaccesibles, pero cualquier cosa es sólo llenar más tarde en la página 'MI CATASTRO'.",
+  "dashboard.profile.pending:modal.description.2": "En caso de que no quiera rellenar esa información ahora es sólo hacer clic en 'PREINIR MÁS TARDE' en la parte superior de esta página. Algunos recursos, como las matrículas y el acceso a la sala de clase, serán inaccesibles, pero cualquier cosa es sólo llenar más tarde en la página 'MI CATASTRO'.",
+  "classroom.lessons:modal.research.warning:description": "La encuesta de satisfacción es una actividad obligatoria para completar y disponer de su certificado. Su opinión es muy importante para que podamos mejorar. Contribuya respondiendo la encuesta y conviértase en un finalizador del curso!"
+}

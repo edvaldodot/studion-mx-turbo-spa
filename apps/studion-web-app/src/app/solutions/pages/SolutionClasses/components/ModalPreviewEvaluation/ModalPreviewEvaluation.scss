@@ -1,0 +1,58 @@
+.modal-preview-evaluation {
+  .pre-content,
+  .modal-confirm-content {
+    display: none;
+    visibility: hidden;
+  }
+
+  .evaluation-question,
+  .evaluation-description {
+    position: relative;
+  }
+
+  .evaluation-libras-floating {
+    position: absolute;
+    top: 30%;
+  }
+
+  .libras-blot {
+    display: none;
+  }
+
+  &.libras-on {
+    .libras-blot {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .libras-title {
+        background-image: url("/assets/images/themes/default/svg/libras.svg");
+        background-size: cover;
+        height: 40px;
+        width: 40px;
+        color: transparent;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+      }
+
+      .libras-content {
+        padding-top: 8px;
+        z-index: 2;
+      }
+    }
+  }
+
+  .evaluation-description {
+    .libras-blot {
+      .libras-title {
+        top: 0;
+      }
+      .libras-content {
+        margin-top: 40px;
+      }
+    }
+  }
+}

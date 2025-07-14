@@ -1,0 +1,6 @@
+{
+  "global:profile.menu.1": "我的注册",
+  "profile:header.title": "我的注册",
+  "dashboard.profile.new:modal.description.2": "如果不想请立即填写此信息只需点击此页面顶部的“稍后完成”。某些功能，如注册和某些教室将无法访问，但随时可以在“我的注册”页面后填写。",
+  "dashboard.profile.pending:modal.description.2": "如果不是请立即填写此信息只需点击此页面顶部的“稍后完成”。某些功能，如注册和访问教室将无法访问，但任何事情都是在“我的注册”页面后填写。"
+}

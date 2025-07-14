@@ -1,0 +1,170 @@
+.main-content {
+  &.library {
+    > .center {
+      padding: 0 32px;
+    }
+
+    > .filter {
+      margin: 15px 0;
+    }
+
+    .library-actions-wrapper {
+      margin: 0 0 40px;
+    }
+  }
+
+  .action-submenu {
+    .btn-secondary {
+      &.is-small {
+        min-width: 130px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+.library-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.library {
+  .filter-type {
+    margin-bottom: 20px;
+  }
+
+  .filter-list-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .breadcrumbs {
+    min-height: 40px;
+  }
+}
+
+.display-flex {
+  display: block;
+}
+
+.library-list .card-media {
+  width: 220px;
+}
+
+.card-media-content {
+  padding: 10px;
+}
+
+.card-media__footer {
+  padding: 10px 0;
+}
+
+.datatable {
+  tr {
+    td {
+      &.file-icon {
+        color: var(--black-500);
+      }
+
+      &.td-actions {
+        text-align: right;
+      }
+
+      .datatable-wrapper {
+        position: relative;
+        margin: 0;
+        padding: 0 0 0 60px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 3px;
+          left: 29px;
+          display: block;
+          width: 1px;
+          height: calc(100% - 3px);
+          background-color: var(--primary-color);
+        }
+      }
+    }
+
+    &.is-folder {
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
+      .area-click {
+        cursor: pointer;
+      }
+
+      td {
+        &.file-icon {
+          color: var(--primary-color);
+        }
+      }
+    }
+
+    &.is-open {
+      .arrow-icon {
+        transform: rotate(180deg);
+      }
+    }
+
+    .arrow-icon {
+      color: var(--primary-500);
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .main-content {
+    .center {
+      &.library-actions-wrapper {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .action-submenu-list {
+      left: 100%;
+      top: -43px;
+    }
+  }
+
+  .library-list {
+    gap: 20px;
+  }
+
+  .library-list .card-media {
+    width: calc(100% / 2 - 20px);
+    min-width: 220px;
+  }
+
+  .library {
+    .filter-type {
+      margin-bottom: 0px;
+    }
+
+    .filter-list-center {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .library-list {
+    gap: 20px;
+  }
+
+  .library-list .card-media {
+    width: 100%;
+  }
+}

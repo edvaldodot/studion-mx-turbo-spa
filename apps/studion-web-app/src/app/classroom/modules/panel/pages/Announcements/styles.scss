@@ -1,0 +1,90 @@
+.announcement-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  h2,
+  p {
+    overflow-wrap: break-word;
+  }
+
+  .announcement-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  h2,
+  p {
+    overflow-wrap: break-word;
+  }
+}
+
+.announcement-list .card-announcement {
+  float: left;
+  width: 100%;
+  margin-right: 40px;
+  margin-bottom: 40px;
+
+  &.card-fixed .generic-card {
+    padding-top: 40px;
+    border-left: 10px solid var(--primary-color);
+  }
+}
+
+.announcements-toggle-fixed {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+
+  &__title {
+    margin-bottom: 18px;
+    font-size: 1.4em;
+    color: var(--primary-500);
+  }
+}
+
+.announcement-list .card-announcement:nth-child(2n + 2) {
+  margin-right: 0;
+}
+
+.modal-form .hidden {
+  display: none;
+}
+
+.management-reply-announcements-class {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -16%);
+  width: 100%;
+
+  .form-submit {
+    &.text-center {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.input-editor-announcements-form {
+  .form-editor {
+    &.ql-container {
+      &.ql-snow {
+        margin-bottom: 65px;
+        max-width: 583px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .announcement-list .card-announcement {
+    float: none;
+    width: auto;
+    margin-right: 0;
+  }
+}

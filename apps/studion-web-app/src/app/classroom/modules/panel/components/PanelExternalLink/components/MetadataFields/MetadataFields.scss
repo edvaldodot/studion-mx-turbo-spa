@@ -1,0 +1,16 @@
+.display-flex-meta-data-fields {
+  max-width: 750px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 0.875rem;
+
+  .btn-meta-data-fields {
+    color: var(--black-600);
+  }
+
+  .input-meta-data-fields {
+    max-width: 240px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,142 @@
+.audio__wrapper {
+  background-color: var(--primary-color);
+  padding: 10px;
+
+  .audio__row {
+    display: flex;
+  }
+
+  .audio__volume {
+    position: relative;
+    display: flex;
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .audio__play {
+    background-color: var(--secondary-color);
+    border-radius: 40px;
+    padding: 0 25px;
+
+    .icon-wrapper,
+    .icon {
+      width: 50px;
+      height: 50px;
+      color: var(--text-contrast-primary-color);
+    }
+  }
+
+  .volume__control {
+    position: absolute;
+    top: -66px;
+    left: -30px;
+    width: 100px;
+    transform: rotate(-90deg);
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+  }
+
+  .audio__progress {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    color: var(--text-color);
+  }
+
+  .progress__timer {
+    padding: 0 10px;
+    font-size: 1.4em;
+  }
+
+  .progress__loading {
+    padding: 0 10px;
+  }
+
+  .slider {
+    margin: auto;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px white;
+    border: solid transparent 1px;
+    background: transparent;
+
+    &::-webkit-slider-runnable-track {
+      background: var(--primary-color);
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 10px;
+      height: 10px;
+      background: #fff;
+      box-shadow: calc(-5px - 100vw) 0 0 100vw #fff;
+      border-radius: 50%;
+    }
+
+    &::-ms-thumb {
+      background: #fff;
+      border: 2px solid #999;
+      height: 10px;
+      width: 10px;
+      box-sizing: border-box;
+      border-radius: 50%;
+    }
+
+    &::-moz-range-track {
+      height: 40px;
+      background: var(--primary-color);
+    }
+
+    &::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border: none;
+      outline: none;
+      box-shadow: calc(-5px - 100vw) 0 0 100vw white;
+      border-radius: 50%;
+    }
+
+    &::-ms-fill-lower {
+      background: white;
+    }
+
+    &::-ms-ticks-after {
+      display: none;
+    }
+
+    input[type='range']:focus {
+      outline: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .audio__play {
+      border-radius: 30px;
+      padding: 0 15px;
+
+      .icon-wrapper,
+      .icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 360px) {
+    .slider {
+      max-width: 90px;
+    }
+  }
+}

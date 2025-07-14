@@ -1,0 +1,13 @@
+server {
+  server_name _;
+  listen 8080;
+  access_log /dev/stdout;
+  proxy_temp_path /tmp/proxy;
+
+  root ${DOCUMENTROOT};
+  index index.html index.htm;
+
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+}

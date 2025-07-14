@@ -1,0 +1,57 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.icon-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.icon-wrapper:before {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-wrapper.is-large {
+  width: 60px;
+  height: 60px;
+}
+
+.icon-wrapper.is-large .icon {
+  width: 35px;
+  height: 35px;
+}
+
+.icon-wrapper.is-medium {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-wrapper.is-small {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.icon-wrapper.is-small .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.material-symbols-outlined,
+.material-symbols-rounded,
+.material-symbols-sharp {
+  font-family: "Material Symbols Outlined" !important;
+}

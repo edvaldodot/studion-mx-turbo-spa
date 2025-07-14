@@ -1,0 +1,13 @@
+.mediation {
+  &__action {
+    max-width: 100%;
+    width: 540px;
+    margin: 0 auto;
+
+    .form-input-wrapper {
+      &__right-float {
+        right: -60px;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.panel-library {
+  &__content {
+    background-color: var(--surface-0);
+    border-radius: 8px;
+
+    .event-section {
+      > h3 {
+        font-size: 1.4em;
+        text-transform: uppercase;
+        padding: 18px 14px;
+      }
+    }
+
+    .btn {
+      margin: 8px 10px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      &-items {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+    }
+  }
+}

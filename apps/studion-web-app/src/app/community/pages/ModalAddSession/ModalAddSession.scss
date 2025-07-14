@@ -1,0 +1,129 @@
+.modal-add-session {
+  .session-offering-detail {
+    font-family: var(--font-family);
+    font-size: 1.6em;
+    font-weight: 100;
+    color: var(--text-color);
+    margin-bottom: 40px;
+  }
+
+  .session-offering-detail-item {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .datatable {
+    margin-bottom: 0;
+  }
+
+  .empty-message {
+    margin-bottom: 10px;
+  }
+
+  .form-input-messages-container {
+    color: var(--alert-900);
+  }
+  .form-section {
+    &.schedule-allowed,
+    &.schedule-block {
+      margin-top: 80px;
+      margin-bottom: 20px;
+    }
+    &.modal-form-box-inner {
+      border-radius: 8px;
+    }
+    .optional {
+      display: flex;
+      justify-content: space-between;
+    }
+    .form-section-hint {
+      font-style: italic;
+      font-size: 1.4em;
+    }
+  }
+  .schedule-allowed__add,
+  .schedule-block__add {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .session-deadline {
+    .form-item-description {
+      text-transform: none;
+    }
+  }
+
+  .checkbox__helper {
+    display: flex;
+    ul {
+      padding: 0 0 0 1.6em;
+      list-style: initial;
+    }
+
+    .helper_cloud {
+      z-index: 5;
+    }
+  }
+
+  &__button-submit-responsible {
+    &.btn {
+      margin-top: 12px;
+      .text {
+        padding-right: 10px;
+      }
+
+      .icon-wrapper {
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+  &__background-form-responsible {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    padding: 40px;
+    width: calc(100% + 80px);
+    margin-left: -40px;
+
+    .is-autocomplete .form-input-append {
+      z-index: 5;
+
+      >span:first-child{
+        display: none;
+      }
+    }
+
+
+    .form-group {
+      display: flex;
+      gap: 12px;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .form-item {
+        width: unset;
+        flex-grow: 0
+      }
+
+      .form-item:first-child {
+        width: 220px;
+        flex-shrink: 0;
+      }
+
+    }
+
+    .empty-message {
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 660px) {
+    .form-group {
+      flex-direction: column;
+      .form-item:first-child,
+      .form-item {
+        width: 100%;
+      }
+    }
+
+  }
+}

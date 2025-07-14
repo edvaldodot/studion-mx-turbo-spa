@@ -1,0 +1,9 @@
+.banner-item{
+  border-radius:10px;
+  overflow:hidden;
+  cursor: pointer;
+
+  .generic-card__actions {
+    padding: 0 0.8em 0.8em;
+  }
+}

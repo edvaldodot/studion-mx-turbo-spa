@@ -1,0 +1,65 @@
+.modal-information {
+  .pre-content {
+    margin: 0 0 0.5rem;
+    font-family: var(--font-family);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--secondary-color);
+  }
+
+  .modal-confirm-content {
+    padding: 0;
+  }
+
+  &.small-padding .modal-confirm {
+    padding: 20px;
+    .modal-confirm-content {
+      padding: 20px 49px 0;
+    }
+  }
+
+  .modal-confirm {
+    padding: 45px 71px;
+    max-width: 841px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 8px;
+    border-top: 6px solid var(--secondary-color);
+    text-align: center;
+
+    .modal-confirm-title {
+      margin-bottom: 3rem;
+    }
+
+    .modal-confirm-description {
+      text-align: left;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .modal-confirm-footer {
+      height: unset;
+      margin-top: 0;
+      text-align: left;
+    }
+
+    .modal-confirm-actions {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .modal-confirm {
+      padding: 45px 2em;
+    }
+  }
+}

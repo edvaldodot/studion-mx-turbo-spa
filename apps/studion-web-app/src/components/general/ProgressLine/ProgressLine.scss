@@ -1,0 +1,48 @@
+.progress-line {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+}
+
+.progress-line.--dark {
+  color: var(--text-color);
+}
+
+.progress-line label {
+  display: inline-block;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.progress-line label.--prepend {
+  margin-right: 1em;
+  font-weight: normal;
+}
+
+.progress-line label.--append {
+  margin-left: 1em;
+}
+
+.progress-line__holder {
+  display: flex;
+  align-items: center;
+  margin-top: .8em;
+}
+
+.progress-line__background {
+  flex: 1;
+  position: relative;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.progress-line__determinate {
+  background: var(--alert-900);
+  height: 8px;
+  border-radius: 4px;
+  transition: .3s;
+}
+
+.progress-line.--dark {
+  color: var(--text-color);
+}

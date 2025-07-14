@@ -1,0 +1,5 @@
+{
+  "global:solution.status.expirado": "Não concluinte",
+  "community.sessions.add:modal.student.status.expired": "Não concluinte",
+  "community.sessions.modal:change.status.confirm.message.5": "Mudar o status do aluno para <b>Não concluinte</b> fará com que ele perca acesso ao certificado de conclusão referente a esta turma (se aplicável), e constará como aluno não concluinte nesta solução nos relatórios."
+}

@@ -1,0 +1,21 @@
+.form {
+  &__matrix {
+    .form-item {
+      border: 1px solid var(--surface-border);
+      border-radius: 8px;
+      padding: 25px;
+
+      .form-label {
+        padding: 25px;
+      }
+    }
+
+    .form-input-wrapper {
+      position: initial;
+    }
+
+    .form-input-append {
+      top: 0;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "offerings.list:btn.add": "Criar curso",
+  "offerings.list:empty.title:admin": "Crie cursos para o seu catálogo",
+  "offerings.list:empty.message:admin": "Crie cursos com acesso imediato ou programado.",
+  "offerings:header.description:admin": "Crie as suas soluções educacionais.",
+  "offerings:header.description:student": "Conheça todos os cursos e inscreva-se nas soluções educacionais disponíveis.",
+  "offerings.list:empty.title:student": "Ainda não foi publicado nenhum curso. Volte em breve.",
+  "offerings.list:empty.message:student": "Aqui no catálogo, ficará a conhecer as soluções educacionais disponíveis em que se pode inscrever",
+  "classroom.panel.dashboard:lessons.description.sub": "Aceda aqui ao curso",
+  "classroom.panel.dashboard:announcements.empty.description.1": "Este é o seu <i>dashboard</i>. Aqui estará a par das últimas novidades e documentos.",
+  "classroom.panel.dashboard:event.empty.title": "Ainda não há eventos registados.",
+  "classroom.panel.dashboard:event.empty.description": "Ninguém registou eventos nesta solução. Poderá fazê-lo a partir do Calendário.",
+  "classroom.list:student.empty.title": "Não está matriculado em nenhuma solução educacional",
+  "classroom.list:student.empty.message": "Quando estiver numa turma, poderá aceder aqui ao seu curso.",
+  "library:header.description": "Adicione e faça a gestão dos seus ficheiros.",
+  "library.index:empty.description": "Clique em Criar ferramenta multimédia para adicionar ficheiros à sua biblioteca"
+}

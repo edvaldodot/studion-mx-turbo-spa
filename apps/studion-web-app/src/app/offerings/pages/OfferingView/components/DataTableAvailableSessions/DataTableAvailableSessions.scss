@@ -1,0 +1,247 @@
+.datatable-available-sessions {
+  td {
+    .clamp-line {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      word-break: break-all;
+    }
+  }
+
+  .tr-parent-dropdown {
+    &.is-open {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    > td {
+      height: 75px;
+    }
+  }
+
+  .tr-dropdown {
+    .td-dropdown {
+      padding: 0;
+    }
+
+    .tr-dropdown-content {
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    &:not(.is-open) {
+      .td-dropdown {
+        border: none;
+        height: unset;
+      }
+    }
+  }
+
+  .datatable-wrapper.details {
+    padding: 0;
+
+    .datatable-inner .datatable {
+      margin: 0;
+
+      th {
+        padding-top: 20px;
+      }
+
+      tbody:not(:last-child) {
+        tr td {
+          border-bottom: 1px solid var(--surface-border);
+        }
+      }
+
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    .datatable-wrapper.details .datatable-inner .datatable {
+
+        tbody tr:first-of-type {
+          td {
+            border-bottom: unset;
+          }
+        }
+
+    }
+  }
+}
+
+.datatable-wrapper {
+  .tr-parent-modal-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .modal-information {
+    &.small-padding {
+      .modal-confirm {
+        gap: 0;
+        padding-top: 48px;
+
+        .modal-confirm-content {
+          padding: 0;
+        }
+      }
+
+      .pre-content {
+        font-family: var(--font-family);
+        text-transform: none;
+        margin: 0 0 4px;
+      }
+    }
+
+    .modal-confirm {
+      .modal-confirm-title {
+        font-family: var(--font-family);
+        color: var(--text-color);
+        margin: 0 0 13px;
+      }
+    }
+
+    .course-list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .course-item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 15px 0;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--offer-list-item-divider);
+      }
+
+      .item-row {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .item-column {
+        display: flex;
+        flex-direction: column;
+
+        &:not(:last-child) {
+          padding: 0 14px 0 0;
+        }
+      }
+
+      .item-title {
+        font-family: var(--font-family);
+        color: var(--text-color);
+        margin-bottom: 16px;
+      }
+
+      .item-label {
+        font-family: var(--font-family);
+        color: var(--black-700);
+        text-transform: uppercase;
+        margin: 0 0 4px;
+      }
+
+      .item-date {
+        font-family: var(--font-family);
+        color: var(--black-700);
+      }
+    }
+  }
+
+  .sessions-item-list {
+    .datatable {
+      tbody {
+        background-clip: padding-box;
+        background-color: transparent;
+        border-bottom: 20px solid transparent;
+        border-top: 25px solid transparent;
+      }
+
+      td {
+        background-color: var(--surface-0);
+      }
+
+      .pl-2 {
+        padding-right: 14px;
+      }
+    }
+  }
+
+  .datatable {
+    .td-text-header {
+      &.sub-header {
+        margin-bottom: 5px;
+        font-family: var(--font-family);
+        color: var(--text-color);
+      }
+    }
+
+    .td-text {
+      font-family: var(--font-family);
+      color: var(--text-color);
+
+      &.bolder {
+        font-family: var(--font-family);
+      }
+    }
+
+    .tr-parent-dropdown {
+      .btn-dropdown {
+        display: none;
+      }
+    }
+  }
+
+  .datatable-available-sessions {
+    .tr-dropdown {
+      display: none;
+    }
+  }
+
+  .datatable-wrapper {
+    &.theme-light {
+      .datatable {
+        .td {
+          height: auto;
+          padding-top: 0;
+          padding-bottom: 17px;
+          border: none;
+
+          &.no-bb {
+            border-radius: 10px 10px 0 0;
+          }
+        }
+      }
+    }
+
+    .tr-parent-modal-button {
+      display: table-row;
+      padding: 0;
+
+      td {
+        padding: 0;
+        background-color: transparent;
+
+        .btn {
+          width: 100%;
+          font-family: var(--font-family);
+          letter-spacing: 0.7px;
+          padding: 7px 10px;
+          background-color: var(--primary-color);
+          border-radius: 0 0 10px 10px;
+
+          .text {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

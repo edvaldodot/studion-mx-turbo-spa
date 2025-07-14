@@ -1,0 +1,148 @@
+:root {
+  --upload-file-height: 45px;
+  --upload-file-bg: var(--black-50);
+  --upload-file-border: solid var(--black-100) 1px;
+  --upload-file-border-radius: 8px;
+  --upload-file-padding: 0px 15px 0px 15px;
+  --upload-file-required-status-color: var(--primary-color);
+
+  --upload-file-label-color: var(--black-800);
+  --upload-file-label-font-size: 16px;
+  --upload-file-label-font-weight: 500;
+
+  --upload-file-placeholder-color: var(--black-500);
+  --upload-file-placeholder-font-size: 16px;
+
+  --upload-file-input-text-color: var(--black-800);
+  --upload-file-input-font-size: 16px;
+
+  --upload-file-help-color: var(--black-800);
+  --upload-file-counter-color: var(--black-800);
+
+  --upload-file-details-color: var(--black-800);
+  --upload-file-hint-color: var(--black-800);
+
+  --upload-file-required-status-color: var(--primary-color);
+
+  // icons
+  --upload-file-append-inner-icon-color: var(--black-800);
+  --upload-file-prepend-inner-icon-color: var(--black-800);
+
+  // input status disabled
+  --upload-file-disabled-status-color: var(--black-400);
+
+  --upload-file-add-button-bg: var(--primary-color);
+  --upload-file-add-button-border: solid var(--primary-color) 1px;
+}
+
+.upload-file {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__label {
+    font-family: var(--font-family);
+    color: var(--upload-file-label-color);
+    font-size: var(--upload-file-label-font-size);
+    font-weight: var(--upload-file-label-font-weight);
+    line-height: 16.8px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    background: var(--upload-file-bg);
+    border: var(--upload-file-border);
+    border-radius: var(--upload-file-border-radius);
+    height: var(--upload-file-height);
+    padding: var(--upload-file-padding);
+    position: relative;
+
+    input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      background: transparent;
+      padding: {
+        top: 13px;
+        bottom: 13px;
+      }
+      font-size: var(--upload-file-input-font-size);
+      color: var(--upload-file-input-text-color);
+    }
+    input::placeholder {
+      font-size: var(--upload-file-placeholder-font-size);
+      color: var(--upload-file-placeholder-color);
+    }
+    input::-webkit-inner-spin-button {
+      appearance: none;
+    }
+
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 30px var(--upload-file-bg) inset;
+    }
+  }
+  &__required {
+    font-size: 16px;
+    color: var(--upload-file-required-status-color);
+    font-weight: 500;
+  }
+  &__prepend {
+  }
+  &__add {
+    background: var(--upload-file-add-button-bg);
+    border: var(--upload-file-add-button-border);
+    padding: {
+      right: 8px;
+      left: 8px;
+    }
+    color: var(--button-text-color);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 144px;
+    height: 45px;
+    font-family: var(--font-family);
+    margin: {
+      right: -16px;
+    }
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  &__prepend-inner {
+  }
+  &__input {
+  }
+  &__append-inner {
+  }
+  &__append {
+  }
+  &__hint {
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--upload-file-hint-color);
+  }
+}
+
+.--error {
+  --upload-file-border: solid var(--error-900) 1px;
+  --upload-file-hint-color: var(--error-900);
+  --upload-file-input-text-color: var(--error-900);
+  --upload-file-placeholder-color: var(--error-900);
+}
+
+.--disabled {
+  --upload-file-label-color: var(--upload-file-disabled-status-color);
+  --upload-file-border: solid var(--upload-file-disabled-status-color) 1px;
+  --upload-file-hint-color: var(--upload-file-disabled-status-color);
+  --upload-file-input-text-color: var(--upload-file-disabled-status-color);
+  --upload-file-append-inner-icon-color: var(--upload-file-disabled-status-color);
+  --upload-file-prepend-inner-icon-color: var(--upload-file-disabled-status-color);
+  --upload-file-placeholder-color: var(--upload-file-disabled-status-color);
+  --upload-file-add-button-bg: var(--upload-file-disabled-status-color);
+  --upload-file-add-button-border: solid var(--upload-file-disabled-status-color) 1px;
+}

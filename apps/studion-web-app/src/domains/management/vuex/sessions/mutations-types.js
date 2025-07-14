@@ -1,0 +1,3 @@
+const NAMESPACE = 'Sessions'
+
+export const SET_MODAL_SESSION_LIST = `${NAMESPACE}/SET_MODAL_SESSION_LIST`

@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "EditorConfig.EditorConfig",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+    "Gruntfuggly.todo-tree",
+  ]
+}

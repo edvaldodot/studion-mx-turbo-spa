@@ -1,0 +1,14 @@
+.hour-field {
+  input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-family: var(--font-family);
+    font-size: 1.6em;
+    padding-bottom: 10px;
+    color: currentColor;
+    &::-webkit-calendar-picker-indicator {
+      display: none;
+    }
+  }
+}

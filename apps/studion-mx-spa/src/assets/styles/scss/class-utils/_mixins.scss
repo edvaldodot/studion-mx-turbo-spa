@@ -1,0 +1,446 @@
+@use 'sass:math';
+@use 'sass:color';
+@use "sass:list";
+@use "sass:string";
+
+@use './variables' as *;
+
+@mixin style-class($prop, $map, $responsive: false, $states: false) {
+    @each $key, $val in $map {
+        .#{$prefix}#{$key} {
+            #{$prop}: #{$val} !important;
+        }
+    }
+
+    @if ($states) {
+        @each $key, $val in $map {
+            .focus#{$separator} {
+                &#{$prefix}#{$key}:focus {
+                    #{$prop}: #{$val} !important;
+                }
+            }
+
+            .hover#{$separator} {
+                &#{$prefix}#{$key}:hover {
+                    #{$prop}: #{$val} !important;
+                }
+            }
+
+            .active#{$separator} {
+                &#{$prefix}#{$key}:active {
+                    #{$prop}: #{$val} !important;
+                }
+            }
+        }
+    }
+
+    @if ($responsive) {
+        @each $key, $val in $breakpoints {
+            @media screen and (min-width: #{$val}) {
+                .#{$key + $separator} {
+                    @each $key, $val in $map {
+                        &#{$prefix}#{$key} {
+                            #{$prop}: #{$val} !important;
+                        }
+                    }
+
+                    @if ($states) {
+                        @each $key, $val in $map {
+                            &focus#{$separator} {
+                                &#{$prefix}#{$key}:focus {
+                                    #{$prop}: #{$val} !important;
+                                }
+                            }
+
+                            &hover#{$separator} {
+                                &#{$prefix}#{$key}:hover {
+                                    #{$prop}: #{$val} !important;
+                                }
+                            }
+
+                            &active#{$separator} {
+                                &#{$prefix}#{$key}:active {
+                                    #{$prop}: #{$val} !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin color-class($name, $prop, $colors, $shades) {
+    @each $color in $colors {
+        .#{$prefix}#{$name}#{$color} {
+            @each $shade in $shades {
+                &-#{$shade} {
+                    #{$prop}: var(--#{$color}-#{$shade}) !important;
+                }
+            }
+        }
+
+        .focus#{$separator} {
+            &#{$prefix}#{$name}#{$color} {
+                @each $shade in $shades {
+                    &-#{$shade}:focus {
+                        #{$prop}: var(--#{$color}-#{$shade}) !important;
+                    }
+                }
+            }
+        }
+
+        .hover#{$separator} {
+            &#{$prefix}#{$name}#{$color} {
+                @each $shade in $shades {
+                    &-#{$shade}:hover {
+                        #{$prop}: var(--#{$color}-#{$shade}) !important;
+                    }
+                }
+            }
+        }
+
+        .active#{$separator} {
+            &#{$prefix}#{$name}#{$color} {
+                @each $shade in $shades {
+                    &-#{$shade}:active {
+                        #{$prop}: var(--#{$color}-#{$shade}) !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin surface-class($name, $prop, $shades) {
+    @each $shade in $shades {
+        .#{$prefix}#{$name}-#{$shade} {
+            #{$prop}: var(--surface-#{$shade}) !important;
+        }
+    }
+
+    @each $shade in $shades {
+        .focus#{$separator} {
+            &#{$prefix}#{$name}-#{$shade}:focus {
+                #{$prop}: var(--surface-#{$shade}) !important;
+            }
+        }
+
+        .hover#{$separator} {
+            &#{$prefix}#{$name}-#{$shade}:hover {
+                #{$prop}: var(--surface-#{$shade}) !important;
+            }
+        }
+
+        .active#{$separator} {
+            &#{$prefix}#{$name}-#{$shade}:active {
+                #{$prop}: var(--surface-#{$shade}) !important;
+            }
+        }
+    }
+}
+
+@mixin border-class($name, $directions, $scales) {
+    @each $dir, $prop in $directions {
+        @for $i from 0 through list.length($scales) - 1 {
+            $borderValue: if($i == 0, 'none', $i);
+            $className: #{$name}-#{$dir}-#{$borderValue};
+            @if ($dir == '') {
+                $className: #{$name}-#{$borderValue};
+            }
+
+            .#{$prefix}#{$className} {
+                @each $propName in $prop {
+                    #{$propName}-width: list.nth($scales, $i + 1) !important;
+                    #{$propName}-style: if($i == 0, none, solid);
+                }
+            }
+        }
+    }
+
+    @each $key, $val in $breakpoints {
+        @media screen and (min-width: #{$val}) {
+            .#{$key + $separator} {
+                @each $dir, $prop in $directions {
+                    @for $i from 0 through list.length($scales) - 1 {
+                        $borderValue: if($i == 0, 'none', $i);
+                        $className: #{$name}-#{$dir}-#{$borderValue};
+                        @if ($dir == '') {
+                            $className: #{$name}-#{$borderValue};
+                        }
+
+                        &#{$prefix}#{$className} {
+                            @each $propName in $prop {
+                                #{$propName}-width: list.nth($scales, $i + 1) !important;
+                                #{$propName}-style: if($i == 0, none, solid);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin border-radius-class($map, $directions) {
+    @each $key, $val in $map {
+        $prefixName: $key;
+        $suffixName: '';
+        $index: string.index($key, 'border-round');
+
+        @if $index != null {
+            $prefixName: 'border-round';
+            $suffixName: string.slice($key, string.length('border-round') + 1, string.length($key));
+        }
+
+        @each $dir, $prop in $directions {
+            .#{$prefix}#{$prefixName}-#{$dir}#{$suffixName} {
+                @each $propName in $prop {
+                    #{$propName}: #{$val} !important;
+                }
+            }
+        }
+    }
+
+    @each $key, $val in $breakpoints {
+        @media screen and (min-width: #{$val}) {
+            .#{$key + $separator} {
+                @each $key, $val in $map {
+                    $prefixName: $key;
+                    $suffixName: '';
+                    $index: string.index($key, 'border-round');
+
+                    @if $index != null {
+                        $prefixName: 'border-round';
+                        $suffixName: string.slice($key, string.length('border-round') + 1, string.length($key));
+                    }
+
+                    @each $dir, $prop in $directions {
+                        &#{$prefix}#{$prefixName}-#{$dir}#{$suffixName} {
+                            @each $propName in $prop {
+                                #{$propName}: #{$val} !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin rgba-color-class($name, $prop, $colors, $shades) {
+    @each $colorName, $colorValue in $colors {
+        .#{$prefix}#{$name}#{$colorName}-alpha {
+            @each $shade in $shades {
+                &-#{$shade} {
+                    #{$prop}: #{"rgba(#{$colorValue},#{math.div($shade, 100)})"} !important;
+                }
+            }
+        }
+
+        .hover#{$separator} {
+            &#{$prefix}#{$name}#{$colorName}-alpha {
+                @each $shade in $shades {
+                    &-#{$shade}:hover {
+                        #{$prop}: #{"rgba(#{$colorValue},#{math.div($shade, 100)})"} !important;
+                    }
+                }
+            }
+        }
+
+        .focus#{$separator} {
+            &#{$prefix}#{$name}#{$colorName}-alpha {
+                @each $shade in $shades {
+                    &-#{$shade}:focus {
+                        #{$prop}: #{"rgba(#{$colorValue},#{math.div($shade, 100)})"} !important;
+                    }
+                }
+            }
+        }
+
+        .active#{$separator} {
+            &#{$prefix}#{$name}#{$colorName}-alpha {
+                @each $shade in $shades {
+                    &-#{$shade}:active {
+                        #{$prop}: #{"rgba(#{$colorValue},#{math.div($shade, 100)})"} !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin spacing-class($inPrefix, $map, $scales, $responsive: true, $auto: false, $negative: false) {
+    $inPrefix: $prefix + $inPrefix;
+
+    @each $name, $prop in $map {
+        @for $i from 0 through list.length($scales) - 1 {
+            .#{$inPrefix}#{$name}-#{$i} {
+                @each $propName in $prop {
+                    #{$propName}: $spacer * list.nth($scales, $i + 1) !important;
+                }
+            }
+        }
+
+        @if ($negative) {
+            @for $i from 1 through list.length($scales) - 1 {
+                .-#{$inPrefix}#{$name}-#{$i} {
+                    @each $propName in $prop {
+                        #{$propName}: -1 * $spacer * list.nth($scales, $i + 1) !important;
+                    }
+                }
+            }
+        }
+
+        @if ($auto) {
+            .#{$inPrefix}#{$name}-auto {
+                @each $propName in $prop {
+                    #{$propName}: auto !important;
+                }
+            }
+        }
+    }
+
+    @if ($responsive) {
+        @each $key, $val in $breakpoints {
+            @media screen and (min-width: #{$val}) {
+                @each $name, $prop in $map {
+                    @for $i from 0 through list.length($scales) - 1 {
+                        .#{$key + $separator}#{$inPrefix}#{$name}-#{$i} {
+                            @each $propName in $prop {
+                                #{$propName}: $spacer * list.nth($scales, $i + 1) !important;
+                            }
+                        }
+                    }
+
+                    @if ($negative) {
+                        @for $i from 1 through list.length($scales) - 1 {
+                            .#{$key + $separator}-#{$inPrefix}#{$name}-#{$i} {
+                                @each $propName in $prop {
+                                    #{$propName}: -1 * $spacer * list.nth($scales, $i + 1) !important;
+                                }
+                            }
+                        }
+                    }
+
+                    @if ($auto) {
+                        .#{$key + $separator}#{$inPrefix}#{$name}-auto {
+                            @each $propName in $prop {
+                                #{$propName}: auto !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin generate-class($map, $responsive: false, $states: false) {
+    @each $name, $propMap in $map {
+        .#{$prefix}#{$name} {
+            @each $prop, $val in $propMap {
+                #{$prop}: #{$val} !important;
+            }
+        }
+    }
+
+    @if ($states) {
+        @each $name, $propMap in $map {
+            .focus#{$separator} {
+                &#{$prefix}#{$name}:focus {
+                    @each $prop, $val in $propMap {
+                        #{$prop}: #{$val} !important;
+                    }
+                }
+            }
+
+            .hover#{$separator} {
+                &#{$prefix}#{$name}:hover {
+                    @each $prop, $val in $propMap {
+                        #{$prop}: #{$val} !important;
+                    }
+                }
+            }
+
+            .active#{$separator} {
+                &#{$prefix}#{$name}:active {
+                    @each $prop, $val in $propMap {
+                        #{$prop}: #{$val} !important;
+                    }
+                }
+            }
+        }
+    }
+
+    @if ($responsive) {
+        @each $key, $val in $breakpoints {
+            @media screen and (min-width: #{$val}) {
+                .#{$key + $separator} {
+                    @each $name, $propMap in $map {
+                        &#{$prefix}#{$name} {
+                            @each $prop, $val in $propMap {
+                                #{$prop}: #{$val} !important;
+                            }
+                        }
+                    }
+
+                    @if ($states) {
+                        @each $name, $propMap in $map {
+                            &focus#{$separator} {
+                                &#{$prefix}#{$name}:focus {
+                                    @each $prop, $val in $propMap {
+                                        #{$prop}: #{$val} !important;
+                                    }
+                                }
+                            }
+
+                            &hover#{$separator} {
+                                &#{$prefix}#{$name}:hover {
+                                    @each $prop, $val in $propMap {
+                                        #{$prop}: #{$val} !important;
+                                    }
+                                }
+                            }
+
+                            &active#{$separator} {
+                                &#{$prefix}#{$name}:active {
+                                    @each $prop, $val in $propMap {
+                                        #{$prop}: #{$val} !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin generate-variables-base-colors($primaryColor, $secondaryColor) {
+  $colorsVariants: (50: 90%, 100: 80%, 200: 70%, 300: 60%, 400: 50%, 500: 40%, 600: 30%, 700: 20%, 800: 10%, 900: 0%);
+
+
+  @each $color, $percent in $colorsVariants {
+    --primary-#{$color}: #{color.scale($primaryColor, $lightness: $percent)};
+  }
+  @each $color, $percent in $colorsVariants {
+    --secondary-#{$color}: #{color.scale($secondaryColor, $lightness: $percent)};
+  }
+}
+
+@mixin text-contrast($primaryColor, $secondaryColor, $textColor, $percentage: 50) {
+  @if (color.channel($primaryColor, "lightness", $space: hsl) > $percentage) {
+    --text-contrast-primary-color: #{$textColor};
+  } @else {
+    --text-contrast-primary-color: #ffffff;
+  }
+
+  @if (color.channel($secondaryColor, "lightness", $space: hsl) > $percentage) {
+    --text-contrast-secondary-color: #{$textColor};
+  } @else {
+    --text-contrast-secondary-color: #ffffff;
+  }
+}

@@ -1,0 +1,17 @@
+.main-content {
+  &__classroom {
+    &.has-biometrics {
+      margin-top: 46px;
+
+      @media screen and (max-width: 1023px) {
+        margin-top: 92px;
+        &.lessons {
+          .mobile-header {
+            margin-top: 92px;
+          }
+          margin-top: 148px;
+        }
+      }
+    }
+  }
+}
